@@ -1,3 +1,6 @@
+"use client";
+
+import { motion, useReducedMotion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 /**
@@ -5,6 +8,7 @@ import { cn } from "@/lib/utils";
  * Saudi sky — stands in for the hero photograph until real renders arrive.
  */
 export function HeroArt({ className, clouds = false, id = "hero" }: { className?: string; clouds?: boolean; id?: string }) {
+  const reduce = useReducedMotion();
   const g = (n: string) => `${id}-${n}`;
   const mullions = Array.from({ length: 10 }, (_, i) => 440 + i * 80);
   const slats = Array.from({ length: 14 }, (_, i) => i);
@@ -73,13 +77,19 @@ export function HeroArt({ className, clouds = false, id = "hero" }: { className?
       <rect width="1440" height="900" fill={`url(#${g("sun")})`} />
 
       {clouds && (
-        <g fill="#fff" filter={`url(#${g("soft")})`} opacity="0.85">
+        <motion.g
+          fill="#fff"
+          filter={`url(#${g("soft")})`}
+          opacity="0.85"
+          animate={reduce ? undefined : { x: [0, 40, 0] }}
+          transition={{ duration: 40, repeat: Infinity, ease: "easeInOut" }}
+        >
           <ellipse cx="300" cy="150" rx="120" ry="34" />
           <ellipse cx="380" cy="130" rx="80" ry="30" />
           <ellipse cx="1290" cy="300" rx="150" ry="30" opacity="0.8" />
           <ellipse cx="1210" cy="520" rx="200" ry="36" opacity="0.7" />
           <ellipse cx="1340" cy="640" rx="160" ry="40" opacity="0.75" />
-        </g>
+        </motion.g>
       )}
 
       {/* Left wing: flat roof + glazing */}
@@ -96,6 +106,15 @@ export function HeroArt({ className, clouds = false, id = "hero" }: { className?
       <g clipPath={`url(#${g("glassClip")})`}>
         <path d="M440 900 L800 60 L920 60 L560 900 Z" fill={`url(#${g("reflect")})`} opacity="0.7" />
         <path d="M880 900 L1110 60 L1160 60 L930 900 Z" fill={`url(#${g("reflect")})`} opacity="0.45" />
+        {!reduce && (
+          <motion.path
+            d="M300 900 L620 60 L700 60 L380 900 Z"
+            fill={`url(#${g("reflect")})`}
+            initial={{ x: -500, opacity: 0 }}
+            animate={{ x: 1100, opacity: [0, 0.9, 0] }}
+            transition={{ duration: 6, repeat: Infinity, repeatDelay: 3, ease: "easeInOut" }}
+          />
+        )}
         {mullions.map((x) => (
           <line key={x} x1={x} y1="200" x2={x} y2="900" stroke="#CFE4FB" strokeOpacity="0.45" strokeWidth="3" />
         ))}
@@ -113,7 +132,15 @@ export function HeroArt({ className, clouds = false, id = "hero" }: { className?
       </g>
       {/* downlights */}
       {[0.25, 0.45, 0.65, 0.85].map((t) => (
-        <circle key={t} cx={1000 + 380 * t} cy={240 + 250 * t} r="4" fill="#FFE8C2" opacity="0.9" />
+        <circle
+          key={t}
+          cx={1000 + 380 * t}
+          cy={240 + 250 * t}
+          r="4"
+          fill="#FFE8C2"
+          className={reduce ? "" : "skyline-twinkle"}
+          style={{ animationDelay: `${t * 4}s` }}
+        />
       ))}
 
       {/* Main roof fascias */}

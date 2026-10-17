@@ -58,7 +58,12 @@ export function Navbar() {
   };
 
   const solid = scrolled || mobileOpen;
-  const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
+  const isActive = (href: string) => {
+    if (href === "/") return pathname === "/";
+    if (href === routes.solutions) return pathname.startsWith("/solutions") || pathname.startsWith("/pillars");
+    if (href === routes.cse) return pathname.startsWith("/products");
+    return pathname.startsWith(href);
+  };
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-2 pt-2 sm:px-3 sm:pt-3">
@@ -74,7 +79,7 @@ export function Navbar() {
           <Logo tone={solid ? "dark" : "light"} />
 
           {/* Desktop links */}
-          <ul className="hidden items-center gap-0.5 lg:flex xl:gap-1">
+          <ul className="hidden items-center gap-0.5 xl:flex">
             {nav.map((item) =>
               item.pillarsMenu ? (
                 <li key={item.label} className="relative" onMouseEnter={openMenu} onMouseLeave={scheduleClose}>
@@ -84,8 +89,12 @@ export function Navbar() {
                     aria-controls="pillars-menu"
                     onClick={() => setMenuOpen((v) => !v)}
                     className={cn(
-                      "flex items-center gap-1 whitespace-nowrap rounded-full px-2.5 py-2 text-[13px] font-semibold transition-colors xl:px-3 xl:text-sm",
-                      solid ? "text-ink/80 hover:text-ink" : "text-white/85 hover:text-white",
+                      "flex items-center gap-1 whitespace-nowrap rounded-full px-3 py-2 text-sm font-semibold transition-colors",
+                      isActive(item.href)
+                        ? "text-accent"
+                        : solid
+                          ? "text-ink/80 hover:text-ink"
+                          : "text-white/85 hover:text-white",
                     )}
                   >
                     {item.label}
@@ -101,7 +110,7 @@ export function Navbar() {
                     href={item.href}
                     aria-current={isActive(item.href) ? "page" : undefined}
                     className={cn(
-                      "whitespace-nowrap rounded-full px-2.5 py-2 text-[13px] font-semibold transition-colors xl:px-3 xl:text-sm",
+                      "whitespace-nowrap rounded-full px-3 py-2 text-sm font-semibold transition-colors",
                       isActive(item.href)
                         ? "text-accent"
                         : solid
@@ -133,7 +142,7 @@ export function Navbar() {
               aria-expanded={mobileOpen}
               onClick={() => setMobileOpen((v) => !v)}
               className={cn(
-                "grid size-11 place-items-center rounded-full transition-colors lg:hidden",
+                "grid grid-cols-1 size-11 place-items-center rounded-full transition-colors xl:hidden",
                 solid ? "bg-ink/5 text-ink" : "bg-white/15 text-white",
               )}
             >
@@ -186,7 +195,7 @@ function PillarsMenu({ onNavigate }: { onNavigate: () => void }) {
                 onClick={onNavigate}
                 className="group flex gap-3 rounded-2xl p-3 transition-colors hover:bg-brand-light"
               >
-                <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-brand-light text-brand transition-colors group-hover:bg-brand group-hover:text-white">
+                <span className="grid grid-cols-1 size-10 shrink-0 place-items-center rounded-xl bg-brand-light text-brand transition-colors group-hover:bg-brand group-hover:text-white">
                   <Icon name={p.icon} size={19} />
                 </span>
                 <span className="min-w-0">
@@ -220,7 +229,7 @@ function MobileSheet({ isActive }: { isActive: (href: string) => boolean }) {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -12 }}
       transition={{ duration: 0.3, ease: EASE }}
-      className="mx-auto mt-2 max-h-[calc(100dvh-96px)] max-w-[1280px] overflow-y-auto rounded-3xl border border-line bg-white p-4 shadow-float lg:hidden"
+      className="mx-auto mt-2 max-h-[calc(100dvh-96px)] max-w-[1280px] overflow-y-auto rounded-3xl border border-line bg-white p-4 shadow-float xl:hidden"
     >
       <ul className="divide-y divide-line">
         {nav.map((item) =>
@@ -247,7 +256,7 @@ function MobileSheet({ isActive }: { isActive: (href: string) => boolean }) {
                     {pillars.map((p) => (
                       <li key={p.href}>
                         <Link href={p.href} className="flex items-center gap-3 rounded-xl px-2 py-2.5 text-sm font-medium text-body hover:bg-page">
-                          <span className="grid size-8 place-items-center rounded-lg bg-brand-light text-brand">
+                          <span className="grid grid-cols-1 size-8 place-items-center rounded-lg bg-brand-light text-brand">
                             <Icon name={p.icon} size={16} />
                           </span>
                           {p.menuTitle}

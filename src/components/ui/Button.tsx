@@ -59,7 +59,7 @@ export function Button({
       {!plain && (
         <span
           className={cn(
-            "relative grid size-8 shrink-0 place-items-center overflow-hidden rounded-full transition-transform duration-300 group-hover:scale-110",
+            "relative grid grid-cols-1 size-8 shrink-0 place-items-center overflow-hidden rounded-full transition-transform duration-300 group-hover:scale-110",
             s.dot,
           )}
         >

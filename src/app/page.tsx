@@ -6,8 +6,10 @@ import { CseSection } from "@/components/home/CseSection";
 import { Pillars } from "@/components/home/Pillars";
 import { Process } from "@/components/home/Process";
 import { CaseStudies } from "@/components/home/CaseStudies";
-import { FinalCta } from "@/components/home/FinalCta";
-import { Faq } from "@/components/home/Faq";
+import { ConversionCta } from "@/components/sections/ConversionCta";
+import { FaqSection } from "@/components/sections/FaqSection";
+import { home } from "@/content/home";
+import { images } from "@/content/images";
 
 export default function HomePage() {
   return (
@@ -20,8 +22,14 @@ export default function HomePage() {
       <Pillars />
       <Process />
       <CaseStudies />
-      <FinalCta />
-      <Faq />
+      <ConversionCta
+        badge={home.finalCta.badge}
+        headline={home.finalCta.headline}
+        body={home.finalCta.body}
+        primary={home.finalCta.primary}
+        image={images.finalCta}
+      />
+      <FaqSection {...home.faq} />
     </>
   );
 }

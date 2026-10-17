@@ -15,7 +15,7 @@ export function ExecutionGap() {
           </h2>
         </Reveal>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-3">
           {problem.cards.map((card, i) => (
             <Reveal key={card.title} delay={i * 0.1}>
               <article className="group relative h-full overflow-hidden rounded-card border border-white bg-white shadow-card transition-shadow duration-500 hover:shadow-float">
@@ -31,7 +31,7 @@ export function ExecutionGap() {
                       WebkitMaskImage: "radial-gradient(circle at center, #000 30%, transparent 70%)",
                     }}
                   />
-                  <span className="absolute left-5 top-5 grid size-10 place-items-center rounded-full bg-accent text-white shadow-glow-orange">
+                  <span className="absolute left-5 top-5 grid grid-cols-1 size-10 place-items-center rounded-full bg-accent text-white shadow-glow-orange">
                     <Icon name={card.icon} size={18} />
                   </span>
                   <span className="absolute right-5 top-6 font-display text-sm font-semibold text-muted">{card.index}</span>

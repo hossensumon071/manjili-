@@ -20,7 +20,7 @@ export function CseSection() {
   return (
     <section className="pb-24 sm:pb-32" aria-labelledby="cse-title">
       <div className="container-x">
-        <Reveal className="grid gap-8 [&>*]:min-w-0 lg:grid-cols-[1fr_auto] lg:items-end">
+        <Reveal className="grid grid-cols-1 gap-8 [&>*]:min-w-0 lg:grid-cols-[1fr_auto] lg:items-end">
           <div>
             <p className="eyebrow">{cse.eyebrow}</p>
             <h2 id="cse-title" className="h-section mt-4 max-w-[22ch]">
@@ -33,13 +33,13 @@ export function CseSection() {
           </Button>
         </Reveal>
 
-        <div className="mt-12 grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-14">
+        <div className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-14">
           <Reveal y={36}>
             <Media
               src={images.cse}
               alt="Connected Sales Environment showing live masterplan inventory and unit financing"
               fallback={<CseMockup />}
-              className="aspect-[4/3.3] rounded-card shadow-float ring-1 ring-ink/5 sm:aspect-[4/3]"
+              className="aspect-[4/3.3] rounded-card shadow-float ring-1 ring-ink/5 sm:aspect-auto sm:h-[480px]"
               sizes="(min-width: 1024px) 640px, 100vw"
             />
           </Reveal>
@@ -58,7 +58,7 @@ export function CseSection() {
                   whileInView={{ backgroundColor: "#FF7A00", color: "#FFFFFF" }}
                   viewport={{ margin: "0px 0px -40% 0px" }}
                   transition={{ duration: 0.4 }}
-                  className="relative z-10 grid size-10 shrink-0 place-items-center rounded-full ring-4 ring-page"
+                  className="relative z-10 grid grid-cols-1 size-10 shrink-0 place-items-center rounded-full ring-4 ring-page"
                 >
                   <Icon name={f.icon} size={18} />
                 </motion.span>

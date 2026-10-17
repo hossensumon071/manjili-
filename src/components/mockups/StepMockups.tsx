@@ -1,0 +1,94 @@
+import { Icon } from "@/components/ui/Icon";
+
+/** Step 01 overlay: model files being ingested (sits on top of the coast art). */
+export function IngestionOverlay() {
+  const files = [
+    { name: "Masterplan.rvt", pct: 100 },
+    { name: "Towers_A-C.ifc", pct: 100 },
+    { name: "Site_GIS.shp", pct: 72 },
+  ];
+  return (
+    <div className="absolute bottom-3 left-3 right-3 rounded-xl border border-white/60 bg-white/85 p-3 shadow-card backdrop-blur-md sm:right-auto sm:w-60">
+      <p className="mb-2 text-[11px] font-semibold text-muted">Engineering data · NDA vault</p>
+      <ul className="space-y-1.5">
+        {files.map((f) => (
+          <li key={f.name} className="flex items-center gap-2 text-[11px] font-semibold text-ink">
+            <span className={`grid size-4 place-items-center rounded-full ${f.pct === 100 ? "bg-status text-white" : "bg-brand-light text-brand"}`}>
+              {f.pct === 100 ? <Icon name="check" size={10} strokeWidth={3} /> : <span className="size-1.5 rounded-full bg-brand" />}
+            </span>
+            <span className="flex-1 truncate">{f.name}</span>
+            <span className="text-muted">{f.pct}%</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+/** Step 02: dual-runtime build console. */
+export function RuntimeMockup() {
+  return (
+    <div className="absolute inset-0 grid grid-cols-[1.6fr_1fr] gap-3 bg-[#EEF3F9] p-4">
+      <div className="rounded-xl bg-white p-3 shadow-card">
+        <div className="mb-3 flex items-center gap-2 text-[11px] font-bold text-ink">
+          <span className="size-3 rounded bg-brand" />
+          Runtime targets
+        </div>
+        {[
+          { label: "UE5 offline app", meta: "4K", on: true },
+          { label: "WebGL mobile", meta: "Live", on: true },
+          { label: "Touch table", meta: "Queued", on: false },
+        ].map((r) => (
+          <div key={r.label} className="flex items-center gap-2 border-t border-line py-2 first:border-t-0">
+            <span className={`grid size-4 place-items-center rounded ${r.on ? "bg-accent text-white" : "border border-line"}`}>
+              {r.on && <Icon name="check" size={10} strokeWidth={3} />}
+            </span>
+            <span className="flex-1 truncate text-[11px] font-semibold text-ink">{r.label}</span>
+            <span className="text-[10px] text-muted">{r.meta}</span>
+          </div>
+        ))}
+      </div>
+      <div className="flex flex-col gap-2 rounded-xl bg-white p-3 shadow-card">
+        <span className="rounded-md bg-ink py-2 text-center text-[11px] font-bold text-white">Deploy</span>
+        <span className="rounded-md border border-line py-2 text-center text-[11px] font-semibold text-ink">Preview</span>
+        <span className="rounded-md border border-line py-2 text-center text-[11px] font-semibold text-ink">Build logs</span>
+        <p className="mt-auto text-center text-[10px] text-muted">Build 2.14 ready</p>
+      </div>
+    </div>
+  );
+}
+
+/** Step 03: live inventory sync table. */
+export function InventoryMockup() {
+  const rows = [
+    { name: "Marina Bay Residences", units: "312", sync: 96 },
+    { name: "Riyadh Avenue Towers", units: "1,428", sync: 88 },
+    { name: "Wadi Villas Phase 2", units: "184", sync: 74 },
+  ];
+  return (
+    <div className="absolute inset-0 bg-[#EEF3F9] p-4">
+      <div className="h-full rounded-xl bg-white p-3 shadow-card">
+        <div className="grid grid-cols-[1fr_auto_64px] gap-3 border-b border-line pb-2 text-[10px] font-semibold text-muted">
+          <span>Project</span>
+          <span>Units</span>
+          <span>Sync</span>
+        </div>
+        {rows.map((r) => (
+          <div key={r.name} className="grid grid-cols-[1fr_auto_64px] items-center gap-3 border-b border-line py-2.5 last:border-0">
+            <span className="flex min-w-0 items-center gap-2 text-[11px] font-semibold text-ink">
+              <span className="size-5 shrink-0 rounded bg-gradient-to-br from-brand-sky to-brand-deep" />
+              <span className="truncate">{r.name}</span>
+            </span>
+            <span className="text-[11px] text-body">{r.units}</span>
+            <span className="h-1.5 overflow-hidden rounded-full bg-brand-light">
+              <span className="block h-full rounded-full bg-brand" style={{ width: `${r.sync}%` }} />
+            </span>
+          </div>
+        ))}
+        <p className="mt-2 flex items-center gap-1.5 text-[10px] font-semibold text-status">
+          <span className="size-1.5 rounded-full bg-status" /> Yardi · Salesforce connected
+        </p>
+      </div>
+    </div>
+  );
+}

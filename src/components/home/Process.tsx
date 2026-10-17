@@ -7,7 +7,7 @@ import { images } from "@/content/images";
 import { EASE } from "@/lib/utils";
 import { Media } from "@/components/ui/Media";
 import { Reveal } from "@/components/ui/Reveal";
-import { SceneFrame } from "@/components/art/IsoScene";
+import { CoastArt } from "@/components/art/SceneArt";
 import { IngestionOverlay, InventoryMockup, RuntimeMockup } from "@/components/mockups/StepMockups";
 
 const { process } = home;
@@ -17,7 +17,7 @@ const visuals: ReactNode[] = [
     <Media
       src={images.processIngestion}
       alt="Coastal master development being ingested from engineering data"
-      fallback={<SceneFrame variant="masterplan" seed={43} density="card" className="h-full w-full" />}
+      fallback={<CoastArt id="process-coast" />}
       className="h-full w-full"
       sizes="(min-width: 768px) 33vw, 100vw"
     />
@@ -31,7 +31,7 @@ export function Process() {
   return (
     <section className="py-24 sm:py-32" aria-labelledby="process-title">
       <div className="container-x">
-        <Reveal className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_minmax(0,400px)] lg:items-end">
+        <Reveal className="grid gap-6 lg:grid-cols-[1fr_minmax(0,400px)] lg:items-end">
           <div>
             <p className="eyebrow">{process.eyebrow}</p>
             <h2 id="process-title" className="h-section mt-4 max-w-[16ch]">
@@ -41,7 +41,7 @@ export function Process() {
           <p>{process.subheader}</p>
         </Reveal>
 
-        <ol className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-6">
+        <ol className="mt-14 grid gap-10 md:grid-cols-3 md:gap-6">
           {process.steps.map((step, i) => (
             <motion.li
               key={step.title}

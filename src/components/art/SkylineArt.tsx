@@ -1,165 +1,17 @@
-"use client";
-
-import { motion, useInView, useMotionValue, useReducedMotion, useSpring, useTransform } from "framer-motion";
-import { useRef, type PointerEvent } from "react";
 import { cn } from "@/lib/utils";
-import { BEACONS, BRIDGE_PATH, GROUND, KINGDOM_CENTRE, SKYLINE_BACK, SKYLINE_FRONT_CHUNKS, WINDOW_LIGHTS } from "./skyline-data";
 
-const EASE = [0.22, 1, 0.36, 1] as const;
+const SKYLINE = "M0 240V197H28V240Z M26 240V194H54V240Z M52 240V214H84V240Z M82 240V194H101V240Z M99 240V215H128V240Z M126 240V198H143V240Z M141 240V217H164V240Z M162 240V224H178V240Z M176 240V201H209V240Z M207 240V216H235V240Z M233 240V226H266V240Z M264 240V222H294V240Z M292 240V224H307V240Z M305 240V211H325V240Z M323 240V225H356V240Z M354 240V197H392V240Z M390 240V198H414V240Z M412 240V214H444V240Z M442 240V212H472V240Z M470 240V208H504V240Z M502 240V226H531V240Z M529 240V221H564V240Z M562 240V209H590V240Z M588 240V221H615V240Z M613 240V210H649V240Z M647 240V212H671V240Z M669 240V208H699V240Z M697 240V222H711V240Z M709 240V220H741V240Z M739 240V220H765V240Z M763 240V202H786V240Z M784 240V225H800V240Z M798 240V226H833V240Z M831 240V213H851V240Z M849 240V196H864V240Z M862 240V201H888V240Z M886 240V222H913V240Z M911 240V214H943V240Z M941 240V209H979V240Z M977 240V221H1001V240Z M999 240V205H1022V240Z M1020 240V200H1034V240Z M1032 240V219H1070V240Z M1068 240V211H1086V240Z M1084 240V220H1120V240Z M1118 240V223H1132V240Z M1130 240V195H1158V240Z M1156 240V214H1175V240Z M1173 240V194H1201V240Z M1199 240V218H1219V240Z M1217 240V202H1244V240Z M1242 240V201H1259V240Z M1257 240V213H1284V240Z M1282 240V209H1296V240Z M1294 240V207H1326V240Z M1324 240V213H1338V240Z M1336 240V201H1355V240Z M1353 240V220H1386V240Z M1384 240V217H1399V240Z M1397 240V198H1417V240Z M1415 240V226H1437V240Z M1435 240V205H1473V240Z M1030 240V195L1039.0 173L1049 195V240Z M19 240V156L28.5 136L38 156V240Z M1032 240V173H1047V240Z M385 240V157H402V240Z M197 240V161H220V240Z M481 240V195L491.7 183L502 195V240Z M635 240V148H652V240Z M522 240V166H550V240Z M1152 240V191H1182V240Z M810 240V190L821.9 164L833 190V240Z M929 240V171L935.4 160L942 171V240Z M350 240V132L360.4 119L371 132V240Z M558 240V149H576V240Z M1174 240V135H1197V240Z M443 240V198H461V240Z M93 240V178L99.4 167L106 178V240Z M562 240V197H580V240Z M914 240V133H928V240Z M105 240V195H126V240Z M1171 240V165L1177.1 143L1183 165V240Z M470 240V195L476.3 183L482 195V240Z M319 240V177H338V240Z M861 240V160H881V240Z M643 240V172L653.8 162L664 172V240Z M1187 240V145H1201V240Z M603 240V174L617.1 153L631 174V240Z M643 240V170H668V240Z M618 240V172H634V240Z M786 240V138L799.6 124L813 138V240Z M272 240V185L286.6 169L301 185V240Z M1111 240V196H1123V240Z M1019 240V167H1033V240Z M1030 240V164H1049V240Z M888 240V148H915V240Z M1028 240V157H1045V240Z M349 240V155H367V240Z M795 240V181H814V240Z M330 240V144H356V240Z M143 240V163H157V240Z M457 240V186H471V240Z M317 240V147H342V240Z M45 240V145H61V240Z M1174 240V130L1184.6 105L1195 130V240Z M868 240V164H884V240Z M481 240V186H501V240Z M8 240V154H30V240Z M104 240V210A16 16 0 0 1 136 210V240Z M93 240V178L96 168L99 178V240Z M141 240V178L144 168L147 178V240Z M394 240V210A16 16 0 0 1 426 210V240Z M383 240V178L386 168L389 178V240Z M431 240V178L434 168L437 178V240Z M964 240V210A16 16 0 0 1 996 210V240Z M953 240V178L956 168L959 178V240Z M1001 240V178L1004 168L1007 178V240Z M1144 240V210A16 16 0 0 1 1176 210V240Z M1133 240V178L1136 168L1139 178V240Z M1181 240V178L1184 168L1187 178V240Z M28.5 240V213H31.5V240Z M30 213Q24 210 18 219Q24 214 30 213Z M30 213Q36 210 42 219Q36 214 30 213Z M30 213Q26 205 22 209Q26 209 30 213Z M30 213Q34 205 38 209Q34 209 30 213Z M30 213Q30 204 30 206Q30 208 30 213Z M68.5 240V211H71.5V240Z M70 211Q64 208 58 217Q64 212 70 211Z M70 211Q76 208 82 217Q76 212 70 211Z M70 211Q66 203 62 207Q66 207 70 211Z M70 211Q74 203 78 207Q74 207 70 211Z M70 211Q70 202 70 204Q70 206 70 211Z M248.5 240V213H251.5V240Z M250 213Q244 210 238 219Q244 214 250 213Z M250 213Q256 210 262 219Q256 214 250 213Z M250 213Q246 205 242 209Q246 209 250 213Z M250 213Q254 205 258 209Q254 209 250 213Z M250 213Q250 204 250 206Q250 208 250 213Z M328.5 240V208H331.5V240Z M330 208Q324 205 318 214Q324 209 330 208Z M330 208Q336 205 342 214Q336 209 330 208Z M330 208Q326 200 322 204Q326 204 330 208Z M330 208Q334 200 338 204Q334 204 330 208Z M330 208Q330 198 330 201Q330 202 330 208Z M558.5 240V215H561.5V240Z M560 215Q554 212 548 221Q554 216 560 215Z M560 215Q566 212 572 221Q566 216 560 215Z M560 215Q556 207 552 211Q556 211 560 215Z M560 215Q564 207 568 211Q564 211 560 215Z M560 215Q560 206 560 208Q560 210 560 215Z M598.5 240V217H601.5V240Z M600 217Q594 214 588 223Q594 218 600 217Z M600 217Q606 214 612 223Q606 218 600 217Z M600 217Q596 209 592 213Q596 213 600 217Z M600 217Q604 209 608 213Q604 213 600 217Z M600 217Q600 208 600 210Q600 212 600 217Z M928.5 240V207H931.5V240Z M930 207Q924 204 918 213Q924 208 930 207Z M930 207Q936 204 942 213Q936 208 930 207Z M930 207Q926 199 922 203Q926 203 930 207Z M930 207Q934 199 938 203Q934 203 930 207Z M930 207Q930 198 930 200Q930 202 930 207Z M1078.5 240V206H1081.5V240Z M1080 206Q1074 203 1068 212Q1074 207 1080 206Z M1080 206Q1086 203 1092 212Q1086 207 1080 206Z M1080 206Q1076 198 1072 202Q1076 202 1080 206Z M1080 206Q1084 198 1088 202Q1084 202 1080 206Z M1080 206Q1080 196 1080 199Q1080 200 1080 206Z M1118.5 240V208H1121.5V240Z M1120 208Q1114 205 1108 214Q1114 209 1120 208Z M1120 208Q1126 205 1132 214Q1126 209 1120 208Z M1120 208Q1116 200 1112 204Q1116 204 1120 208Z M1120 208Q1124 200 1128 204Q1124 204 1120 208Z M1120 208Q1120 198 1120 201Q1120 202 1120 208Z M1208.5 240V207H1211.5V240Z M1210 207Q1204 204 1198 213Q1204 208 1210 207Z M1210 207Q1216 204 1222 213Q1216 208 1210 207Z M1210 207Q1206 199 1202 203Q1206 203 1210 207Z M1210 207Q1214 199 1218 203Q1214 203 1210 207Z M1210 207Q1210 198 1210 200Q1210 202 1210 207Z M686 240L691 90C694 55 704 28 720 14C736 28 746 55 749 90L754 240Z M806 240L818 100L822 100L834 240Z M815 90A5 5 0 1 0 825 90A5 5 0 1 0 815 90Z M819 85V44H821V85Z M600 240V90L615.0 60L630 90V240Z M640 240V65L653.0 25L666 65V240Z M870 240V75L885.0 41L900 75V240Z M910 240V100H934V240Z M560 240V120L572.0 100L584 120V240Z M1220 210L1440 120V132L1220 220Z M1265 240V190H1275V240Z M1325 240V165H1335V240Z M1385 240V140H1395V240Z M1289 181V153H1295V156H1291V181Z M1349 157V129H1355V132H1351V157Z M1409 132V104H1415V107H1411V132Z";
+const KINGDOM_CENTRE_OPENING = "M705 90C707 62 713 44 720 36C727 44 733 62 735 90Z";
 
 /**
- * Animated Riyadh skyline for the footer.
- * 1. When the footer scrolls into view the city rises district by district,
- *    from the Kingdom Centre outwards.
- * 2. Afterwards it reacts to the pointer: a soft "searchlight" lights the
- *    buildings under the cursor and the back layer drifts with parallax.
- * 3. Ambient life: twinkling windows, aviation beacons, bridge traffic.
+ * Riyadh skyline silhouette (Kingdom Centre, Al Faisaliah, minarets, palms)
+ * that rises out of the footer. Generated once — do not hand-edit the path.
  */
-export function SkylineArt({ className, fill = "#2378DE" }: { className?: string; fill?: string }) {
-  const ref = useRef<SVGSVGElement>(null);
-  const inView = useInView(ref, { once: true, margin: "0px 0px -10% 0px" });
-  const reduce = useReducedMotion();
-
-  // pointer → viewBox x
-  const px = useMotionValue(720);
-  const glowX = useSpring(px, { stiffness: 120, damping: 20 });
-  const backX = useTransform(glowX, [0, 1440], [18, -18]);
-  const glowOpacity = useMotionValue(0);
-  const glowOpacitySpring = useSpring(glowOpacity, { stiffness: 140, damping: 22 });
-
-  const onMove = (e: PointerEvent<SVGSVGElement>) => {
-    const r = e.currentTarget.getBoundingClientRect();
-    // account for "slice" scaling on narrow screens
-    const scale = Math.max(r.width / 1440, r.height / GROUND);
-    const offset = (r.width - 1440 * scale) / 2;
-    px.set((e.clientX - r.left - offset) / scale);
-    glowOpacity.set(1);
-  };
-
-  const show = reduce || inView;
-  const order = (cx: number) => Math.abs(cx - 720) / 720; // 0 at centre → 1 at edges
-
-  const cars = [
-    { dur: 7, delay: 0, color: "#FFFFFF" },
-    { dur: 9, delay: 2.5, color: "#FFB15C" },
-    { dur: 8, delay: 5, color: "#FFFFFF" },
-    { dur: 10, delay: 1.2, color: "#FFB15C", reverse: true },
-  ];
-
+export function SkylineArt({ className, fill = "#2378DE", sky = "#F3F8FD" }: { className?: string; fill?: string; sky?: string }) {
   return (
-    <svg
-      ref={ref}
-      viewBox={`0 0 1440 ${GROUND}`}
-      preserveAspectRatio="xMidYMax slice"
-      className={cn("block aspect-[1440/260] min-h-[120px] w-full touch-pan-y", className)}
-      aria-hidden="true"
-      onPointerMove={reduce ? undefined : onMove}
-      onPointerLeave={() => glowOpacity.set(0)}
-    >
-      <defs>
-        <radialGradient id="skyline-glow">
-          <stop offset="0" stopColor="#FFFFFF" stopOpacity="0.55" />
-          <stop offset="0.45" stopColor="#9CCBFF" stopOpacity="0.25" />
-          <stop offset="1" stopColor="#9CCBFF" stopOpacity="0" />
-        </radialGradient>
-        <clipPath id="skyline-clip">
-          {SKYLINE_FRONT_CHUNKS.map((c) => (
-            <path key={c.cx} d={c.d} />
-          ))}
-          <path d={KINGDOM_CENTRE} clipRule="evenodd" />
-        </clipPath>
-      </defs>
-
-      {/* drifting haze clouds */}
-      {!reduce &&
-        [
-          { cx: 200, cy: 70, rx: 90, d: 60 },
-          { cx: 900, cy: 40, rx: 120, d: 80 },
-          { cx: 1250, cy: 90, rx: 70, d: 70 },
-        ].map((c, i) => (
-          <motion.ellipse
-            key={i}
-            cx={c.cx}
-            cy={c.cy}
-            rx={c.rx}
-            ry={c.rx * 0.18}
-            fill="#D6E7FB"
-            animate={{ x: [0, 60, 0] }}
-            transition={{ duration: c.d, repeat: Infinity, ease: "easeInOut" }}
-          />
-        ))}
-
-      {/* back layer with pointer parallax */}
-      <motion.g style={{ x: reduce ? 0 : backX }}>
-        <motion.path
-          d={SKYLINE_BACK}
-          fill={fill}
-          initial={false}
-          animate={show ? { y: 0, opacity: 0.28 } : { y: 60, opacity: 0 }}
-          transition={{ duration: 1.6, ease: EASE }}
-        />
-      </motion.g>
-
-      {/* front: districts rise from the centre outwards */}
-      {SKYLINE_FRONT_CHUNKS.map((c) => (
-        <motion.path
-          key={c.cx}
-          d={c.d}
-          fill={fill}
-          initial={false}
-          animate={show ? { y: 0 } : { y: 140 }}
-          transition={{ duration: 1.1, ease: EASE, delay: 0.15 + order(c.cx) * 0.7 }}
-        />
-      ))}
-      <motion.path
-        d={KINGDOM_CENTRE}
-        fill={fill}
-        fillRule="evenodd"
-        initial={false}
-        animate={show ? { y: 0 } : { y: 260 }}
-        transition={{ duration: 1.3, ease: EASE, delay: 0.05 }}
-      />
-
-      {/* pointer searchlight, clipped to the buildings */}
-      {!reduce && (
-        <g clipPath="url(#skyline-clip)">
-          <motion.circle cx={glowX} cy={GROUND - 90} r="170" fill="url(#skyline-glow)" style={{ opacity: glowOpacitySpring }} />
-        </g>
-      )}
-
-      {/* ambient life — appears once the city has risen */}
-      <motion.g initial={false} animate={{ opacity: show ? 1 : 0 }} transition={{ duration: 0.8, delay: show ? 1.2 : 0 }}>
-        {WINDOW_LIGHTS.map(([x, y], i) => (
-          <rect
-            key={i}
-            x={x}
-            y={y}
-            width="2.6"
-            height="3.4"
-            rx="0.6"
-            fill={i % 4 === 0 ? "#FFD9A0" : "#CFE5FF"}
-            className={reduce ? "opacity-60" : "skyline-twinkle"}
-            style={{ animationDelay: `${(i * 0.37) % 6}s`, animationDuration: `${3 + (i % 5)}s` }}
-          />
-        ))}
-        {BEACONS.map(([x, y], i) => (
-          <circle key={i} cx={x} cy={y - 2} r="2.2" fill="#FF4D4D" className={reduce ? "" : "skyline-beacon"} style={{ animationDelay: `${i * 0.4}s` }} />
-        ))}
-        {!reduce &&
-          cars.map((c, i) => (
-            <circle key={i} r="2" fill={c.color}>
-              <animateMotion
-                dur={`${c.dur}s`}
-                begin={`${c.delay}s`}
-                repeatCount="indefinite"
-                path={BRIDGE_PATH}
-                keyPoints={c.reverse ? "1;0" : "0;1"}
-                keyTimes="0;1"
-                calcMode="linear"
-              />
-            </circle>
-          ))}
-      </motion.g>
+    <svg viewBox="0 0 1440 240" preserveAspectRatio="xMidYMax slice" className={cn("block w-full", className)} aria-hidden="true">
+      <path d={SKYLINE} fill={fill} />
+      <path d={KINGDOM_CENTRE_OPENING} fill={sky} />
     </svg>
   );
 }

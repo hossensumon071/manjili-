@@ -7,15 +7,15 @@ import { Logo } from "./Logo";
 export function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="mt-16 px-2 pb-2 sm:mt-24 sm:px-3 sm:pb-3">
-      <SkylineArt />
+    <footer className="px-2 pb-2 sm:px-3 sm:pb-3">
+      <SkylineArt className="h-[110px] sm:h-[150px] lg:h-[190px]" />
       <div className="-mt-px overflow-hidden rounded-b-[22px] bg-brand-footer text-white sm:rounded-b-stage">
         <div className="container-x py-14 lg:py-16">
-          <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1.15fr] lg:gap-10">
+          <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1.15fr] lg:gap-10">
             <div>
               <Logo tone="light" />
               <p className="mt-6 max-w-[34ch] text-sm leading-relaxed text-white/85">
-                <span className="font-semibold text-white">{site.legalName} (CR# {site.crNumber})</span> — {footer.blurb}
+                <span className="font-semibold text-white">{site.legalName}</span> — {footer.blurb}
               </p>
               <p className="mt-4 max-w-[36ch] text-xs leading-relaxed text-white/70">{footer.sovereignty}</p>
               <ul className="mt-6 flex gap-2.5" aria-label="Social media">
@@ -26,7 +26,7 @@ export function Footer() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={s.label}
-                      className="grid grid-cols-1 size-9 place-items-center rounded-full bg-white text-brand-footer transition-transform duration-300 hover:-translate-y-0.5"
+                      className="grid size-9 place-items-center rounded-full bg-white text-brand-footer transition-transform duration-300 hover:-translate-y-0.5"
                     >
                       <Icon name={s.icon} size={16} />
                     </a>
@@ -69,7 +69,7 @@ export function Footer() {
               <h2 className="text-sm font-bold text-white">Commercial Counterparty</h2>
               <ul className="mt-5 space-y-4 text-sm">
                 <li className="flex gap-3">
-                  <span className="grid grid-cols-1 size-9 shrink-0 place-items-center rounded-full bg-white text-brand-footer">
+                  <span className="grid size-9 shrink-0 place-items-center rounded-full bg-white text-brand-footer">
                     <Icon name="mail" size={16} />
                   </span>
                   <span className="flex flex-col">
@@ -82,7 +82,7 @@ export function Footer() {
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="grid grid-cols-1 size-9 shrink-0 place-items-center rounded-full bg-white text-brand-footer">
+                  <span className="grid size-9 shrink-0 place-items-center rounded-full bg-white text-brand-footer">
                     <Icon name="phone" size={16} />
                   </span>
                   <a href={site.phoneHref} className="text-white/85 hover:text-white">
@@ -90,7 +90,7 @@ export function Footer() {
                   </a>
                 </li>
                 <li className="flex gap-3">
-                  <span className="grid grid-cols-1 size-9 shrink-0 place-items-center rounded-full bg-white text-brand-footer">
+                  <span className="grid size-9 shrink-0 place-items-center rounded-full bg-white text-brand-footer">
                     <Icon name="mapPin" size={16} />
                   </span>
                   <address className="not-italic text-white/85">{site.address}</address>
@@ -100,10 +100,7 @@ export function Footer() {
           </div>
 
           <div className="mt-14 flex flex-col gap-4 border-t border-white/25 pt-6 text-xs text-white/75 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex flex-col gap-1.5 sm:flex-row sm:items-center sm:gap-4">
-              <p>© {year} {site.legalName}. All rights reserved.</p>
-              <p className="text-white/60">Saudi PDPL Aligned · KSA Off-Plan Ready Architecture · Class-A Enterprise SLAs</p>
-            </div>
+            <p>© {year} {site.name}. All rights reserved.</p>
             <ul className="flex gap-5">
               <li>
                 <Link href={routes.privacy} className="hover:text-white">

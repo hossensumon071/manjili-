@@ -123,11 +123,31 @@ export const home = {
     ],
   },
 
-  // Cards are pulled from src/content/case-studies (Masar Ma’ab + Dyari Signature).
+  // From the approved Figma design. Sync with 10_Page_04_Case_Studies_Hub.md when that page is built.
   caseStudies: {
     eyebrow: "Case Studies",
     headline: "Inspect the project, deployment, and evidence.",
     cta: { label: "Explore Now", href: routes.caseStudies },
+    items: [
+      {
+        name: "Masar Ma’ab",
+        badge: "3 towers",
+        location: "Makkah, Saudi Arabia",
+        type: "Residential development",
+        summary: "Spatial sales enablement for a three-tower development.",
+        href: routes.caseStudies,
+        art: "towers" as const,
+      },
+      {
+        name: "Dyari Signature",
+        badge: "33 buildings",
+        location: "Saudi Arabia",
+        type: "Residential development",
+        summary: "Exhibition-ready discovery across 33 buildings.",
+        href: routes.caseStudies,
+        art: "residence" as const,
+      },
+    ],
   },
 
   finalCta: {

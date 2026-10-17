@@ -28,7 +28,7 @@ function PillarCard({ pillar }: { pillar: Pillar }) {
         }}
       />
       <div className="flex items-start justify-between">
-        <span className="grid grid-cols-1 size-10 place-items-center rounded-full bg-white text-accent shadow-[0_8px_20px_-8px_rgba(0,0,0,0.35)] transition-transform duration-500 group-hover:rotate-[-8deg] group-hover:scale-110">
+        <span className="grid size-10 place-items-center rounded-full bg-white text-accent shadow-[0_8px_20px_-8px_rgba(0,0,0,0.35)] transition-transform duration-500 group-hover:rotate-[-8deg] group-hover:scale-110">
           <Icon name={pillar.icon} size={18} />
         </span>
         <span className="font-display text-sm font-semibold text-white/55">Pillar {pillar.index}</span>
@@ -50,7 +50,7 @@ export function Pillars() {
         <Sheen className="opacity-80" />
         <Sheen flip className="translate-y-1/3 opacity-60" />
         <div className="container-x py-20 sm:py-24 lg:py-28">
-          <Reveal className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_minmax(0,420px)] lg:items-end">
+          <Reveal className="grid gap-6 lg:grid-cols-[1fr_minmax(0,420px)] lg:items-end">
             <div>
               <p className="text-eyebrow font-semibold text-white/80">{copy.eyebrow}</p>
               <h2 id="pillars-title" className="mt-4 max-w-[14ch] font-display text-h2 font-bold text-white">
@@ -60,7 +60,7 @@ export function Pillars() {
             <p className="text-white/85">{copy.lead}</p>
           </Reveal>
 
-          <div className="mt-12 grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-2">
+          <div className="mt-12 grid gap-4 sm:gap-5 md:grid-cols-2">
             {pillars.map((p, i) => (
               <Reveal key={p.href} delay={(i % 2) * 0.1}>
                 <PillarCard pillar={p} />

@@ -2,11 +2,10 @@ import type { IconName } from "@/components/ui/Icon";
 
 export const site = {
   name: "Manzili",
-  legalName: "IT Home Solutions Company d.b.a. Manzili",
-  crNumber: "1010797640",
+  legalName: "Manzili Technologies Co.",
   description:
     "Manzili equips Saudi master developers and commercial sales leadership with high-performance digital twins, integrated showroom hardware, and the REGA-compliant Connected Sales Environment (CSE).",
-  url: "https://manzili360.com",
+  url: "https://manzili.sa",
   email: { sales: "sales@manzili.sa", support: "support@manzili.sa" },
   phone: "+966 53-484-4986",
   phoneHref: "tel:+966534844986",

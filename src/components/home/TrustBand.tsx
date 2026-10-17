@@ -16,7 +16,7 @@ export function TrustBand() {
       <div className="stage surface-blue">
         <Sheen />
         <div className="container-x py-16 sm:py-20 lg:py-24">
-          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.05fr_1fr] lg:gap-16">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_1fr] lg:gap-16">
             <Reveal>
               <p className="text-eyebrow font-semibold text-white/80">{trust.eyebrow}</p>
               <h2 id="trust-title" className="mt-4 max-w-[21ch] font-display text-h2 font-bold text-white">

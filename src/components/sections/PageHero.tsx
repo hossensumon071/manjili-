@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
 import { Sheen } from "@/components/ui/Sheen";
 
-export type Crumb = { label: string; href?: string };
+export type Crumb = { label: string; href?: string | null };
 export type Cta = { label: string; href: string };
 
 type Props = {
@@ -50,10 +50,10 @@ export function PageHero({ breadcrumb, eyebrow, title, subheader, primary, secon
 
         <div className="container-x pb-12 pt-28 sm:pb-16 lg:pb-20 lg:pt-36">
           <motion.nav {...fade(0.1)} aria-label="Breadcrumb">
-            <ol className="flex flex-wrap items-center gap-1.5 text-xs font-medium text-white/70">
+            <ol className="flex flex-wrap items-center gap-1.5 text-xs font-medium text-white/95">
               {breadcrumb.map((c, i) => (
                 <li key={c.label} className="flex items-center gap-1.5">
-                  {i > 0 && <Icon name="chevronDown" size={13} className="-rotate-90 opacity-60" />}
+                  {i > 0 && <Icon name="chevronDown" size={13} className="-rotate-90 opacity-60 rtl:rotate-90" />}
                   {c.href ? (
                     <Link href={c.href} className="transition-colors hover:text-white">
                       {c.label}
@@ -87,7 +87,7 @@ export function PageHero({ breadcrumb, eyebrow, title, subheader, primary, secon
               >
                 {title}
               </motion.h1>
-              <motion.p {...fade(0.45)} className="mt-5 max-w-[56ch] text-lead font-medium text-white/85">
+              <motion.p {...fade(0.45)} className="mt-5 max-w-[56ch] text-lead font-medium text-white/95">
                 {subheader}
               </motion.p>
               {(primary || secondary) && (
@@ -118,8 +118,8 @@ export function PageHero({ breadcrumb, eyebrow, title, subheader, primary, secon
 
           <motion.ul
             {...fade(0.8)}
-            aria-label="Operational status"
-            className="mt-12 flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-white/15 pt-6 text-xs font-medium text-white/75"
+           
+            className="mt-12 flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-white/15 pt-6 text-xs font-medium text-white/95"
           >
             {status.map((s, i) => (
               <li key={s} className="flex items-center gap-3">

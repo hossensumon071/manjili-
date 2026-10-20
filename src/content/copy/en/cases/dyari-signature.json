@@ -1,0 +1,161 @@
+{
+ "template": "B",
+ "hero": {
+  "eyebrow": "Case Study · RestateX",
+  "title": "406 Units Across 36 Buildings, Found in Seconds",
+  "body": "Dyari Real Estate Development presented its 406-unit Riyadh community at RestateX with a Manzili multi-building twin, exhibition hardware and sales training.",
+  "chips": [
+   "Dyari Real Estate Development",
+   "36 Buildings",
+   "406 Residential Units",
+   "Al Mounsiya, Riyadh",
+   "RestateX Diamond Sponsor"
+  ],
+  "mockupChips": [
+   "Live twin",
+   "36 buildings",
+   "406 units"
+  ]
+ },
+ "sidebar": [
+  "Dyari Real Estate Development",
+  "Dyari Signature · master-planned residential community of apartments, penthouses and villas (36 buildings, 406 units) · RestateX Diamond Sponsor pavilion",
+  "Al Mounsiya, Riyadh",
+  "Multi-building WebGL twin · 4K touch tables · Sales team training"
+ ],
+ "challenge": {
+  "eyebrow": "The Challenge",
+  "title": "Presenting 36 Buildings at a Packed Exhibition",
+  "body": "As Diamond Sponsor at RestateX, Dyari expected heavy buyer traffic over four exhibition days. Presenting 406 units across 36 buildings with scale models or printed brochures would have created agent bottlenecks and slowed reservations.",
+  "header": [
+   "Sales Friction",
+   "The Commercial Risk",
+   "What Manzili Delivered"
+  ],
+  "rows": [
+   [
+    "Slow Catalog Browsing",
+    "Buyers spend 15+ minutes flipping booklets to find unit types and building numbers.",
+    "Sub-second unit filtering: advisors find units by budget, bedrooms, floor and orientation in two taps."
+   ],
+   [
+    "Unclear Community Layout",
+    "Static plans can't show how buildings relate to gardens, parking and access roads.",
+    "3D community twin: shows courtyard views, sun orientation and walkability."
+   ],
+   [
+    "Exhibition Network Failure",
+    "Overloaded venue Wi-Fi stalls cloud-only presentations at peak hours.",
+    "Offline-first caching: local hardware keeps running through a full venue outage."
+   ]
+  ]
+ },
+ "solution": {
+  "eyebrow": "Our Solution",
+  "title": "A Multi-Building 3D Twin with Instant Unit Search",
+  "body": "Manzili built one digital twin of all 36 buildings in Dyari Signature, linking large touch tables with overhead LED displays and phone handoffs.",
+  "blocks": [
+   {
+    "title": "36-Building Masterplan Navigation",
+    "points": [
+     "One coordinate system allows smooth navigation across all 36 buildings, roads and parks.",
+     "Clear zoning shows privacy buffers and vehicle access points."
+    ]
+   },
+   {
+    "title": "Instant Unit Search",
+    "points": [
+     "Filters any of the 406 units by layout, floor, area and availability.",
+     "Removes manual lookups and speeds up buyer qualification."
+    ]
+   },
+   {
+    "title": "Exhibition-Grade Touch Hardware",
+    "points": [
+     "Heavy-duty 4K touch tables paired with synchronized presentation screens.",
+     "Waiting visitors watch live walkthroughs while agents present."
+    ]
+   },
+   {
+    "title": "QR Code Takeaway",
+    "points": [
+     "Visitors scan a QR code on the touch table to load their shortlisted units on their own phone.",
+     "Keeps buyer interest alive without printed brochures."
+    ]
+   }
+  ]
+ },
+ "enablement": {
+  "eyebrow": "Sales Team Enablement",
+  "title": "Fast Qualification for High-Traffic Exhibitions",
+  "body": "Manzili trained Dyari's sales team to qualify buyers in 90 seconds and match them to specific units before starting a detailed 3D walkthrough.",
+  "steps": [
+   {
+    "index": "01",
+    "title": "Multi-Criteria Filtering",
+    "body": "The agent enters bedrooms, price and preferred building, cutting 406 units to 3 top matches."
+   },
+   {
+    "index": "02",
+    "title": "Community Context",
+    "body": "The 3D twin then shows building position, courtyard exposure, parking and nearby amenities."
+   },
+   {
+    "index": "03",
+    "title": "Unit Inspection & QR Handover",
+    "body": "Advisor and buyer review the 3D interior together. Once the buyer is ready to reserve, the unit record goes to their phone by QR code."
+   }
+  ]
+ },
+ "outcomes": {
+  "eyebrow": "Reported Performance",
+  "title": "Delivery Outcomes",
+  "stats": [
+   {
+    "value": "406",
+    "label": "Units Modeled",
+    "body": "Full 3D coverage across all 36 buildings in Al Mounsiya, Riyadh.",
+    "outcome": "Floor-by-floor visibility for every apartment."
+   },
+   {
+    "value": "36",
+    "label": "Buildings Modeled",
+    "body": "Every building, road and park in one twin.",
+    "outcome": "Buyers see exactly where each unit sits."
+   },
+   {
+    "value": "<1 s",
+    "label": "Unit Search",
+    "body": "Instant filtering by unit type, floor and view.",
+    "outcome": "Advisors find matching units during live conversations."
+   },
+   {
+    "value": "0",
+    "label": "Hardware Downtime at RestateX",
+    "body": "Local edge caching kept every screen running.",
+    "outcome": "Presentations ran through every RestateX session."
+   }
+  ]
+ },
+ "standards": {
+  "eyebrow": "Quality & Compliance",
+  "title": "Delivery Standards",
+  "rows": [
+   [
+    "Commercial Touch Hardware",
+    "Commercial-grade capacitive touch",
+    "Tested for 12-hour exhibition days without overheating or touch drift"
+   ],
+   [
+    "Data Hosting",
+    "In-Kingdom cloud hosting",
+    "Lead and buyer data handled under the Saudi PDPL"
+   ],
+   [
+    "Offline Operation",
+    "Embedded local asset cache",
+    "Full 3D interactivity without an internet connection"
+   ]
+  ]
+ }
+}

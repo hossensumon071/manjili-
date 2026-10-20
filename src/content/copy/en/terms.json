@@ -1,0 +1,175 @@
+{
+ "head": {
+  "crumb": "Terms of Service",
+  "eyebrow": "Legal",
+  "title": "Terms of Service",
+  "intro": "The terms that govern use of the Manzili website, digital twins, web platforms and the Connected Sales Environment.",
+  "facts": [
+   {
+    "label": "Effective date",
+    "value": "October 19, 2026"
+   },
+   {
+    "label": "Operating entity",
+    "value": "IT Home Solutions Company, trading as Manzili (CR 1010797640)"
+   },
+   {
+    "label": "Registered office",
+    "value": "Al Rayyan District, Riyadh 14212, Saudi Arabia"
+   },
+   {
+    "label": "Built for",
+    "value": "REGA and Wafi off-plan workflows · Saudi PDPL"
+   }
+  ],
+  "chips": [
+   "In-Kingdom hosting under Saudi PDPL",
+   "Built for REGA and Wafi off-plan workflows"
+  ]
+ },
+ "sections": [
+  {
+   "id": "acceptance",
+   "title": "1. Acceptance of These Terms",
+   "blocks": [
+    {
+     "p": "These Terms of Service (\"Terms\") govern institutional access to, and utilization of, the Manzili website, digital twins, interactive masterplans, showroom software, web platforms and the Connected Sales Environment (CSE) owned and operated by IT Home Solutions Company, trading as Manzili (CR 1010797640) (\"Manzili\", \"we\", \"us\", or \"our\")."
+    },
+    {
+     "p": "By accessing this website, submitting a Technical Scoping request, accessing our connected sales environments, or licensing our spatial visualization platforms, you (\"Enterprise Client\", \"Developer\", \"Authorized Counterparty\", or \"User\") agree to be bound by these Terms and all applicable laws and regulations of the Kingdom of Saudi Arabia."
+    },
+    {
+     "p": "If you represent an institutional real estate developer, asset management firm, or commercial enterprise, you warrant that you possess the requisite corporate authority to bind your organization to these Terms."
+    }
+   ]
+  },
+  {
+   "id": "scope",
+   "title": "2. Our Services",
+   "blocks": [
+    {
+     "p": "Manzili provides enterprise sales enablement, digital twin visualization, hardware-software integration, and transactional workflow infrastructure tailored specifically for off-plan and completed real estate portfolios within Saudi Arabia."
+    },
+    {
+     "ol": [
+      "Enterprise Infrastructure Partner: Manzili operates as an enterprise technology and implementation counterparty. Unless expressly stipulated under a separate bilateral joint-venture agreement, Manzili does not act as a licensed real estate brokerage, financial escrow agent, or off-plan underwriting entity.",
+      "Services Provided: Manzili provides WebGL digital twins, synchronized CRM middleware, AV showroom integrations, VIP launch command execution, and Matterport lifecycle capture. All deployments are subject to formal statements of work (SOW) and enterprise service level agreements (SLAs)."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ip",
+   "title": "3. Intellectual Property",
+   "blocks": [
+    {
+     "ol": [
+      "Ownership of Core IP: Manzili retains exclusive ownership, title, copyright, and global intellectual property rights in and to all proprietary codebases, WebGL rendering pipelines, spatial telemetry algorithms, hardware controller interfaces, UI/UX frameworks, graphics, trademarks, logos, and original documentation. This includes the 3D models and digital twins Manzili builds, unless the Master Service Agreement states otherwise.",
+      "Protected Trademarks: \"Manzili\", \"Manzili CSE\", \"Connected Sales Environment\", the Manzili logomark, and associated system designations are trademarks of IT Home Solutions Company (CR 1010797640). No entity or individual may display, replicate, adapt, or utilize these identifiers without prior written corporate authorization.",
+      "Client Asset Ownership: Enterprise Developers retain full title and intellectual property rights over their respective architectural CAD/BIM files, masterplan engineering drafts, brand assets, and proprietary unit pricing matrices provided to Manzili for digital twin ingestion."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "disclaimer",
+   "title": "4. Visualization Disclaimer",
+   "blocks": [
+    {
+     "ol": [
+      "Representational Fidelity: The 3D digital twins, interactive masterplans, lighting simulations, and virtual tours engineered by Manzili are high-fidelity architectural visualizations designed to communicate spatial layout, unit orientation, and masterplan scale.",
+      "Engineering & Construction Tolerances: While Manzili models directly from verified BIM/CAD files, physical construction is subject to civil engineering tolerances, municipal approvals, materials substitution, and contractor execution. Final unit dimensions, finishes, and spatial configurations are governed strictly by the developer's registered Wafi Off-Plan Sales and Purchase Agreement (SPA).",
+      "Non-Endorsement of Non-Original Content: Any third-party market data, infrastructure timelines, or external municipal plans referenced on this platform are provided for contextual dissemination only. Manzili disclaims liability for inaccuracies in developer-supplied data or government infrastructure planning adjustments."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "transactions",
+   "title": "5. Transactions, REGA & Wafi",
+   "blocks": [
+    {
+     "ol": [
+      "Regulatory Alignment: When deployed within the Manzili Connected Sales Environment (CSE), digital reservation workflows, Nafath identity verification, milestone payment schedules, and SPA auto-generation are built for REGA and Wafi off-plan workflows.",
+      "Developer Commercial Responsibility: The developer remains exclusively responsible for the legal validity of its Wafi off-plan license, the accuracy of its project bank escrow accounts, and the commercial fulfillment of reservations made through timed unit holds on the platform."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rfp",
+   "title": "6. Technical Scoping Requests",
+   "blocks": [
+    {
+     "ol": [
+      "Company Email: Manzili may ask for a company email address to verify the developer entity before scoping begins.",
+      "Confidentiality of Requests: All architectural briefs, unit inventories, and commercial timelines submitted through our Technical Scoping form are treated as confidential and handled under the Saudi PDPL. Project files are requested only after an NDA is signed."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "liability",
+   "title": "7. Limitation of Liability",
+   "blocks": [
+    {
+     "ol": [
+      "To the maximum extent permitted under Saudi law, Manzili shall not be liable for any indirect, incidental, consequential, or special damages—including loss of commercial revenue, anticipated sales, or event interruption—arising from the use or inability to use our platform or exhibition hardware.",
+      "Hardware deployed under Pillar 03 (Showroom Hardware) and Pillar 05 (Launch Command) operates under dedicated enterprise SLAs. Liability for exhibition network latency or hardware downtime caused by third-party event telecom congestion or force majeure events is expressly limited to the terms of the applicable commercial contract."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "infringement",
+   "title": "8. Infringement Notices",
+   "blocks": [
+    {
+     "p": "If any intellectual property rights holder believes that content published on this website infringes upon their protected legal rights, a formal notice must be submitted to our corporate desk containing:"
+    },
+    {
+     "ul": [
+      "Verifiable proof of ownership and legal authorization.",
+      "Precise location (URL) and identification of the protected work.",
+      "Full corporate contact details of the legal claimant."
+     ]
+    },
+    {
+     "p": "Notices must be directed in writing to support@manzili.sa or to our registered office."
+    }
+   ]
+  },
+  {
+   "id": "law",
+   "title": "9. Governing Law & Disputes",
+   "blocks": [
+    {
+     "p": "These Terms and any non-contractual obligations arising out of or in connection with them shall be governed by and construed in accordance with the laws and commercial regulations of the Kingdom of Saudi Arabia."
+    },
+    {
+     "p": "Any dispute, controversy, or claim arising out of or relating to these Terms shall be referred to and resolved by the competent Commercial Courts in Riyadh, Kingdom of Saudi Arabia."
+    },
+    {
+     "p": "These Terms are published in Arabic and English. If the two versions conflict, the Arabic version prevails."
+    }
+   ]
+  },
+  {
+   "id": "contact",
+   "title": "10. Legal Contact",
+   "blocks": [
+    {
+     "p": "IT Home Solutions Company, trading as Manzili (CR 1010797640)"
+    },
+    {
+     "ul": [
+      "Registered office: Al Rayyan District, Riyadh 14212, Saudi Arabia",
+      "Legal & support: support@manzili.sa",
+      "Sales: sales@manzili.sa",
+      "Phone: +966 53 484 4986"
+     ]
+    }
+   ]
+  }
+ ]
+}

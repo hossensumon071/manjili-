@@ -23,12 +23,12 @@ export function SectionHeader({ eyebrow, title, lead, id, tone = "light", layout
       )}
     >
       <div>
-        {eyebrow && <p className={cn("text-eyebrow font-semibold", dark ? "text-white/75" : "text-accent")}>{eyebrow}</p>}
+        {eyebrow && <p className={cn("eyebrow", dark && "eyebrow-on-dark")}>{eyebrow}</p>}
         <h2 id={id} className={cn("mt-4 max-w-[22ch] font-display text-h2 font-bold", dark ? "text-white" : "text-ink")}>
           {title}
         </h2>
       </div>
-      {lead && <p className={cn("max-w-[62ch]", dark ? "text-white/80" : "text-body")}>{lead}</p>}
+      {lead && <p className={cn("max-w-[62ch]", dark ? "text-white/95" : "text-body")}>{lead}</p>}
     </Reveal>
   );
 }

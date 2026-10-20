@@ -1,0 +1,141 @@
+{
+ "s01": {
+  "breadcrumb": "Home",
+  "breadcrumbHref": "/",
+  "eyebrow": "Pillar 06 · Lifecycle & Matterport",
+  "h1": "Sell Every Phase From One Model, Concept to Handover",
+  "subheadingBodyCopy": "We support developers at every project stage: turning concepts into off-plan digital twins, capturing Matterport tours of model units, and bringing every 3D asset into one web platform for unbuilt and completed stock.",
+  "primaryCta": "Book Technical Scoping",
+  "primaryCtaHref": "/contact-us",
+  "secondaryCta": "View Virtual Tours",
+  "secondaryCtaHref": "#tours",
+  "specStrip": [
+   "Concept Design",
+   "Digital Twin",
+   "Matterport Tours",
+   "Completed Projects"
+  ],
+  "_tables": [],
+  "crumbs": [
+   {
+    "label": "Home",
+    "href": "/"
+   },
+   {
+    "label": "6-Pillar Infrastructure",
+    "href": "/#pillars"
+   },
+   {
+    "label": "Lifecycle & Matterport",
+    "href": null
+   }
+  ]
+ },
+ "s02": {
+  "eyebrow": "Three Stages, One Platform",
+  "h2": "Keep Sales Moving Through Every Development Stage",
+  "subheadingBodyCopy": "Master developments roll out over years of phases. Manzili keeps your 3D assets in use the whole way, from off-plan digital twins to model-unit scans and completed-stock sales.",
+  "block01NumberLabel": [
+   "01",
+   "Stage 01 · Off-Plan"
+  ],
+  "block01Title": "Concept Modeling & Digital Twins",
+  "block01Body": "We turn CAD, BIM and GIS data into interactive Unreal Engine 5 environments from the concept stage onward. Developers present high-fidelity masterplans on gallery touch tables and share lightweight web versions with buyers anywhere.",
+  "block01Features": [
+   "CAD & BIM Ingestion",
+   "Accurate geometry from engineering files",
+   "Ready From Concept Stage",
+   "Build and present before launch",
+   "Multi-Platform Deployment",
+   "Showroom hardware and mobile web in sync"
+  ],
+  "block02NumberLabel": [
+   "02",
+   "Stage 02 · Model Units"
+  ],
+  "block02Title": "Matterport 3D Model Unit Tours",
+  "block02Body": "As show villas and mock-up units are completed, our technicians scan them with Matterport Pro3 cameras. The tours sit inside the web platform, so remote buyers can inspect real finishes and layouts next to the off-plan twin.",
+  "block02Features": [
+   "Matterport Pro3 LiDAR Capture",
+   "Accurate, true-to-scale interiors",
+   "Built-In Web Viewer",
+   "Co-browse inside the project platform",
+   "Finish & Material Checks",
+   "Buyers see the real materials"
+  ],
+  "block03NumberLabel": [
+   "03",
+   "Stage 03 · Completion"
+  ],
+  "block03Title": "Completed Project Virtual Tours",
+  "block03Body": "Support continues past handover into secondary inventory and completed commercial assets. We capture Matterport tours of finished towers, offices and retail districts, so asset teams can sign tenants and buyers faster.",
+  "block03Features": [
+   "Ready-Stock Sales",
+   "Leasing and secondary sales",
+   "Portfolio-Wide View",
+   "One dashboard across completed developments",
+   "Long-Term Archive",
+   "Accurate digital record for facility handover"
+  ],
+  "_tables": []
+ },
+ "s03": {
+  "eyebrow": "Sample Tours",
+  "h2": "Interactive Matterport 3D Virtual Tours",
+  "subheadingBodyCopy": "See how Matterport scans sit inside the developer web platform, so remote buyers can inspect model units and completed properties in accurate 3D.",
+  "card01Label": "3D tour preview",
+  "card01Tag": "Model Unit · Off-Plan",
+  "card01Title": "Luxury Show Villa Model Unit",
+  "card01Body": "LiDAR scan capturing proportions, bespoke joinery and natural courtyard light.",
+  "card02Label": "3D tour preview",
+  "card02Tag": "Completed Unit · Ready to Move In",
+  "card02Title": "Completed Residential Tower Penthouse",
+  "card02Body": "Full interior and terrace scan, with panoramic city orientation and accurate floor layouts.",
+  "_tables": []
+ },
+ "s04": {
+  "eyebrow": "Why It Matters",
+  "h2": "Value Across the Full Development Cycle",
+  "card01Chip": "One Model, Every Phase",
+  "card01Title": "No Rebuilds Between Phases",
+  "card01Body": "The master model is updated as plans change, so you avoid costly re-renders and your gallery always matches construction progress.",
+  "card02Chip": "Remote Tour Reach",
+  "card02Title": "Faster Model Unit Payback",
+  "card02Body": "Matterport tours put your show villas in front of GCC and international buyers online, so you get more return on the cost of building them.",
+  "card03Chip": "Single Web Dashboard",
+  "card03Title": "One Platform for Your Portfolio",
+  "card03Body": "Manage off-plan towers, model units and completed stock from one web interface.",
+  "_tables": []
+ },
+ "s05": {
+  "q1": "How do Matterport tours integrate into the web platform?",
+  "a1": "The scans are embedded in your project's web platform. From the interactive floor plan, buyers and consultants switch between the off-plan 3D model and the scan of the built model unit.",
+  "q2": "Can Manzili capture 3D tours for ready-built completed projects?",
+  "a2": "Yes. Our technicians scan completed units with Matterport Pro3 cameras, and the tours sit in the same web platform as the off-plan twin.",
+  "q3": "What happens when architectural designs or phase layouts change?",
+  "a3": "Changes go into the single master model and publish to the showroom app and web platform together, so both always show the same plans.",
+  "_tables": []
+ },
+ "s06": {
+  "previousLink": [
+   "Previous pillar",
+   "Pillar 05 · Launch Command"
+  ],
+  "previousLinkHref": "/pillars/vip-launch-command",
+  "nextLink": "Explore the CSE Platform",
+  "nextLinkHref": "/platform-cse",
+  "overviewLink": "View All 6 Pillars",
+  "overviewLinkHref": "/#pillars",
+  "_tables": []
+ },
+ "s07": {
+  "eyebrow": "Concept to handover · Matterport Pro3 tours",
+  "h2": "Keep Your 3D Assets Selling After Launch",
+  "subheadingBodyCopy": "Tell us your phasing plan, and we'll scope model-unit scans and twin updates for each stage.",
+  "primaryCta": "Book Technical Scoping",
+  "primaryCtaHref": "/contact-us",
+  "secondaryCta": "View Case Studies",
+  "secondaryCtaHref": "/case-studies",
+  "_tables": []
+ }
+}

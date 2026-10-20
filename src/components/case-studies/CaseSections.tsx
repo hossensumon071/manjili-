@@ -3,12 +3,12 @@ import { Icon } from "@/components/ui/Icon";
 import { Reveal } from "@/components/ui/Reveal";
 import { Sheen } from "@/components/ui/Sheen";
 import { SectionHeader } from "@/components/sections/SectionHeader";
-import type { CaseMetric } from "@/content/case-studies";
+type CaseMetric = { value: string; label: string; title?: string; body: string; outcome?: string };
 
 /** Project metadata strip directly under the hero. */
 export function MetadataGrid({ items }: { items: { label: string; value: string }[] }) {
   return (
-    <section className="relative z-10 -mt-px pt-10 sm:pt-14" aria-label="Project overview">
+    <section className="relative z-10 -mt-px pt-10 sm:pt-14">
       <div className="container-x">
         <Reveal>
           <div className="overflow-hidden rounded-card bg-white shadow-card ring-1 ring-ink/5">
@@ -41,7 +41,7 @@ export function RiskCards({ eyebrow, title, lead, risks }: { eyebrow: string; ti
                   aria-hidden="true"
                   className="absolute -right-24 -top-24 size-72 opacity-25 transition-all duration-700 group-hover:scale-110 group-hover:opacity-80"
                   style={{
-                    background: "repeating-radial-gradient(circle, rgba(255,122,0,0) 0 20px, rgba(255,122,0,.25) 26px, rgba(255,122,0,0) 38px)",
+                    background: "repeating-radial-gradient(circle, rgba(242,142,33,0) 0 20px, rgba(242,142,33,.25) 26px, rgba(242,142,33,0) 38px)",
                     maskImage: "radial-gradient(circle, #000 30%, transparent 70%)",
                     WebkitMaskImage: "radial-gradient(circle, #000 30%, transparent 70%)",
                   }}
@@ -53,7 +53,7 @@ export function RiskCards({ eyebrow, title, lead, risks }: { eyebrow: string; ti
                     </span>
                     <span className="text-sm font-bold text-muted">{String(i + 1).padStart(2, "0")}</span>
                   </div>
-                  <p className="mt-6 text-xs font-semibold text-accent">{r.category}</p>
+                  <p className="mt-6 text-xs font-semibold text-accent-dark">{r.category}</p>
                   <h3 className="mt-1.5 text-h4 font-semibold text-ink">{r.title}</h3>
                   <p className="mt-3 text-[15px] leading-relaxed">{r.body}</p>
                 </div>
@@ -69,7 +69,7 @@ export function RiskCards({ eyebrow, title, lead, risks }: { eyebrow: string; ti
 /** 2×2 feature cards (format B solutions). */
 export function SolutionCards({ id, eyebrow, title, lead, cards }: { id?: string; eyebrow: string; title: string; lead: string; cards: { title: string; points: string[] }[] }) {
   return (
-    <section id={id} className="scroll-mt-24 py-24 sm:py-32" aria-label={title}>
+    <section id={id} className="scroll-mt-32 py-24 sm:py-32" aria-label={title}>
       <div className="container-x">
         <SectionHeader eyebrow={eyebrow} title={title} lead={lead} />
         <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2">
@@ -77,16 +77,16 @@ export function SolutionCards({ id, eyebrow, title, lead, cards }: { id?: string
             <Reveal key={c.title} delay={(i % 2) * 0.08}>
               <article className="group h-full rounded-card bg-white p-6 shadow-card ring-1 ring-ink/5 transition-shadow duration-500 hover:shadow-float sm:p-8">
                 <div className="flex items-center gap-4">
-                  <span className="grid grid-cols-1 size-11 place-items-center rounded-xl bg-brand-light text-brand transition-colors duration-500 group-hover:bg-brand group-hover:text-white">
+                  <span className="grid grid-cols-1 size-11 place-items-center rounded-xl bg-brand-light text-brand-dark transition-colors duration-500 group-hover:bg-brand group-hover:text-white">
                     <Icon name={(["cube", "map", "monitor", "globe"] as const)[i % 4]} size={20} />
                   </span>
-                  <span className="text-3xl font-extrabold text-ink/10">{String(i + 1).padStart(2, "0")}</span>
+                  <span aria-hidden="true" className="text-3xl font-extrabold text-ink/10">{String(i + 1).padStart(2, "0")}</span>
                 </div>
                 <h3 className="mt-6 text-h3 font-semibold text-ink">{c.title}</h3>
                 <ul className="mt-4 space-y-3">
                   {c.points.map((p) => (
                     <li key={p} className="flex gap-3 text-[15px] leading-relaxed">
-                      <span className="mt-1 grid grid-cols-1 size-5 shrink-0 place-items-center rounded-full bg-brand text-white">
+                      <span className="mt-1 grid grid-cols-1 size-5 shrink-0 place-items-center rounded-full bg-brand-dark text-white">
                         <Icon name="check" size={11} strokeWidth={3} />
                       </span>
                       {p}
@@ -103,7 +103,7 @@ export function SolutionCards({ id, eyebrow, title, lead, cards }: { id?: string
 }
 
 /** Four-metric impact band. */
-export function ImpactMetrics({ eyebrow, title, lead, metrics }: { eyebrow: string; title: string; lead?: string; metrics: CaseMetric[] }) {
+export function ImpactMetrics({ eyebrow, title, lead, metrics, outcomePrefix = "Outcome:" }: { eyebrow: string; title: string; lead?: string; metrics: CaseMetric[]; outcomePrefix?: string }) {
   return (
     <section className="px-2 sm:px-3" aria-label={title}>
       <div className="stage surface-blue">
@@ -112,16 +112,16 @@ export function ImpactMetrics({ eyebrow, title, lead, metrics }: { eyebrow: stri
           <SectionHeader eyebrow={eyebrow} title={title} lead={lead} tone="dark" />
           <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
             {metrics.map((m, i) => (
-              <Reveal key={m.label} delay={i * 0.08}>
+              <Reveal key={m.label + i} delay={i * 0.08}>
                 <article className="glass flex h-full flex-col rounded-card p-6">
                   <p className="text-[clamp(2rem,3.2vw,2.75rem)] font-extrabold leading-none tracking-[-0.03em] text-white">{m.value}</p>
-                  <p className="mt-3 text-sm font-semibold text-[#FFC58A]">{m.label}</p>
+                  <p className="mt-3 text-sm font-semibold text-[#FFFFFF]">{m.label}</p>
                   <span className="my-5 h-px w-10 bg-white/30" aria-hidden="true" />
                   {m.title && <h3 className="text-h4 font-semibold text-white">{m.title}</h3>}
-                  <p className={cn("text-sm leading-relaxed text-white/80", m.title && "mt-2")}>{m.body}</p>
+                  <p className={cn("text-sm leading-relaxed text-white/95", m.title && "mt-2")}>{m.body}</p>
                   {m.outcome && (
                     <p className="mt-auto border-t border-white/15 pt-4 text-sm leading-relaxed text-white">
-                      <span className="font-semibold">Outcome: </span>
+                      <span className="font-semibold">{outcomePrefix} </span>
                       {m.outcome}
                     </p>
                   )}
@@ -148,7 +148,7 @@ export function QuoteBlock({ text, name, role, context }: { text: string; name: 
             “{text}”
           </blockquote>
           <div className="mt-8 flex items-center gap-4">
-            <span className="grid grid-cols-1 size-12 place-items-center rounded-full bg-brand text-white">
+            <span className="grid grid-cols-1 size-12 place-items-center rounded-full bg-brand-dark text-white">
               <Icon name="building" size={20} />
             </span>
             <div>

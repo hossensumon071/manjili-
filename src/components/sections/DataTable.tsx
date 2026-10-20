@@ -20,7 +20,7 @@ type Props = {
  */
 export function DataTable({ id, eyebrow, title, lead, columns, rows, highlight }: Props) {
   return (
-    <section id={id} className="scroll-mt-24 py-24 sm:py-32" aria-labelledby={id ? `${id}-title` : undefined}>
+    <section id={id} className="scroll-mt-32 py-24 sm:py-32" aria-labelledby={id ? `${id}-title` : undefined}>
       <div className="container-x">
         <SectionHeader eyebrow={eyebrow} title={title} lead={lead} id={id ? `${id}-title` : undefined} />
 
@@ -36,12 +36,12 @@ export function DataTable({ id, eyebrow, title, lead, columns, rows, highlight }
                     className={cn(
                       "px-6 py-5 text-sm font-bold",
                       ci === 0 && "w-[22%]",
-                      ci === highlight ? "bg-brand text-white" : "bg-page text-ink",
+                      ci === highlight ? "bg-brand-dark text-white" : "bg-page text-ink",
                     )}
                   >
                     {ci === highlight ? (
                       <span className="flex items-center gap-2">
-                        <span className="grid grid-cols-1 size-5 place-items-center rounded-full bg-white text-brand">
+                        <span className="grid grid-cols-1 size-5 place-items-center rounded-full bg-white text-brand-dark">
                           <Icon name="check" size={12} strokeWidth={3} />
                         </span>
                         {c}
@@ -90,7 +90,7 @@ export function DataTable({ id, eyebrow, title, lead, columns, rows, highlight }
                     const col = ci + 1;
                     return (
                       <div key={ci} className={cn("px-5 py-4", col === highlight && "bg-brand-light/60")}>
-                        <dt className={cn("text-xs font-semibold", col === highlight ? "text-brand" : "text-muted")}>
+                        <dt className={cn("text-xs font-semibold", col === highlight ? "text-brand-dark" : "text-muted")}>
                           {columns[col]}
                         </dt>
                         <dd className={cn("mt-1 text-sm leading-relaxed", col === highlight ? "font-semibold text-ink" : "text-body")}>

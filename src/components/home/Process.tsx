@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
-import { home } from "@/content/home";
+import type { Head } from "@/content/copy";
 import { images } from "@/content/images";
 import { EASE } from "@/lib/utils";
 import { Media } from "@/components/ui/Media";
@@ -10,7 +10,6 @@ import { Reveal } from "@/components/ui/Reveal";
 import { SceneFrame } from "@/components/art/IsoScene";
 import { IngestionOverlay, InventoryMockup, RuntimeMockup } from "@/components/mockups/StepMockups";
 
-const { process } = home;
 
 const visuals: ReactNode[] = [
   <>
@@ -27,7 +26,8 @@ const visuals: ReactNode[] = [
   <InventoryMockup key="inventory" />,
 ];
 
-export function Process() {
+export function Process({ c }: { c: Head & { steps: Record<string, string>[] } }) {
+  const process = c;
   return (
     <section className="py-24 sm:py-32" aria-labelledby="process-title">
       <div className="container-x">
@@ -35,10 +35,10 @@ export function Process() {
           <div>
             <p className="eyebrow">{process.eyebrow}</p>
             <h2 id="process-title" className="h-section mt-4 max-w-[16ch]">
-              {process.headline}
+              {process.title}
             </h2>
           </div>
-          <p>{process.subheader}</p>
+          <p>{process.body}</p>
         </Reveal>
 
         <ol className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-6">
@@ -52,8 +52,8 @@ export function Process() {
               className="group"
             >
               <div className="flex items-center gap-4">
-                <span className="font-display text-5xl font-semibold leading-none text-ink/15 transition-colors duration-500 group-hover:text-brand sm:text-6xl">
-                  {step.index}
+                <span aria-hidden="true" className="font-display text-5xl font-semibold leading-none text-ink/15 transition-colors duration-500 group-hover:text-brand-dark sm:text-6xl">
+                  {step.number}
                 </span>
                 {i < process.steps.length - 1 && (
                   <motion.span

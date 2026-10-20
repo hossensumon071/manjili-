@@ -1,0 +1,132 @@
+{
+ "s01": {
+  "breadcrumb": "Home",
+  "breadcrumbHref": "/",
+  "eyebrow": "Pillar 01 · Digital Twin",
+  "h1": "Let Buyers See the Exact View Before They Reserve",
+  "subheadingBodyCopy": "From one master 3D model, Manzili builds an Unreal Engine 5 app that runs offline on your showroom hardware and a lightweight web platform buyers open on any phone.",
+  "primaryCta": "Book Technical Scoping",
+  "primaryCtaHref": "/contact-us",
+  "secondaryCta": "See How It Works",
+  "secondaryCtaHref": "#architecture",
+  "specStrip": [
+   "One Master 3D Model",
+   "Offline Unreal Engine 5 App",
+   "Mobile Web Platform"
+  ],
+  "_tables": [],
+  "crumbs": [
+   {
+    "label": "Home",
+    "href": "/"
+   },
+   {
+    "label": "6-Pillar Infrastructure",
+    "href": "/#pillars"
+   },
+   {
+    "label": "Digital Twin",
+    "href": null
+   }
+  ]
+ },
+ "s02": {
+  "eyebrow": "How It Works",
+  "h2": "One Master Model, Two Ways to Sell",
+  "subheadingBodyCopy": "Most developers juggle visual files from several agencies. Manzili builds one master 3D model from your BIM and CAD files, then produces two versions of it to cover the whole buyer journey.",
+  "block01NumberLabel": [
+   "01",
+   "Sales Gallery & VIP Suites"
+  ],
+  "block01Title": "Enterprise Unreal Engine 5 Application",
+  "block01Subtitle": "Runs Offline in Your Sales Gallery",
+  "block01Body": "Built for sales gallery touch tables, LED walls and VIP suites. The app runs fully offline, so a dropped connection can't interrupt a presentation. Unreal Engine 5 renders native 4K at 60 FPS with full architectural detail and accurate sun angles.",
+  "block01Features": [
+   "No Network Dependency",
+   "Runs fully offline on local workstations",
+   "Architectural Accuracy",
+   "Lumen daylight and Nanite geometry",
+   "Calibrated for Your Hardware",
+   "Tuned for touch tables and LED walls"
+  ],
+  "block02NumberLabel": [
+   "02",
+   "Mobile & Remote Buyers"
+  ],
+  "block02Title": "Lightweight WebGL Web Platform",
+  "block02Subtitle": "Runs in Any Mobile Browser",
+  "block02Body": "Compressed automatically from the same master model, the web platform loads 3D masterplans in standard phone and desktop browsers. Buyers explore and select units over 4G or 5G, with nothing to download.",
+  "block02Features": [
+   "No App Download",
+   "Opens in Safari, Chrome and Edge",
+   "Mobile-First",
+   "Loads in under 3 seconds on mobile networks",
+   "Remote Buyer Reach",
+   "Co-browsing and remote unit reservations"
+  ],
+  "_tables": []
+ },
+ "s03": {
+  "eyebrow": "Developer Advantage",
+  "h2": "How One Model Protects Your Launch",
+  "card01Chip": "99.9% Presentation Uptime SLA",
+  "card01Title": "Presentations That Don't Depend on Wi-Fi",
+  "card01Body": "The Unreal Engine 5 app runs on local showroom hardware, so a Wi-Fi dropout or slow network doesn't stall a VIP meeting.",
+  "card02Chip": "One Source of Truth",
+  "card02Title": "Every Screen Shows the Same Plans",
+  "card02Body": "Both versions come from one master model, so unit types, prices and design updates match across showroom displays and the web platform.",
+  "card03Chip": "Online to Showroom",
+  "card03Title": "Remote Leads, Showroom Close",
+  "card03Body": "Capture high-intent buyers remotely on the web platform, then bring them into the showroom app to choose their unit and reserve.",
+  "_tables": []
+ },
+ "s04": {
+  "eyebrow": "The Build Pipeline",
+  "h2": "From BIM Files to Two Sales Tools",
+  "step01": [
+   "01",
+   "Core 3D Master Build",
+   "We ingest your Revit, CAD and IFC files and build one high-precision master model with accurate structure and coordinates."
+  ],
+  "step02": [
+   "02",
+   "Offline UE5 App Packaging",
+   "The master model compiles into an Unreal Engine 5 app configured for your showroom touch tables, LED walls and presentation machines."
+  ],
+  "step03": [
+   "03",
+   "Web Platform Optimization",
+   "An automated pipeline compresses the geometry for fast browser streaming, ready to publish when you are."
+  ],
+  "_tables": []
+ },
+ "s05": {
+  "q1": "Why deploy both an offline UE5 app and a web platform?",
+  "a1": "Showroom presentations need full graphics power and no dependence on the internet, which the offline Unreal Engine 5 app delivers. Remote buyers need instant access with nothing to install, which the web platform delivers.",
+  "q2": "What happens to the offline UE5 app if showroom Wi-Fi disconnects?",
+  "a2": "The buyer won't notice anything. The app runs entirely on local hardware, so presentations, touch controls and 4K navigation carry on. Inventory updates queue locally and sync as soon as the connection returns.",
+  "q3": "What happens when architectural designs or phase layouts change?",
+  "a3": "Changes go into the single master model and publish to the showroom app and web platform together, so both always show the same plans.",
+  "_tables": []
+ },
+ "s06": {
+  "previousLink": "View All 6 Pillars",
+  "previousLinkHref": "/#pillars",
+  "nextLink": [
+   "Next pillar",
+   "Pillar 02 · CRM & Inventory Sync"
+  ],
+  "nextLinkHref": "/pillars/crm-inventory-integration",
+  "_tables": []
+ },
+ "s07": {
+  "eyebrow": "One master model · Unreal Engine 5 + web",
+  "h2": "Build One Twin for Your Showroom and Every Buyer's Phone",
+  "subheadingBodyCopy": "Send your BIM or CAD files under NDA, and we'll scope the showroom app and web platform for your launch.",
+  "primaryCta": "Book Technical Scoping",
+  "primaryCtaHref": "/contact-us",
+  "secondaryCta": "View Case Studies",
+  "secondaryCtaHref": "/case-studies",
+  "_tables": []
+ }
+}

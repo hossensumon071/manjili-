@@ -1,0 +1,169 @@
+{
+ "template": "A",
+ "hero": {
+  "eyebrow": "Case Study · Tabuk",
+  "title": "A Turnkey Tabuk Hills Sales Center in 48 Hours",
+  "body": "Manzili had the Tabuk Hills sales center running in 48 hours, with pre-built showroom hardware, a WebGL twin of the masterplan and sales playbooks for the local team.",
+  "chips": [
+   "Institutional Residential Developer",
+   "NHC Masterplan",
+   "Tabuk Hills",
+   "Tabuk",
+   "Live Regional Sales Center"
+  ],
+  "mockupChips": [
+   "Live twin",
+   "4,600+ units",
+   "2.2M+ m²"
+  ]
+ },
+ "sidebar": [
+  "Institutional Residential Developer",
+  "Tabuk Hills · NHC destination masterplan · 2,237,000+ m² · 4,600+ residential units",
+  "Tabuk",
+  "WebGL masterplan twin · Plug-and-play sales center hardware · Local sales team training"
+ ],
+ "challenge": {
+  "eyebrow": "The Challenge",
+  "title": "Running a High-Volume Sales Center Far From Riyadh",
+  "body": "A high-volume off-plan sales center in Tabuk needed reliable hardware that didn't depend on scarce local AV specialists.",
+  "cards": [
+   {
+    "index": "01",
+    "category": "Local Support",
+    "title": "Few Specialist Technicians",
+    "body": "Regional cities have few AV and GPU specialists, so any hardware fault risks long showroom downtime."
+   },
+   {
+    "index": "02",
+    "category": "Buyer Confidence",
+    "title": "Doubts About Off-Plan Homes",
+    "body": "Buyers used to inspecting finished homes hesitated to commit to 4,600+ unbuilt units without seeing them."
+   },
+   {
+    "index": "03",
+    "category": "Team Experience",
+    "title": "New Sales Teams",
+    "body": "Newly hired consultants struggled to explain infrastructure timelines and relied on handing out brochures."
+   }
+  ]
+ },
+ "solution": {
+  "eyebrow": "Our Solution",
+  "title": "A Turnkey Remote Sales Setup for Tabuk Hills",
+  "body": "Manzili delivered a browser-based WebGL masterplan, pre-configured showroom hardware racks and on-site coaching tailored to local buyers.",
+  "blocks": [
+   {
+    "index": "01",
+    "label": "Pillar 01 · Digital Twin",
+    "title": "Browser-Based Masterplan Twin",
+    "body": "A 2.2M+ m² WebGL model of all 4,600+ homes, parks, schools and commercial facilities, running smoothly at 60 FPS on every device.",
+    "features": [
+     {
+      "title": "Accurate Terrain",
+      "body": "Real elevation contours of the Tabuk plateau"
+     },
+     {
+      "title": "Amenity Distances",
+      "body": "Walking and driving times to schools and clinics"
+     },
+     {
+      "title": "Works in Any Browser",
+      "body": "No installs for buyers or consultants"
+     }
+    ]
+   },
+   {
+    "index": "02",
+    "label": "Pillar 03 · Showroom Hardware",
+    "title": "Pre-Built Showroom Hardware",
+    "body": "Touch tables and presenter consoles shipped pre-configured in flight racks, with remote health monitoring that cuts the need for on-site technician visits.",
+    "features": [
+     {
+      "title": "48-Hour Setup",
+      "body": "Commissioned within 48 hours of handover"
+     },
+     {
+      "title": "Remote Diagnostics",
+      "body": "Temperature and GPU load flagged to Riyadh engineers"
+     },
+     {
+      "title": "Offline Mode",
+      "body": "Presentations continue during fiber cuts"
+     }
+    ]
+   },
+   {
+    "index": "03",
+    "label": "Pillar 04 · Sales Enablement",
+    "title": "Sales Team Certification",
+    "body": "Hands-on coaching taught Tabuk consultants to guide first-time off-plan buyers through the 3D twin step by step.",
+    "features": [
+     {
+      "title": "Masterplan-to-Home Storytelling",
+      "body": "From infrastructure to living spaces"
+     },
+     {
+      "title": "Local Objection Playbooks",
+      "body": "Answers on construction timelines"
+     },
+     {
+      "title": "Reservation Routine",
+      "body": "Timed unit holds before interest fades"
+     }
+    ]
+   }
+  ]
+ },
+ "outcomes": {
+  "eyebrow": "Reported Performance",
+  "title": "Delivery Outcomes",
+  "stats": [
+   {
+    "value": "48 h",
+    "label": "Showroom Setup Time",
+    "title": "Turnkey Commissioning",
+    "body": "Pre-assembled racks arrived in Tabuk and were fully operational within 48 hours, meeting the launch milestone."
+   },
+   {
+    "value": "0",
+    "label": "Hardware Outages in 120 Days",
+    "title": "Uninterrupted Presentations",
+    "body": "No hardware outage needed an on-site technician in the first 120 days of operation."
+   },
+   {
+    "value": "2.2M+ m²",
+    "label": "Masterplan Modeled",
+    "title": "Full Terrain & Infrastructure",
+    "body": "Every home, contour, road and amenity in one twin."
+   },
+   {
+    "value": "4,600+",
+    "label": "Homes Modeled",
+    "title": "Every Unit Explorable",
+    "body": "Each of the 4,600+ homes is selectable in the showroom and on the web."
+   }
+  ]
+ },
+ "standards": {
+  "eyebrow": "Quality & Compliance",
+  "title": "Delivery Standards",
+  "rows": [
+   [
+    "Logistics & Staging",
+    "Factory pre-testing in Riyadh",
+    "Hardware and software load-tested for 72 hours before shipping to Tabuk"
+   ],
+   [
+    "System Continuity",
+    "Standby edge processing modules",
+    "Redundant SSD images and automatic reboot keep the showroom running"
+   ],
+   [
+    "One Accountable Partner",
+    "Single Master Service Agreement",
+    "Covers the 3D platform, display hardware and sales training"
+   ]
+  ]
+ }
+}

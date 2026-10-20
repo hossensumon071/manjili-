@@ -1,0 +1,169 @@
+{
+ "template": "A",
+ "hero": {
+  "eyebrow": "Case Study · RestateX",
+  "title": "A 12,000-Unit Masterplan Launch at RestateX",
+  "body": "Alwareef, a 12,000-unit NHC community in Southeast Jeddah, launched at RestateX with a Manzili WebGL twin, exhibition hardware and on-site launch support.",
+  "chips": [
+   "Institutional Residential Developer",
+   "NHC Masterplan",
+   "Alwareef",
+   "Southeast Jeddah",
+   "RestateX Launch"
+  ],
+  "mockupChips": [
+   "Live twin",
+   "12,000+ units",
+   "10M+ m²"
+  ]
+ },
+ "sidebar": [
+  "Institutional Residential Developer",
+  "Alwareef · NHC destination masterplan · 10M+ m² · 12,000+ residential units",
+  "Southeast Jeddah",
+  "WebGL masterplan twin · Exhibition touch podiums · Dual-carrier failover · RestateX launch support"
+ ],
+ "challenge": {
+  "eyebrow": "The Challenge",
+  "title": "Launching a 10M+ m² Suburb at a Packed Exhibition",
+  "body": "Launching off-plan inventory across a 10M+ m² masterplan at RestateX needed reliable hardware and no network lag during heavy visitor surges.",
+  "cards": [
+   {
+    "index": "01",
+    "category": "Network Risk",
+    "title": "Exhibition Wi-Fi Blackouts",
+    "body": "Convention hall Wi-Fi often fails under crowd pressure, crashing cloud-only sales platforms at peak hours."
+   },
+   {
+    "index": "02",
+    "category": "Buyer Understanding",
+    "title": "A Masterplan Too Big for 2D",
+    "body": "With 12,000+ planned homes over 10M+ m², buyers struggled to picture phases, roads and amenities on flat maps."
+   },
+   {
+    "index": "03",
+    "category": "Inventory Risk",
+    "title": "Double-Bookings Under Heavy Traffic",
+    "body": "Many consultants serving hundreds of walk-in buyers at once risk selling the same unit twice without live inventory."
+   }
+  ]
+ },
+ "solution": {
+  "eyebrow": "Our Solution",
+  "title": "An Exhibition-Ready Setup for RestateX",
+  "body": "The RestateX setup paired WebGL masterplan navigation with local hardware, cellular failover and fast reservation workflows for the sales team.",
+  "blocks": [
+   {
+    "index": "01",
+    "label": "Pillar 01 · Digital Twin",
+    "title": "10M+ m² WebGL Masterplan Twin",
+    "body": "A no-download WebGL twin of all 10M+ m² of Alwareef, showing residential zones, parks, schools and highway junctions in 4K at 60 FPS.",
+    "features": [
+     {
+      "title": "Destination-Scale Coverage",
+      "body": "All 12,000+ planned homes"
+     },
+     {
+      "title": "Infrastructure Context",
+      "body": "Transit, schools and commercial centers"
+     },
+     {
+      "title": "Under 3-Second Load",
+      "body": "On sales iPads and buyers' phones"
+     }
+    ]
+   },
+   {
+    "index": "02",
+    "label": "Pillar 03 · Showroom Hardware",
+    "title": "Exhibition Hardware & Local Computing",
+    "body": "Durable touch podiums and presenter stations backed by local edge computers that run without venue internet.",
+    "features": [
+     {
+      "title": "Exhibition Touch Podiums",
+      "body": "Built for continuous exhibition traffic"
+     },
+     {
+      "title": "Synchronized Video Walls",
+      "body": "Consultant walkthroughs mirrored on booth screens"
+     },
+     {
+      "title": "Plug-and-Play Assembly",
+      "body": "Pre-configured flight cases, set up in 24 hours"
+     }
+    ]
+   },
+   {
+    "index": "03",
+    "label": "Pillar 05 · Launch Command",
+    "title": "Failover & On-Site Launch Command",
+    "body": "On-site launch engineers ran local edge servers with dual-carrier private 5G failover throughout RestateX.",
+    "features": [
+     {
+      "title": "Dual-Carrier Private 5G",
+      "body": "Automatic carrier failover"
+     },
+     {
+      "title": "On-Floor Standby Engineers",
+      "body": "Specialists in the booth for the full event"
+     },
+     {
+      "title": "Fast Unit Holds",
+      "body": "Live inventory sync prevents double-bookings"
+     }
+    ]
+   }
+  ]
+ },
+ "outcomes": {
+  "eyebrow": "Reported Performance",
+  "title": "Delivery Outcomes",
+  "stats": [
+   {
+    "value": "100%",
+    "label": "Uptime Across 4 Exhibition Days",
+    "title": "No Network Downtime",
+    "body": "Local caching and private 5G failover kept every display running, despite venue network outages."
+   },
+   {
+    "value": "Sub-500 ms",
+    "label": "Unit Lock Time",
+    "title": "Live Inventory Sync",
+    "body": "Unit holds synced in under 500 ms across every booth screen, with no double-bookings."
+   },
+   {
+    "value": "12,000+",
+    "label": "Units Modeled",
+    "title": "Full Masterplan Scope",
+    "body": "Apartments, townhomes, commercial boulevards and community amenities across Alwareef."
+   },
+   {
+    "value": "0",
+    "label": "Rebuilds From Booth to Sales Center",
+    "title": "Reused After the Show",
+    "body": "The digital twin moved from the RestateX booth into the permanent Alwareef sales center with no rebuild."
+   }
+  ]
+ },
+ "standards": {
+  "eyebrow": "Quality & Compliance",
+  "title": "Delivery Standards",
+  "rows": [
+   [
+    "High-Load Performance",
+    "Edge caching with local GPU compute",
+    "No frame drops during simultaneous multi-screen presentations"
+   ],
+   [
+    "Failover Redundancy",
+    "Dual-carrier bonded cellular uplink",
+    "Automatic failover if the event line slows or drops"
+   ],
+   [
+    "On-Site Support",
+    "Event engineers on the floor",
+    "Component swaps within 120 seconds"
+   ]
+  ]
+ }
+}

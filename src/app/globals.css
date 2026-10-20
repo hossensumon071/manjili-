@@ -12,6 +12,11 @@
     -webkit-text-size-adjust: 100%;
   }
 
+  /* QA F5: anchor targets land clear of the fixed header (~110px) */
+  [id] {
+    scroll-margin-top: 8rem;
+  }
+
   body {
     @apply bg-page font-sans text-[15px] leading-[1.65] text-body antialiased sm:text-base;
   }
@@ -24,11 +29,11 @@
   }
 
   ::selection {
-    background: rgba(0, 102, 255, 0.18);
+    background: rgba(6, 154, 215, 0.2);
   }
 
   :focus-visible {
-    outline: 2px solid #ff7a00;
+    outline: 2px solid #0474a1;
     outline-offset: 3px;
     border-radius: 6px;
   }
@@ -56,15 +61,19 @@
     @apply relative isolate overflow-hidden rounded-[22px] sm:rounded-stage;
   }
 
+  /* Brand blue surface.
+     Text zone (top/left) sits on #0477AB — Manzili blue #069AD7 at the same hue, just deep
+     enough for white body text (4.6:1). The true brand blue glows in the bottom-right corner. */
   .surface-blue {
     background:
-      radial-gradient(90% 70% at 8% 0%, rgba(120, 190, 255, 0.55) 0%, rgba(120, 190, 255, 0) 60%),
-      radial-gradient(70% 60% at 100% 100%, rgba(0, 60, 180, 0.55) 0%, rgba(0, 60, 180, 0) 70%),
-      linear-gradient(135deg, #2a8bf2 0%, #0d6cf0 48%, #0756d6 100%);
+      radial-gradient(65% 75% at 100% 100%, rgba(6, 154, 215, 0.95) 0%, rgba(6, 154, 215, 0) 70%),
+      radial-gradient(40% 50% at 95% 95%, rgba(61, 178, 227, 0.5) 0%, rgba(61, 178, 227, 0) 70%),
+      linear-gradient(160deg, #0477ab 0%, #0478ad 55%, #0583ba 100%);
   }
 
   .glass {
-    @apply border border-white/20 bg-white/[0.09] backdrop-blur-md;
+    /* darker tint keeps white text on glass above 4.5:1 */
+    @apply border border-white/25 bg-[#02304a]/35 backdrop-blur-md;
   }
 
   .h-display {
@@ -76,7 +85,14 @@
   }
 
   .eyebrow {
-    @apply text-eyebrow font-semibold text-accent;
+    @apply inline-flex items-center gap-2 text-eyebrow font-bold text-accent-dark;
+  }
+  .eyebrow-on-dark {
+    @apply text-white;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply h-[3px] w-5 rounded-full bg-accent;
   }
 }
 
@@ -113,7 +129,7 @@
   appearance: none;
   height: 6px;
   border-radius: 999px;
-  background: linear-gradient(90deg, #ff7a00 var(--fill, 30%), #e2e8f0 var(--fill, 30%));
+  background: linear-gradient(90deg, #F28E21 var(--fill, 30%), #E4E3E3 var(--fill, 30%));
   cursor: pointer;
 }
 .cse-range::-webkit-slider-thumb {
@@ -122,8 +138,8 @@
   height: 14px;
   border-radius: 999px;
   background: #fff;
-  border: 3px solid #ff7a00;
-  box-shadow: 0 2px 6px rgba(255, 122, 0, 0.4);
+  border: 3px solid #F28E21;
+  box-shadow: 0 2px 6px rgba(242,142,33, 0.4);
   transition: transform 0.2s;
 }
 .cse-range::-webkit-slider-thumb:hover {
@@ -134,7 +150,7 @@
   height: 10px;
   border-radius: 999px;
   background: #fff;
-  border: 3px solid #ff7a00;
+  border: 3px solid #F28E21;
 }
 
 /* ------------------------------------------------------------------
@@ -153,4 +169,14 @@ h1,
 h2,
 h3 {
   overflow-wrap: break-word;
+}
+
+/* Arabic (RTL rule 2): taller body line height for Cairo Arabic */
+html[lang="ar"] body {
+  line-height: 1.75;
+}
+html[lang="ar"] .h-display,
+html[lang="ar"] h1,
+html[lang="ar"] h2 {
+  letter-spacing: 0;
 }

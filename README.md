@@ -31,6 +31,21 @@ Every visual ships with a built-in illustration. To swap one for a photo, put th
 file in `public/images/` and set its path in `src/content/images.ts`, e.g.
 `hero: "/images/hero.jpg"`. Images are served through `next/image` (AVIF/WebP).
 
+## Brand system
+
+Official palette (brand kit): **Blue #069AD7 · Grey #373535 · Orange #F28E21 · Light Grey #EFEFEF**.
+Tokens live in `tailwind.config.ts`. Brand blue and orange are below 4.5:1 on white, so text uses
+AA shades: `brand-dark` #0474A1 (links, small text, primary buttons), `brand-deep` #045A86
+(dark surfaces), `accent-dark` #9D5C15 (small orange text). Body text `body` #555353, captions
+`muted` #6B6969. Use plain `brand` / `accent` only for icons, fills and large display type.
+
+Buttons: one system in `src/components/ui/Button.tsx` — `primary`/`secondary` on light surfaces,
+`light`/`outline` on blue surfaces, all 48px with 15px labels.
+
+Logos: `public/brand/` (colour, white, vertical, icon). Favicons, Apple icon and share image are
+in `src/app/` (`favicon.ico`, `icon.svg`, `apple-icon.png`, `opengraph-image.png`, `twitter-image.png`).
+Replace `opengraph-image.png` / `twitter-image.png` (1200×630) when the final share image arrives.
+
 ## Fonts
 
 **Cairo** everywhere (brand rule), loaded via `next/font` with Latin + Arabic
@@ -66,11 +81,40 @@ Real photos can still replace any visual via `src/content/images.ts`.
 ## RFP form (/contact)
 
 The form posts to `/api/rfp`, which validates every field server-side and rejects
-free webmail domains. Set `RFP_WEBHOOK_URL` (see `.env.example`) to forward each
-submission to your CRM, Zapier/Make, Slack or email automation. Without it,
-submissions are only logged on the server.
+free webmail domains, then emails the submission via Resend and/or forwards it to a
+webhook. Configure in Vercel → Settings → Environment Variables (see `.env.example`):
+`RESEND_API_KEY`, `RFP_TO_EMAIL`, `RFP_FROM_EMAIL` (verified domain), optional
+`RFP_WEBHOOK_URL`. With nothing configured the form shows an error instead of
+silently dropping submissions.
+
+## SEO / indexing
+
+`robots.txt`, `sitemap.xml` and `manifest.webmanifest` are generated. The site is
+**noindex by default** (staging). Set `NEXT_PUBLIC_ALLOW_INDEXING=true` and
+`NEXT_PUBLIC_SITE_URL=https://your-domain` only on the live production domain.
+
+## Social links
+
+Add profile URLs in `src/content/site.ts` → `socials`. Icons with an empty URL are hidden.
 
 Matterport tours (Pillar 06): paste the share URL into `embedUrl` in `pillar-06.ts`.
+
+
+## Languages (English + Arabic) and copy
+
+- English pages: `src/app/(en)/`. Arabic pages: `src/app/(ar)/ar/`. Each group has its own root
+  layout, so Arabic pages render `<html lang="ar" dir="rtl">` (Cairo, 1.75 line height).
+- One view component per page (`src/components/views/`) renders either language.
+- **All copy comes from Buddy's final files** in `/copy` (`Manzili_Website_Copy_EN.md`, `..._AR.md`).
+  They are converted to `src/content/copy/{en,ar}/*.json`. Never edit the JSON by hand; to update
+  copy, replace the .md files and run:
+
+  ```bash
+  bash scripts/copy/run.sh
+  ```
+- `lp(locale, path)` builds locale-aware links; `pageMetadata(locale, slug)` sets title, description,
+  canonical `https://manzili.sa/...`, hreflang (en / ar / x-default) and Open Graph.
+- Routes: `/platform-cse`, `/contact-us`; `/solutions` removed. 301 redirects in `next.config.mjs`.
 
 ## Accessibility & motion
 

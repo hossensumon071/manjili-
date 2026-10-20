@@ -1,0 +1,169 @@
+{
+ "template": "A",
+ "hero": {
+  "eyebrow": "Case Study · Madinah",
+  "title": "A 6,000-Unit Madinah Community, Explored in 3D",
+  "body": "Families buying off-plan at Al-Mukiman in central Madinah explore their future homes on a Manzili 3D twin and showroom touch tables, guided by trained sales staff.",
+  "chips": [
+   "Institutional Residential Developer",
+   "NHC Masterplan",
+   "Al-Mukiman",
+   "Central Madinah",
+   "Live Sales Center"
+  ],
+  "mockupChips": [
+   "Live twin",
+   "6,000+ units",
+   "3.5M+ m²"
+  ]
+ },
+ "sidebar": [
+  "Institutional Residential Developer",
+  "Al-Mukiman · NHC destination masterplan · 3,545,000+ m² · 6,000+ residential units",
+  "Central Madinah",
+  "WebGL masterplan twin · Multi-touch sales gallery displays · Sales team certification"
+ ],
+ "challenge": {
+  "eyebrow": "The Challenge",
+  "title": "Clear Answers for Multi-Generational Family Buyers",
+  "body": "Family buyers in central Madinah decide together, and they need to see height limits, setbacks and privacy clearly before they commit to an off-plan home.",
+  "cards": [
+   {
+    "index": "01",
+    "category": "Planning Constraints",
+    "title": "Strict Height and Setback Rules",
+    "body": "Municipal height limits and privacy setbacks near the Prophet's Mosque need exact validation, which 2D floor plans can't provide."
+   },
+   {
+    "index": "02",
+    "category": "Showroom Adoption",
+    "title": "Slow Tools, Back to Brochures",
+    "body": "Across 3.5M+ m², slow-loading portals pushed consultants back to printed brochures and WhatsApp PDFs at peak family visiting hours."
+   },
+   {
+    "index": "03",
+    "category": "Family Decisions",
+    "title": "Many Decision-Makers",
+    "body": "Extended families who can't read blueprints take longer to agree, delaying reservations."
+   }
+  ]
+ },
+ "solution": {
+  "eyebrow": "Our Solution",
+  "title": "A Turnkey Sales Setup for Al-Mukiman",
+  "body": "The Al-Mukiman sales center runs on a browser-based WebGL twin and showroom touch tables, with structured sales playbooks for the frontline team.",
+  "blocks": [
+   {
+    "index": "01",
+    "label": "Pillar 01 · Digital Twin",
+    "title": "Browser-Based Community Twin",
+    "body": "A no-download WebGL masterplan of all 3.5M+ m² of Al-Mukiman, showing building massing, roads, mosques, schools and plot-level daylight in 4K at 60 FPS.",
+    "features": [
+     {
+      "title": "Community Exploration",
+      "body": "Aerial navigation across 6,000+ homes"
+     },
+     {
+      "title": "Boundary Context",
+      "body": "Accurate distances to the Prophet's Mosque area"
+     },
+     {
+      "title": "Under 3-Second Load",
+      "body": "Smooth on 4G and 5G mobile browsers"
+     }
+    ]
+   },
+   {
+    "index": "02",
+    "label": "Pillar 03 · Showroom Hardware",
+    "title": "Sales Gallery Hardware",
+    "body": "65-inch 4K multi-touch tables installed in the permanent sales center, backed by local computing that removes network lag in busy consultations.",
+    "features": [
+     {
+      "title": "Multi-Touch Tables",
+      "body": "Rated for all-day showroom use"
+     },
+     {
+      "title": "Dual-Display Mode",
+      "body": "Touch table mirrored to LED walls"
+     },
+     {
+      "title": "Local Edge Caching",
+      "body": "No dependence on public Wi-Fi"
+     }
+    ]
+   },
+   {
+    "index": "03",
+    "label": "Pillar 04 · Sales Enablement",
+    "title": "Sales Playbooks for Family Buyers",
+    "body": "On-site coaching replaced passive feature tours with a structured presentation built for Saudi family buyers.",
+    "features": [
+     {
+      "title": "Masterplan-to-Home Sequence",
+      "body": "From community infrastructure to living room"
+     },
+     {
+      "title": "Objection Handling",
+      "body": "Answers on privacy and nearby mosques"
+     },
+     {
+      "title": "Digital Reservation Flow",
+      "body": "From unit inspection to timed unit hold"
+     }
+    ]
+   }
+  ]
+ },
+ "outcomes": {
+  "eyebrow": "Reported Performance",
+  "title": "Delivery Outcomes",
+  "stats": [
+   {
+    "value": "6,000+",
+    "label": "Residential Units Modeled",
+    "title": "Every Plot in 3D",
+    "body": "Each plot in the community can be explored in the twin."
+   },
+   {
+    "value": "3.5M+ m²",
+    "label": "Masterplan Modeled",
+    "title": "Full Community Context",
+    "body": "Roads, mosques, schools and setbacks across the whole masterplan."
+   },
+   {
+    "value": "<3 s",
+    "label": "Mobile Load Time",
+    "title": "Shared with the Whole Family",
+    "body": "Buyers shared twin links with family members who couldn't attend, loading in under 3 seconds on Saudi mobile networks."
+   },
+   {
+    "value": "99.9%",
+    "label": "Presentation Uptime",
+    "title": "Stable Sales Gallery",
+    "body": "Local caching kept the gallery running smoothly at 60 FPS through peak sales seasons."
+   }
+  ]
+ },
+ "standards": {
+  "eyebrow": "Quality & Compliance",
+  "title": "Delivery Standards",
+  "rows": [
+   [
+    "Architectural Accuracy",
+    "Full BIM / CAD coordinates",
+    "Matches the approved municipal masterplan and infrastructure data"
+   ],
+   [
+    "Data Hosting",
+    "In-Kingdom data hosting",
+    "Buyer data hosted in-Kingdom under the Saudi PDPL"
+   ],
+   [
+    "Hardware Service",
+    "Hot-standby hardware",
+    "Pre-configured replacement parts minimize showroom downtime"
+   ]
+  ]
+ }
+}

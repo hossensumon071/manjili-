@@ -1,0 +1,160 @@
+{
+ "template": "B",
+ "hero": {
+  "eyebrow": "Case Study · Masar Destination",
+  "title": "Holy Mosque Views, Verified Floor by Floor",
+  "body": "Manzili built the browser-based 3D twin, sales gallery hardware and sales training for Erth Real Estate Development's SAR 2B+ three-tower development in Makkah's Masar Destination.",
+  "chips": [
+   "Erth Real Estate Development",
+   "3 Luxury Towers",
+   "SAR 2B+ Value",
+   "Masar Destination, Makkah"
+  ],
+  "mockupChips": [
+   "Live twin",
+   "3 towers",
+   "850 m to the Holy Mosque"
+  ]
+ },
+ "sidebar": [
+  "Erth Real Estate Development",
+  "Masar Ma’ab · 3 luxury residential and hospitality towers, up to 31 floors · 81,000+ m² built-up living area · over SAR 2 billion",
+  "Masar Destination, Makkah",
+  "WebGL digital twin · Sales gallery touch tables · Sales team training"
+ ],
+ "challenge": {
+  "eyebrow": "The Challenge",
+  "title": "Selling Holy City Residences Off-Plan",
+  "body": "Selling luxury residences 850 meters from the Holy Mosque means proving floor heights, orientation toward the Haram and links to the pedestrian concourse. Static brochures and 2D plans couldn't justify floor-by-floor premiums to private and institutional investors.",
+  "header": [
+   "Sales Friction",
+   "The Commercial Risk",
+   "What Manzili Delivered"
+  ],
+  "rows": [
+   [
+    "Unclear Views by Floor",
+    "Buyers question high-floor premiums without verified views.",
+    "Verified view analysis: 3D elevations show the exact Holy Mosque and concourse sightlines from every floor."
+   ],
+   [
+    "Complex Masterplan Context",
+    "Static maps can't show how Masar's central boulevard connects to the towers.",
+    "Masterplan-to-unit navigation: buyers explore district access, parking and pedestrian concourses in 3D."
+   ],
+   [
+    "Long Decision Cycles",
+    "GCC and international buyers want to verify remotely before they commit.",
+    "No-install web access: the WebGL twin streams to remote buyers through a secure link."
+   ]
+  ]
+ },
+ "solution": {
+  "eyebrow": "Our Solution",
+  "title": "An Interactive 3D Twin with Holy Mosque Sightlines",
+  "body": "One twin runs on the showroom touch tables and streams to buyers' browsers. It models all three towers with architectural precision, sun orientation and direct pedestrian concourse links.",
+  "blocks": [
+   {
+    "title": "View & Sightline Verification",
+    "points": [
+     "Camera positions model the exact view from each floor toward the Holy Mosque concourse.",
+     "Removes buyer doubt about view premiums across all three towers."
+    ]
+   },
+   {
+    "title": "Masar Destination Context",
+    "points": [
+     "Includes Masar's 3.6 km boulevard, high-speed rail access and underground bus stops.",
+     "Shows walking times and transport options directly from the residences."
+    ]
+   },
+   {
+    "title": "Turnkey Sales Gallery Hardware",
+    "points": [
+     "Commercial 65-inch 4K touch tables installed in Erth's sales center.",
+     "Fast touch response for group presentations and investor reviews."
+    ]
+   },
+   {
+    "title": "Remote Sharing by Web Link",
+    "points": [
+     "Agents send personalized, unit-specific 3D walkthroughs to overseas buyers.",
+     "Nothing to install on the investor's side."
+    ]
+   }
+  ]
+ },
+ "enablement": {
+  "eyebrow": "Sales Team Enablement",
+  "title": "A Structured Journey for Luxury Investors",
+  "body": "Manzili trained Erth's sales team in floor rehearsals to guide high-net-worth buyers from the masterplan to a unit reservation.",
+  "steps": [
+   {
+    "index": "01",
+    "title": "District Orientation",
+    "body": "Advisors open on the Masar Destination twin, showing proximity to the Holy Mosque, concourse links and transit connections."
+   },
+   {
+    "index": "02",
+    "title": "Tower Selection & View Check",
+    "body": "The advisor isolates Tower 1, 2 or 3 and rotates it to show sun orientation, privacy buffers and verified views."
+   },
+   {
+    "index": "03",
+    "title": "Floor Plan & Finish Confirmation",
+    "body": "The interface moves into 3D floor plans with layouts, hospitality-grade finishes and live unit availability."
+   }
+  ]
+ },
+ "outcomes": {
+  "eyebrow": "Reported Performance",
+  "title": "Delivery Outcomes",
+  "stats": [
+   {
+    "value": "3",
+    "label": "Residential Towers Modeled",
+    "body": "Every floor of all three towers, up to 31 floors.",
+    "outcome": "Floor-by-floor coverage for off-plan apartment selection."
+   },
+   {
+    "value": "81,000+ m²",
+    "label": "Living Area Modeled",
+    "body": "Built-up residential area captured across the development.",
+    "outcome": "Buyers compare every apartment type in one model."
+   },
+   {
+    "value": "0",
+    "label": "App Downloads for Buyers",
+    "body": "Browser-based WebGL streaming on all major devices.",
+    "outcome": "GCC and overseas buyers inspect units from a web link."
+   },
+   {
+    "value": "99.9%",
+    "label": "Presentation Uptime",
+    "body": "Commercial 65-inch 4K touch tables.",
+    "outcome": "Stable presentations throughout investor launches."
+   }
+  ]
+ },
+ "standards": {
+  "eyebrow": "Quality & Compliance",
+  "title": "Delivery Standards",
+  "rows": [
+   [
+    "BIM Dimension Accuracy",
+    "Full engineering CAD ingestion",
+    "Exact ceiling heights, window openings and interior areas"
+   ],
+   [
+    "In-Kingdom Hosting",
+    "KSA cloud infrastructure",
+    "Buyer interactions and registration data hosted in-Kingdom under the Saudi PDPL"
+   ],
+   [
+    "Hardware Support",
+    "Commercial hardware support",
+    "On-demand technical support keeps 4K touch screens running"
+   ]
+  ]
+ }
+}

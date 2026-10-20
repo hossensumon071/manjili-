@@ -1,17 +1,19 @@
-import { home } from "@/content/home";
+import type { Head } from "@/content/copy";
+import type { IconName } from "@/components/ui/Icon";
 import { Icon } from "@/components/ui/Icon";
 import { Reveal } from "@/components/ui/Reveal";
 
-const { problem } = home;
+const ICONS: IconName[] = ["monitor", "unlink", "eye"];
 
-export function ExecutionGap() {
+export function ExecutionGap({ c }: { c: Head & { cards: Record<string, string>[] } }) {
+  const problem = c;
   return (
     <section className="py-24 sm:py-32" aria-labelledby="gap-title">
       <div className="container-x">
         <Reveal>
           <p className="eyebrow">{problem.eyebrow}</p>
           <h2 id="gap-title" className="h-section mt-4 max-w-[20ch]">
-            {problem.headline}
+            {problem.title}
           </h2>
         </Reveal>
 
@@ -26,15 +28,15 @@ export function ExecutionGap() {
                     className="absolute -right-24 -top-28 size-[22rem] opacity-30 blur-[1px] transition-all duration-700 ease-out group-hover:scale-110 group-hover:opacity-100"
                     style={{
                       background:
-                        "repeating-radial-gradient(circle at center, rgba(46,139,240,0) 0 22px, rgba(46,139,240,0.45) 30px, rgba(46,139,240,0) 44px)",
+                        "repeating-radial-gradient(circle at center, rgba(6,154,215,0) 0 22px, rgba(6,154,215,0.45) 30px, rgba(6,154,215,0) 44px)",
                       maskImage: "radial-gradient(circle at center, #000 30%, transparent 70%)",
                       WebkitMaskImage: "radial-gradient(circle at center, #000 30%, transparent 70%)",
                     }}
                   />
                   <span className="absolute left-5 top-5 grid grid-cols-1 size-10 place-items-center rounded-full bg-accent text-white shadow-glow-orange">
-                    <Icon name={card.icon} size={18} />
+                    <Icon name={ICONS[i % 3]} size={18} />
                   </span>
-                  <span className="absolute right-5 top-6 font-display text-sm font-semibold text-muted">{card.index}</span>
+                  <span className="absolute end-5 top-6 font-display text-sm font-semibold text-muted">{card.number}</span>
                 </div>
                 <div className="p-6 pt-2">
                   <h3 className="text-h4 font-semibold text-ink">{card.title}</h3>

@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState, type ReactNode } from "react";
-import type { LegalBlock, LegalDoc } from "@/content/legal/types";
+type LegalBlock = { p: string } | { ul: string[] } | { ol: string[] } | { h3: string };
+type LegalDoc = { sections: { id: string; title: string; blocks: LegalBlock[] }[] };
 import { cn } from "@/lib/utils";
 
 /** Renders **bold** and [label](href) inside legal copy. */
@@ -14,7 +15,7 @@ function Rich({ text }: { text: string }) {
   while ((m = re.exec(text))) {
     if (m.index > last) out.push(text.slice(last, m.index));
     if (m[1] !== undefined) out.push(<strong key={k++} className="font-semibold text-ink"><Rich text={m[1]} /></strong>);
-    else out.push(<a key={k++} href={m[3]} className="font-semibold text-brand underline decoration-brand/30 underline-offset-2 hover:decoration-brand">{m[2]}</a>);
+    else out.push(<a key={k++} href={m[3]} className="font-semibold text-brand-dark underline decoration-brand/30 underline-offset-2 hover:decoration-brand">{m[2]}</a>);
     last = m.index + m[0].length;
   }
   if (last < text.length) out.push(text.slice(last));
@@ -31,7 +32,7 @@ function Block({ b }: { b: LegalBlock }) {
       {items.map((it, i) => (
         <li key={i} className="flex gap-3 leading-[1.7]">
           {Tag === "ol" ? (
-            <span className="mt-0.5 grid grid-cols-1 size-6 shrink-0 place-items-center rounded-full bg-brand-light text-xs font-bold text-brand">{i + 1}</span>
+            <span className="mt-0.5 grid grid-cols-1 size-6 shrink-0 place-items-center rounded-full bg-brand-light text-xs font-bold text-brand-dark">{i + 1}</span>
           ) : (
             <span className="mt-[0.6em] size-1.5 shrink-0 rounded-full bg-accent" />
           )}
@@ -42,7 +43,7 @@ function Block({ b }: { b: LegalBlock }) {
   );
 }
 
-export function LegalDocument({ doc }: { doc: LegalDoc }) {
+export function LegalDocument({ doc, tocLabel = "On this page" }: { doc: LegalDoc; tocLabel?: string }) {
   const [active, setActive] = useState(doc.sections[0]?.id);
 
   useEffect(() => {
@@ -61,16 +62,16 @@ export function LegalDocument({ doc }: { doc: LegalDoc }) {
   return (
     <section className="py-16 sm:py-24">
       <div className="container-x grid grid-cols-1 gap-10 lg:grid-cols-[280px_1fr] lg:gap-16">
-        <nav aria-label="On this page" className="lg:sticky lg:top-28 lg:self-start">
-          <p className="text-xs font-semibold text-muted">On this page</p>
-          <ol className="mt-4 space-y-1 border-l border-line">
+        <nav aria-label={tocLabel} className="lg:sticky lg:top-28 lg:self-start">
+          <p className="text-xs font-semibold text-muted">{tocLabel}</p>
+          <ol className="mt-4 space-y-1 border-s border-line">
             {doc.sections.map((s) => (
               <li key={s.id}>
                 <a
                   href={`#${s.id}`}
                   className={cn(
-                    "-ml-px block border-l-2 py-1.5 pl-4 text-sm transition-colors",
-                    active === s.id ? "border-brand font-semibold text-brand" : "border-transparent text-body hover:text-ink",
+                    "-ms-px block border-s-2 py-1.5 ps-4 text-sm transition-colors",
+                    active === s.id ? "border-brand font-semibold text-brand-dark" : "border-transparent text-body hover:text-ink",
                   )}
                 >
                   {s.title}
@@ -81,7 +82,7 @@ export function LegalDocument({ doc }: { doc: LegalDoc }) {
         </nav>
         <article className="max-w-[760px] rounded-card bg-white p-6 shadow-card ring-1 ring-ink/5 sm:p-10 lg:p-12">
           {doc.sections.map((s, i) => (
-            <section key={s.id} id={s.id} className={cn("scroll-mt-28", i > 0 && "mt-12 border-t border-line pt-12")}>
+            <section key={s.id} id={s.id} className={cn("scroll-mt-32", i > 0 && "mt-12 border-t border-line pt-12")}>
               <h2 className="text-h3 font-bold text-ink">{s.title}</h2>
               {s.blocks.map((b, j) => (
                 <Block key={j} b={b} />

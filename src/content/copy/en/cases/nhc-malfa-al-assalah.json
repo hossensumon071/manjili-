@@ -1,0 +1,169 @@
+{
+ "template": "A",
+ "hero": {
+  "eyebrow": "Case Study · Riyadh",
+  "title": "633 Villas, Every Plot Explorable in 3D",
+  "body": "Buyers at Malfa Al-Assalah explore each of its 633 villas plot by plot on a Manzili 3D twin and showroom touch tables, with sales staff trained for family consultations.",
+  "chips": [
+   "Institutional Residential Developer",
+   "NHC Masterplan",
+   "Malfa Al-Assalah",
+   "Southwest Riyadh",
+   "Live Sales Gallery"
+  ],
+  "mockupChips": [
+   "Live twin",
+   "633 villas",
+   "Southwest Riyadh"
+  ]
+ },
+ "sidebar": [
+  "Institutional Residential Developer",
+  "Malfa Al-Assalah · 633 villas on a 45,000+ m² site, within NHC's 3.85M+ m² Al-Assalah master community",
+  "Southwest Riyadh",
+  "Plot-level WebGL twin · 4K showroom touch tables · Sales team certification"
+ ],
+ "challenge": {
+  "eyebrow": "The Challenge",
+  "title": "Helping Families Tell Similar Villas Apart",
+  "body": "Before construction starts, villa buyers in Southwest Riyadh need to understand plot privacy, sun angles and room sizes.",
+  "cards": [
+   {
+    "index": "01",
+    "category": "Buyer Indecision",
+    "title": "Identical Floor Plans",
+    "body": "The same 2D plan across hundreds of plots confused families, delaying decisions and adding extra showroom visits."
+   },
+   {
+    "index": "02",
+    "category": "Sun & Privacy",
+    "title": "No Way to Check Sun and Privacy",
+    "body": "Saudi families weigh sunlight, courtyard privacy and street frontage carefully. Without daylight simulation, decisions stalled."
+   },
+   {
+    "index": "03",
+    "category": "Showroom Tools",
+    "title": "Static Scale Models",
+    "body": "Acrylic models couldn't show interior variations, so teams struggled to explain finishes and layouts from printed sheets."
+   }
+  ]
+ },
+ "solution": {
+  "eyebrow": "Our Solution",
+  "title": "An Interactive Sales Console for Riyadh Villa Buyers",
+  "body": "A plot-level WebGL twin runs on the showroom touch tables, backed by sales playbooks written for family consultations.",
+  "blocks": [
+   {
+    "index": "01",
+    "label": "Pillar 01 · Digital Twin",
+    "title": "Plot-Level WebGL Twin",
+    "body": "A lightweight browser app lets buyers inspect each villa plot, checking courtyard boundaries, street access and nearby green spaces.",
+    "features": [
+     {
+      "title": "Plot Sun-Path Studies",
+      "body": "Daylight from morning to evening on each plot"
+     },
+     {
+      "title": "Interior Walkthroughs",
+      "body": "From ground-floor living to private upper floors"
+     },
+     {
+      "title": "No Download",
+      "body": "Smooth 60 FPS on showroom and mobile"
+     }
+    ]
+   },
+   {
+    "index": "02",
+    "label": "Pillar 03 · Showroom Hardware",
+    "title": "65-Inch Showroom Touch Consoles",
+    "body": "65-inch 4K touch tables in the Al-Assalah sales gallery let families gather around and explore their future home together.",
+    "features": [
+     {
+      "title": "Durable Commercial Glass",
+      "body": "Anti-glare and scratch-resistant"
+     },
+     {
+      "title": "Split-Screen Comparisons",
+      "body": "Villa types and plot sizes side by side"
+     },
+     {
+      "title": "Local Computing",
+      "body": "No lag on zoom, rotate or interior views"
+     }
+    ]
+   },
+   {
+    "index": "03",
+    "label": "Pillar 04 · Sales Enablement",
+    "title": "Sales Coaching for Family Consultations",
+    "body": "On-site coaching certified the developer's consultants to handle family objections step by step, from plot privacy to finishes.",
+    "features": [
+     {
+      "title": "Step-by-Step Walkthroughs",
+      "body": "From amenities to garden privacy"
+     },
+     {
+      "title": "Finish Demonstrations",
+      "body": "Materials and fixtures shown in 3D"
+     },
+     {
+      "title": "Reservation Workflow",
+      "body": "From unit selection to timed unit hold"
+     }
+    ]
+   }
+  ]
+ },
+ "outcomes": {
+  "eyebrow": "Reported Performance",
+  "title": "Delivery Outcomes",
+  "stats": [
+   {
+    "value": "633",
+    "label": "Villas Modeled",
+    "title": "Full Architectural Coverage",
+    "body": "All 633 villas, streetscapes and community parks in 3D."
+   },
+   {
+    "value": "45,000+ m²",
+    "label": "Development Modeled",
+    "title": "Every Plot in Context",
+    "body": "The full site, with roads and green spaces, in one twin."
+   },
+   {
+    "value": "1:1",
+    "label": "Architectural Scale",
+    "title": "Setback & Privacy Checks",
+    "body": "Exact setbacks, street widths and window positions answer family privacy questions before signing."
+   },
+   {
+    "value": "0",
+    "label": "Hardware Outages",
+    "title": "Reliable Showroom",
+    "body": "Pre-configured hardware ran through months of busy weekend sales with no failures."
+   }
+  ]
+ },
+ "standards": {
+  "eyebrow": "Quality & Compliance",
+  "title": "Delivery Standards",
+  "rows": [
+   [
+    "Dimensional Accuracy",
+    "1:1 architectural parity",
+    "The off-plan model matches the approved villa drawings"
+   ],
+   [
+    "Data Privacy (PDPL)",
+    "In-Kingdom cloud hosting",
+    "Buyer and reservation data hosted in-Kingdom under the Saudi PDPL"
+   ],
+   [
+    "Hardware Support",
+    "Hardware support agreement",
+    "2-hour dispatch on launch days · 4-hour standard support SLA"
+   ]
+  ]
+ }
+}

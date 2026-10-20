@@ -1,0 +1,29 @@
+{
+ "home": "Home",
+ "cases": "Case Studies",
+ "primary": "Plan a Similar Launch",
+ "secondary": "See the Technical Scope",
+ "sidebar": [
+  "Client",
+  "Project",
+  "Location",
+  "Scope"
+ ],
+ "challenge": "The Challenge",
+ "solution": "Our Solution",
+ "enablement": "Sales Team Enablement",
+ "leasing": "Leasing Team Enablement",
+ "reported": "Reported Performance",
+ "quality": "Quality & Compliance",
+ "outcomes": "Delivery Outcomes",
+ "outcomePrefix": "Outcome:",
+ "standards": "Delivery Standards",
+ "header": [
+  "Standard",
+  "What We Deployed",
+  "Why It Matters"
+ ],
+ "relatedEyebrow": "More Case Studies",
+ "relatedTitle": "More Launches We've Powered",
+ "cardLink": "View Case Study"
+}

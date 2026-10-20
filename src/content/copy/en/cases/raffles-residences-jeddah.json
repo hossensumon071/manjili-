@@ -1,0 +1,160 @@
+{
+ "template": "B",
+ "hero": {
+  "eyebrow": "Case Study · Jeddah Corniche",
+  "title": "A Corniche Show Residence, Open to Remote Buyers",
+  "body": "Remote buyers tour the built show residence at Erth Real Estate Development's Raffles Residences on the Jeddah Corniche in interactive 3D, before they reserve off-plan.",
+  "chips": [
+   "Erth Real Estate Development",
+   "Branded Luxury Tower",
+   "Show Residence 3D Tour",
+   "Jeddah Corniche"
+  ],
+  "mockupChips": [
+   "Show residence 3D tour",
+   "48 floors",
+   "Jeddah Corniche"
+  ]
+ },
+ "sidebar": [
+  "Erth Real Estate Development · Brand partner: Raffles Hotels & Resorts",
+  "Raffles Residences Jeddah · branded luxury residences and penthouses, 48 floors",
+  "Jeddah Corniche, Jeddah",
+  "3D show residence tour · WebGL twin · Sales team training"
+ ],
+ "challenge": {
+  "eyebrow": "The Challenge",
+  "title": "Letting Remote Buyers Inspect a Luxury Residence",
+  "body": "Luxury buyers want to see finishes, ceiling heights and sea views before they commit to an off-plan branded tower. Erth had built a show residence, but buyers in Riyadh and across the GCC couldn't easily visit Jeddah.",
+  "header": [
+   "Sales Friction",
+   "The Commercial Risk",
+   "What Manzili Delivered"
+  ],
+  "rows": [
+   [
+    "Dependence on Site Visits",
+    "Out-of-region VIP buyers delay reserving until they can travel to the show residence.",
+    "True-scale 3D tour: the built show residence captured with true materials and lighting."
+   ],
+   [
+    "Unclear Terrace & Sea Views",
+    "Floor plans can't convey deep terraces and panoramic Red Sea views.",
+    "Interactive view simulation: floor-specific sea views and sunset angles."
+   ],
+   [
+    "Scattered Sales Material",
+    "Separate PDFs and renders dilute the Raffles brand.",
+    "One branded web experience: curated 3D walkthroughs that open on any tablet or browser without an app."
+   ]
+  ]
+ },
+ "solution": {
+  "eyebrow": "Our Solution",
+  "title": "An Interactive 3D Tour with Corniche Views",
+  "body": "Manzili scanned the built show residence and turned its geometry and materials into a fast WebGL walkthrough, linked from showroom touch displays to remote buyers' devices.",
+  "blocks": [
+   {
+    "title": "True-Scale Show Residence Twin",
+    "points": [
+     "1:1 capture of master suites, living rooms and designer kitchens.",
+     "Accurate timber paneling, imported marble and custom joinery."
+    ]
+   },
+   {
+    "title": "Corniche View Synthesis",
+    "points": [
+     "Drone panoramas aligned with each window opening.",
+     "Accurate Red Sea horizons at different tower heights."
+    ]
+   },
+   {
+    "title": "Private VIP Links",
+    "points": [
+     "Advisors create secure, unit-specific links for private investor walkthroughs.",
+     "Works on desktops, iPads and phones with no download."
+    ]
+   },
+   {
+    "title": "Showroom Display Sync",
+    "points": [
+     "High-definition touch consoles in Erth's private sales lounges.",
+     "Advisors guide clients through rooms, wardrobes and terraces."
+    ]
+   }
+  ]
+ },
+ "enablement": {
+  "eyebrow": "Sales Team Enablement",
+  "title": "Polished Presentations for Global Luxury Buyers",
+  "body": "Manzili trained Erth's private client advisors to use the digital twin in VIP consultations, focusing on hospitality amenities, services and craftsmanship.",
+  "steps": [
+   {
+    "index": "01",
+    "title": "Waterfront Positioning",
+    "body": "Advisors open on the Corniche exterior, showing marinas, beach clubs and downtown access."
+   },
+   {
+    "index": "02",
+    "title": "Floor & Layout Selection",
+    "body": "The advisor selects the floor and checks orientation, privacy and Red Sea views."
+   },
+   {
+    "index": "03",
+    "title": "Interior Walkthrough",
+    "body": "The client enters the 3D show residence and inspects proportions, ceiling heights and finishes room by room."
+   }
+  ]
+ },
+ "outcomes": {
+  "eyebrow": "Reported Performance",
+  "title": "Delivery Outcomes",
+  "stats": [
+   {
+    "value": "48",
+    "label": "Tower Floors Modeled",
+    "body": "Full vertical coverage of residences and penthouses.",
+    "outcome": "Buyers understand the whole building, from lobby to amenities."
+   },
+   {
+    "value": "1:1",
+    "label": "Show Residence Capture",
+    "body": "Calibrated textures matching the real finishes.",
+    "outcome": "A faithful digital version of the physical show residence."
+   },
+   {
+    "value": "0",
+    "label": "App Downloads for Buyers",
+    "body": "Browser-based WebGL on any mobile device.",
+    "outcome": "High-net-worth buyers inspect residences remotely through private links."
+   },
+   {
+    "value": "60 FPS",
+    "label": "On Phones, Tablets and 4K Displays",
+    "body": "Consistent performance across every screen.",
+    "outcome": "The tour feels the same in the showroom and at home."
+   }
+  ]
+ },
+ "standards": {
+  "eyebrow": "Quality & Compliance",
+  "title": "Delivery Standards",
+  "rows": [
+   [
+    "Material Accuracy",
+    "Physically based material rendering",
+    "True marble veining, metal trims and glass reflections"
+   ],
+   [
+    "Data Confidentiality",
+    "Encrypted cloud streaming",
+    "Private viewing links protected by time-limited tokens and access control"
+   ],
+   [
+    "Cross-Platform Performance",
+    "WebGL / HTML5 engine",
+    "Consistent 60 FPS on smartphones, tablets and 4K displays"
+   ]
+  ]
+ }
+}

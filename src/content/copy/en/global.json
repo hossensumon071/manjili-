@@ -1,0 +1,144 @@
+{
+ "nav": {
+  "cse": "Platform (CSE)",
+  "pillars": "6-Pillar Infrastructure",
+  "caseStudies": "Case Studies",
+  "toggle": "العربية",
+  "cta": "Book Technical Scoping",
+  "dropdown": [
+   {
+    "name": "01 Digital Twin",
+    "descriptor": "One 3D model for showroom and web"
+   },
+   {
+    "name": "02 CRM & Inventory Sync",
+    "descriptor": "Live unit status on every screen"
+   },
+   {
+    "name": "03 Showroom Hardware",
+    "descriptor": "Touch tables, LED walls and workstations"
+   },
+   {
+    "name": "04 Sales Enablement",
+    "descriptor": "Train your team to sell in 3D"
+   },
+   {
+    "name": "05 Launch Command",
+    "descriptor": "On-site support for launch events"
+   },
+   {
+    "name": "06 Lifecycle & Matterport",
+    "descriptor": "From concept design to handover"
+   }
+  ],
+  "viewAll": "View All 6 Pillars",
+  "openMenu": "Open menu",
+  "closeMenu": "Close menu"
+ },
+ "footer": {
+  "tagline": "One accountable partner for off-plan sales: digital twins, showroom hardware, sales enablement and launch operations across KSA.",
+  "trust": [
+   "Built for REGA and Wafi off-plan workflows",
+   "In-Kingdom hosting under Saudi PDPL",
+   "One Master Service Agreement"
+  ],
+  "pillarsHeader": "6-Pillar Infrastructure",
+  "pillars": [
+   "01 Digital Twin",
+   "02 CRM & Inventory Sync",
+   "03 Showroom Hardware",
+   "04 Sales Enablement",
+   "05 Launch Command",
+   "06 Lifecycle & Matterport"
+  ],
+  "procHeader": "For Procurement Teams",
+  "proc": [
+   "Connected Sales Environment (CSE)",
+   "Case Studies",
+   "Data Protection (PDPL)",
+   "Technical Scoping & RFP Intake"
+  ],
+  "contactHeader": "Contact",
+  "contact": [
+   "sales@manzili.sa",
+   "support@manzili.sa",
+   "+966 53 484 4986",
+   "WhatsApp: +966 53 484 4986",
+   "Al Rayyan District, Riyadh 14212, Saudi Arabia"
+  ],
+  "hours": "Sunday–Thursday, 9:00–18:00 (Riyadh time)",
+  "socials": [
+   {
+    "label": "Manzili on LinkedIn",
+    "href": "https://www.linkedin.com/company/manzili"
+   },
+   {
+    "label": "Manzili on X",
+    "href": "https://twitter.com/ManziliKSA"
+   },
+   {
+    "label": "Manzili on Instagram",
+    "href": "https://www.instagram.com/manzili.sa/"
+   },
+   {
+    "label": "Manzili on YouTube",
+    "href": "https://www.youtube.com/@manziliKSA"
+   },
+   {
+    "label": "Manzili on TikTok",
+    "href": "https://www.tiktok.com/@manzili.sa"
+   },
+   {
+    "label": "Chat with Manzili on WhatsApp",
+    "href": "https://wa.me/966534844986"
+   }
+  ],
+  "legal": "© 2026 Manzili",
+  "privacy": "Privacy Policy",
+  "terms": "Terms of Service"
+ },
+ "ctaBanner": {
+  "eyebrow": "Built for REGA and Wafi off-plan workflows",
+  "title": "Turn Your BIM into a Launch-Ready Sales Twin",
+  "body": "Share your Revit, IFC or CAD files under NDA. We scope the twin, showroom hardware and launch support, and deliver a launch-ready twin within 14 working days of data freeze.",
+  "primary": "Book Technical Scoping",
+  "secondary": "View Case Studies",
+  "secondaryOnCases": "Explore the CSE Platform"
+ },
+ "faq": {
+  "eyebrow": "FAQ",
+  "title": "Questions From Procurement Teams",
+  "sideTitle": "Not sure which pillars your launch needs?",
+  "sideBody": "A solutions engineer will map your masterplan to the right scope.",
+  "cta": "Book Technical Scoping",
+  "shared": [
+   {
+    "q": "Do buyers need to download an app?",
+    "a": "No. Buyers open the web platform in Chrome, Safari or Edge on any phone or desktop. The Unreal Engine 5 app runs only on the showroom hardware we supply."
+   },
+   {
+    "q": "Can Manzili connect with our existing CRM and inventory system?",
+    "a": "Yes. We deploy pre-built, two-way connectors for Salesforce, Yardi Voyager, SAP RE-FX and HubSpot, and unit status syncs in under 500 ms. Other systems are scoped during Technical Scoping."
+   },
+   {
+    "q": "Can buyers select and reserve individual units?",
+    "a": "Yes, once the project is Wafi-approved to sell. Buyers choose a unit, verify their identity with Nafath and place a timed unit hold linked to the project's Wafi escrow process. The unit then shows as held on every connected screen."
+   },
+   {
+    "q": "Can our existing BIM or Revit data be used?",
+    "a": "Yes. We ingest Revit, IFC, CAD and GIS files under NDA and build one master model. A launch-ready twin follows within 14 working days of data freeze."
+   }
+  ]
+ },
+ "ui": {
+  "skip": "Skip to content",
+  "logoLabel": "Manzili home"
+ },
+ "notFound": {
+  "eyebrow": "Error 404",
+  "title": "We Can't Find That Page",
+  "body": "The link may be out of date, or the page has moved. Head back to the homepage, or book a technical scoping session with our team.",
+  "primary": "Back to Home",
+  "secondary": "Book Technical Scoping"
+ }
+}

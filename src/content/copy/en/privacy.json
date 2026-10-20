@@ -1,0 +1,200 @@
+{
+ "head": {
+  "crumb": "Privacy Policy",
+  "eyebrow": "Legal",
+  "title": "Privacy Policy",
+  "intro": "How we collect, use, host and protect personal data across our website, the Connected Sales Environment, digital twins and showroom hardware.",
+  "facts": [
+   {
+    "label": "Effective date",
+    "value": "October 19, 2026"
+   },
+   {
+    "label": "Operating entity",
+    "value": "IT Home Solutions Company, trading as Manzili (CR 1010797640)"
+   },
+   {
+    "label": "Registered office",
+    "value": "Al Rayyan District, Riyadh 14212, Saudi Arabia"
+   },
+   {
+    "label": "Governing law",
+    "value": "Saudi Personal Data Protection Law (PDPL), Royal Decree No. M/19"
+   }
+  ],
+  "chips": [
+   "In-Kingdom hosting under Saudi PDPL",
+   "In-Kingdom data storage"
+  ]
+ },
+ "sections": [
+  {
+   "id": "governance",
+   "title": "1. Who We Are",
+   "blocks": [
+    {
+     "p": "IT Home Solutions Company, trading as Manzili (CR 1010797640) (\"Manzili\", \"we\", \"our\") is dedicated to protecting the privacy, security, and digital sovereignty of institutional real estate clients, commercial sales teams, and prospective off-plan property buyers."
+    },
+    {
+     "p": "This policy explains how we handle personal data collected through our website, the Connected Sales Environment (CSE), digital twin masterplans and showroom hardware controllers, in line with the Saudi Personal Data Protection Law (PDPL)."
+    },
+    {
+     "p": "This policy is published in Arabic and English. If the two versions conflict, the Arabic version prevails."
+    }
+   ]
+  },
+  {
+   "id": "collected",
+   "title": "2. Information We Collect",
+   "blocks": [
+    {
+     "h3": "A. Technical Scoping Form Data"
+    },
+    {
+     "p": "When developers, asset managers, or family offices submit our Technical Scoping form, we collect:"
+    },
+    {
+     "ul": [
+      "Professional Identity: Full name, job title and developer entity.",
+      "Contact Details: Work email and mobile number.",
+      "Project Details: Masterplan name and location, target launch date, project scale, technical asset state, Wafi licensing status and hardware scope."
+     ]
+    },
+    {
+     "h3": "B. Buyer Activity in the Connected Sales Environment"
+    },
+    {
+     "p": "When a developer uses the Connected Sales Environment (CSE), it records how buyers interact with the 3D experience, to help the developer's sales team understand buyer interest:"
+    },
+    {
+     "ul": [
+      "Spatial Dwell Metrics: Time spent evaluating specific tower typologies, residential floor levels, and unit orientations.",
+      "Unit Interaction Logs: Floor plan configuration toggles, balcony sightline adjustments, and finishing package selections.",
+      "Identity Verification: Nafath verification tokens and timestamps for timed unit holds and generated SPAs (we do not store raw biometric data or national ID credentials on public web servers)."
+     ]
+    },
+    {
+     "h3": "C. Technical Logs & Cookies"
+    },
+    {
+     "ul": [
+      "Enterprise Network Telemetry: IP addresses, browser engine versions, WebGL hardware rendering capabilities, and session timestamps used to optimize 3D streaming performance.",
+      "Essential Cookies & Local Session Storage: Cryptographic session tokens and interface preference cookies necessary to maintain showroom and multi-screen state continuity."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lawful-basis",
+   "title": "3. Why We Process It (Lawful Basis)",
+   "blocks": [
+    {
+     "p": "In compliance with the Saudi PDPL, all data collection is executed under clear, lawful bases:"
+    },
+    {
+     "ol": [
+      "Contractual Performance & Pre-Contractual Scoping: Evaluating developer RFP submissions, configuring custom WebGL digital twin builds, and deploying sales center hardware integrations.",
+      "Transaction Support: Verifying buyer identity for timed unit holds and generating Sales and Purchase Agreements (SPAs) for the developer, in workflows built for REGA and Wafi off-plan requirements.",
+      "Legitimate Commercial Analytics: Aggregating anonymous spatial telemetry to provide master developers with unit absorption heatmaps and buyer demand insights.",
+      "Legal & Regulatory Compliance: Fulfilling statutory obligations set by REGA, the authority responsible for the Wafi off-plan program, and Saudi courts."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sovereignty",
+   "title": "4. Where Data Is Hosted",
+   "blocks": [
+    {
+     "ol": [
+      "In-Kingdom Hosting: In strict adherence to Saudi PDPL cross-border transfer restrictions, all sensitive buyer transaction data, Nafath authentication records, and client project databases are hosted on cloud infrastructure located in Saudi Arabia.",
+      "No Data Commercialization: Manzili does not monetize, sell, lease, or trade personal or institutional commercial data to third-party ad networks, lead brokers, or unauthorized entities."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sub-processors",
+   "title": "5. Service Providers & Integrations",
+   "blocks": [
+    {
+     "p": "We share data only with the following service providers, under data processing agreements:"
+    },
+    {
+     "ul": [
+      "National Unified Portal (Nafath): For biometric and national identity verification during off-plan digital SPA execution.",
+      "Enterprise CRM / ERP Systems: Direct bi-directional API synchronizations with client CRM and ERP instances (such as Salesforce, Yardi Voyager, SAP RE-FX and HubSpot).",
+      "Spatial Capture Engines: Matterport Inc. (used for real-world ready-built scanning and model unit capture, subject to strict enterprise privacy controls).",
+      "In-Kingdom Cloud Infrastructure: Data centers located in Saudi Arabia."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "security",
+   "title": "6. Information Security",
+   "blocks": [
+    {
+     "p": "Manzili applies defense-in-depth technical and organizational measures designed to protect data in transit and at rest:"
+    },
+    {
+     "ul": [
+      "Data Encryption: TLS 1.3 cryptographic protection for all data in transit; AES-256 encryption for all data at rest.",
+      "Access Control & RBAC: Role-based access governance with mandatory multi-factor authentication (MFA) across all administrative portals.",
+      "Hardware Showroom Isolation: Sales center kiosks and command centers utilize partitioned, zero-trust VLAN architecture to safeguard local showroom hardware from public network exposure."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rights",
+   "title": "7. Your Rights Under the PDPL",
+   "blocks": [
+    {
+     "p": "Under the PDPL, you have the following rights over your personal data:"
+    },
+    {
+     "ul": [
+      "Right to Know / Access: The right to obtain confirmation regarding whether personal data is processed and request a copy of relevant records.",
+      "Right to Rectification: The right to request correction of inaccurate, outdated, or incomplete personal information.",
+      "Right to Destruction: The right to request the permanent deletion of personal data when the original processing purpose has expired, subject to legal retention requirements.",
+      "Right to Withdraw Consent: The right to withdraw previously granted consent at any time for non-statutory data processing."
+     ]
+    },
+    {
+     "p": "To exercise any of these statutory rights, submit a formal request to our dedicated Data Protection Officer at: support@manzili.sa."
+    }
+   ]
+  },
+  {
+   "id": "retention",
+   "title": "8. How Long We Keep Data",
+   "blocks": [
+    {
+     "ul": [
+      "Technical Scoping Requests: Retained for the duration of the developer evaluation and contracting process, or archived after 24 months if no contractual engagement ensues.",
+      "Off-Plan Transaction Records: Retained for the period required by Saudi law and the developer's instructions.",
+      "Web Analytics & Session Telemetry: Anonymized and aggregated after 90 days."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dpo",
+   "title": "9. Contact Our Data Protection Officer",
+   "blocks": [
+    {
+     "p": "Data Protection Officer: IT Home Solutions Company, trading as Manzili (CR 1010797640)"
+    },
+    {
+     "ul": [
+      "Registered office: Al Rayyan District, Riyadh 14212, Saudi Arabia",
+      "Privacy requests: support@manzili.sa",
+      "Sales: sales@manzili.sa",
+      "Phone: +966 53 484 4986"
+     ]
+    }
+   ]
+  }
+ ]
+}

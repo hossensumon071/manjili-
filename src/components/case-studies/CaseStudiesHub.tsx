@@ -1,128 +1,67 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { useMemo, useState } from "react";
-import { caseCategories, caseHref, caseStudies, type CaseCategory } from "@/content/case-studies";
-import { caseHub } from "@/content/pages/case-studies-hub";
+import { useState } from "react";
 import { cn, EASE } from "@/lib/utils";
 import { Reveal } from "@/components/ui/Reveal";
 import { CaseCard, type CaseCardData } from "./CaseCard";
 
-type Item = CaseCardData & { key: string; categories: CaseCategory[] };
+type Counter = string | { one: string; two: string; few: string; many: string };
+type Props = { tabs: string[]; cards: (CaseCardData & { filters: number[] })[]; counter: Counter; locale: "en" | "ar" };
 
-export function CaseStudiesHub() {
-  const [filter, setFilter] = useState<CaseCategory | "all">("all");
+function countLabel(n: number, counter: Counter, locale: "en" | "ar") {
+  if (typeof counter === "string") return locale === "en" && n === 1 ? "1 case study" : counter.replace("[n]", String(n));
+  if (n === 1) return counter.one;
+  if (n === 2) return counter.two;
+  return (n <= 10 ? counter.few : counter.many).replace("[n]", String(n));
+}
 
-  const featured = caseStudies.find((c) => c.slug === caseHub.featuredSlug)!;
-  const items: Item[] = useMemo(
-    () => [
-      ...caseHub.programmes.map((p, i) => ({
-        key: `programme-${i}`,
-        href: caseHref(p.slug) + p.anchor,
-        badge: p.badge,
-        client: p.client,
-        project: p.project,
-        location: p.location,
-        headline: p.headline,
-        summary: p.summary,
-        metrics: p.metrics,
-        scene: p.scene,
-        categories: p.categories,
-      })),
-      ...caseStudies
-        .filter((c) => c.slug !== caseHub.featuredSlug)
-        .map((c) => ({
-          key: c.slug,
-          href: caseHref(c.slug),
-          badge: c.card.badge,
-          client: c.card.client,
-          project: c.card.project,
-          location: c.card.location,
-          summary: c.card.summary,
-          metrics: c.card.metrics,
-          scene: c.scene,
-          categories: c.card.categories,
-        })),
-    ],
-    [],
-  );
-
-  const visible = items.filter((i) => filter === "all" || i.categories.includes(filter));
-  const showFeatured = filter === "all" || featured.card.categories.includes(filter as CaseCategory);
-  const count = visible.length + (showFeatured ? 1 : 0);
+/** Case Studies index: filter tabs (cards can carry several tags) + dynamic counter + grid. */
+export function CaseStudiesHub({ tabs, cards, counter, locale }: Props) {
+  const [filter, setFilter] = useState(0); // 0 = All
+  const visible = cards.filter((c) => filter === 0 || c.filters.includes(filter));
 
   return (
-    <section className="py-16 sm:py-24" aria-label="Case studies">
+    <section className="py-16 sm:py-24" aria-label={tabs[0]}>
       <div className="container-x">
         <Reveal className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-          <div role="tablist" aria-label="Filter case studies" className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:px-0">
-            {caseCategories.map((c) => {
-              const active = filter === c.id;
+          <div role="tablist" className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:px-0">
+            {tabs.map((label, i) => {
+              const active = filter === i;
               return (
                 <button
-                  key={c.id}
+                  key={label}
                   role="tab"
                   aria-selected={active}
-                  onClick={() => setFilter(c.id)}
+                  onClick={() => setFilter(i)}
                   className={cn(
                     "relative shrink-0 whitespace-nowrap rounded-full px-4 py-2.5 text-sm font-semibold transition-colors",
                     active ? "text-white" : "bg-white text-ink ring-1 ring-ink/10 hover:ring-brand/40",
                   )}
                 >
-                  {active && (
-                    <motion.span layoutId="case-filter" className="absolute inset-0 rounded-full bg-brand" transition={{ duration: 0.35, ease: EASE }} />
-                  )}
-                  <span className="relative">{c.label}</span>
+                  {active && <motion.span layoutId="case-filter" className="absolute inset-0 rounded-full bg-brand-dark" transition={{ duration: 0.35, ease: EASE }} />}
+                  <span className="relative">{label}</span>
                 </button>
               );
             })}
           </div>
           <p className="shrink-0 whitespace-nowrap text-sm font-medium text-muted" aria-live="polite">
-            {count} {count === 1 ? "deployment" : "deployments"}
+            {countLabel(visible.length, counter, locale)}
           </p>
         </Reveal>
 
-        <AnimatePresence mode="popLayout">
-          {showFeatured && (
-            <motion.div
-              key="featured"
-              layout
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.98 }}
-              transition={{ duration: 0.5, ease: EASE }}
-              className="mt-10"
-            >
-              <CaseCard
-                featured
-                data={{
-                  href: caseHref(featured.slug),
-                  badge: featured.card.badge,
-                  client: featured.card.client,
-                  project: featured.card.project,
-                  location: featured.card.location,
-                  headline: caseHub.featuredHeadline,
-                  summary: featured.card.summary,
-                  metrics: featured.card.metrics,
-                  scene: featured.scene,
-                }}
-              />
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-        <motion.div layout className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <motion.div layout className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence mode="popLayout">
-            {visible.map((item) => (
+            {visible.map((card) => (
               <motion.div
-                key={item.key}
+                key={card.href}
                 layout
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.96 }}
                 transition={{ duration: 0.45, ease: EASE }}
               >
-                <CaseCard data={item} />
+                <CaseCard data={card} />
               </motion.div>
             ))}
           </AnimatePresence>

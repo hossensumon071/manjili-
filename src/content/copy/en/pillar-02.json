@@ -1,0 +1,167 @@
+{
+ "s01": {
+  "breadcrumb": "Home",
+  "breadcrumbHref": "/",
+  "eyebrow": "Pillar 02 · CRM & Inventory Sync",
+  "h1": "Stop Double-Booked Units Across Every Sales Channel",
+  "subheadingBodyCopy": "Manzili connects your 3D showroom and web platform to your CRM and ERP, so unit status updates in under 500 ms and buyer activity flows straight to your sales team.",
+  "primaryCta": "Book Technical Scoping",
+  "primaryCtaHref": "/contact-us",
+  "secondaryCta": "See the Connectors",
+  "secondaryCtaHref": "#matrix",
+  "specStrip": [
+   "Sub-500 ms Two-Way Sync",
+   "Salesforce",
+   "Yardi Voyager",
+   "SAP RE-FX",
+   "HubSpot"
+  ],
+  "_tables": [],
+  "crumbs": [
+   {
+    "label": "Home",
+    "href": "/"
+   },
+   {
+    "label": "6-Pillar Infrastructure",
+    "href": "/#pillars"
+   },
+   {
+    "label": "CRM & Inventory Sync",
+    "href": null
+   }
+  ]
+ },
+ "s02": {
+  "eyebrow": "System Architecture",
+  "h2": "Sub-500 ms Two-Way Inventory Sync Across Every Device",
+  "subheadingBodyCopy": "Launches go wrong when one screen still shows a unit as available after it's been reserved. Manzili links your 3D models directly to your inventory system, so touch tables, LED walls and web sessions all show the same unit status.",
+  "block01NumberLabel": [
+   "01",
+   "Double-Booking Protection"
+  ],
+  "block01Title": "Timed Unit Holds Across Every Screen",
+  "block01Body": "The moment an agent starts a reservation, Manzili places a timed unit hold and broadcasts it across every connected screen and session. Other tables and web sessions show the unit as Pending straight away, so two buyers can't reserve the same unit.",
+  "block01Features": [
+   "Concurrency Guard",
+   "Blocks a second reservation in under 500 ms",
+   "Configurable Hold Windows",
+   "Releases expired holds automatically",
+   "Audit-Ready Logs",
+   "Records agent, timestamp and buyer ID"
+  ],
+  "block02NumberLabel": [
+   "02",
+   "Connectors"
+  ],
+  "block02Title": "Pre-Built CRM & ERP Connectors",
+  "block02Body": "Pre-built connectors for Salesforce, Yardi Voyager, SAP RE-FX and HubSpot. Price changes, phase releases and payment-plan updates show in the 3D twin without engineering work or manual re-entry.",
+  "block02Features": [
+   "Pre-Built Adapters",
+   "Ready for Salesforce, Yardi Voyager, SAP RE-FX and HubSpot",
+   "Instant Price Updates",
+   "Revised payment terms appear immediately",
+   "Automated Phase Releases",
+   "Opens new blocks without manual re-entry"
+  ],
+  "block03NumberLabel": [
+   "03",
+   "Buyer Intent"
+  ],
+  "block03Title": "Buyer Intent Data in Your CRM",
+  "block03Body": "Every 3D interaction is recorded: dwell time by unit type, views checked, sun studies run and floor plans compared. It lands in the buyer's CRM record before they reach the negotiation table.",
+  "block03Features": [
+   "Demand Heatmaps",
+   "Shows the most-viewed layouts and views",
+   "Richer Lead Profiles",
+   "Gives agents each buyer's exact preferences",
+   "Lead Scoring",
+   "Ranks leads by depth of interaction"
+  ],
+  "_tables": []
+ },
+ "s03": {
+  "eyebrow": "Why It Matters",
+  "h2": "How Inventory Sync Protects Launch Momentum",
+  "card01Chip": "No Double-Bookings",
+  "card01Title": "One Unit, One Buyer",
+  "card01Body": "Timed unit holds stop your team selling the same unit twice, even on the busiest launch day.",
+  "card02Chip": "Sub-500 ms Unit Locks",
+  "card02Title": "Real-Time Launch Visibility",
+  "card02Body": "CCOs and sales directors see reservations, revenue and remaining inventory across galleries and digital channels on one console.",
+  "card03Chip": "Faster Reservations",
+  "card03Title": "Faster Path to Reservation",
+  "card03Body": "Buyers go straight from choosing a unit in 3D to the CRM reservation form while their intent is high.",
+  "_tables": []
+ },
+ "s04": {
+  "eyebrow": "Connector Matrix",
+  "h2": "Pre-Built Connectors for Saudi Master Developers",
+  "subheadingBodyCopy": "Every connector links your project inventory to the Manzili platform for sales and leasing. Connectors are pre-tested and hosted in-Kingdom under the Saudi PDPL.",
+  "headerRow": [
+   "Platform",
+   "Sync Mode",
+   "Unit Lock",
+   "What Syncs"
+  ],
+  "row1": [
+   "Salesforce",
+   "Bidirectional event stream",
+   "Sub-500 ms",
+   "Unit inventory and reservations, plus leads and buyer activity"
+  ],
+  "row2": [
+   "Yardi Voyager",
+   "Real-time webhook pipeline",
+   "Sub-500 ms",
+   "Unit inventory, pricing and holds for sales and leasing"
+  ],
+  "row3": [
+   "SAP RE-FX",
+   "OData / RFC middleware",
+   "Sub-500 ms",
+   "Unit inventory, pricing and contract status"
+  ],
+  "row4": [
+   "HubSpot",
+   "Bidirectional REST API",
+   "Sub-500 ms",
+   "Unit availability, plus leads and buyer intent events"
+  ],
+  "_tables": []
+ },
+ "s05": {
+  "q1": "What happens if two agents try to reserve the same unit?",
+  "a1": "The first timed unit hold locks the unit everywhere in under 500 ms. The second agent sees it as Pending and can pick another unit.",
+  "q2": "What happens to inventory sync if showroom internet drops?",
+  "a2": "The showroom app keeps running locally and shows the last confirmed inventory. New timed unit holds wait until the local network reconnects, so no unit is allocated without confirmation.",
+  "q3": "How does buyer intent data reach our CRM?",
+  "a3": "Interaction events, such as views checked, floor plans toggled and sun studies run, are sent by webhook to each buyer's CRM timeline, so your team sees their intent before the first call.",
+  "_tables": []
+ },
+ "s06": {
+  "previousLink": [
+   "Previous pillar",
+   "Pillar 01 · Digital Twin"
+  ],
+  "previousLinkHref": "/pillars/digital-twin-webgl",
+  "nextLink": [
+   "Next pillar",
+   "Pillar 03 · Showroom Hardware"
+  ],
+  "nextLinkHref": "/pillars/sales-center-hardware",
+  "overviewLink": "View All 6 Pillars",
+  "overviewLinkHref": "/#pillars",
+  "_tables": []
+ },
+ "s07": {
+  "eyebrow": "Sub-500 ms unit locks · Pre-built connectors",
+  "h2": "Stop Double-Bookings Before Your Next Launch",
+  "subheadingBodyCopy": "Tell us which CRM and ERP you run, and we'll map the connectors and hold rules for your launch.",
+  "primaryCta": "Book Technical Scoping",
+  "primaryCtaHref": "/contact-us",
+  "secondaryCta": "View Case Studies",
+  "secondaryCtaHref": "/case-studies",
+  "_tables": []
+ }
+}

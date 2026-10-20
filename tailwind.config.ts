@@ -5,26 +5,30 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Official Manzili palette (brand kit): Blue #069AD7 · Grey #373535 · Orange #F28E21 · Light Grey #EFEFEF
+        // "dark"/"deep" shades are for text and surfaces that must meet WCAG AA 4.5:1.
         brand: {
-          DEFAULT: "#0066FF",
-          dark: "#0050C8",
-          deep: "#0A55C8",
-          light: "#EBF3FF",
-          sky: "#2E8BF0",
-          footer: "#2378DE",
+          DEFAULT: "#069AD7", // decoration, icons, large type (3.2:1 on white)
+          dark: "#0474A1", // links, small blue text, primary buttons (5.2:1 with white)
+          deep: "#045A86", // dark blue surfaces, hover (7.5:1 with white)
+          light: "#E6F5FB", // blue tint fills
+          sky: "#3DB2E3",
+          footer: "#0477AB", // footer surface — brand hue, 5.0:1 with white
         },
         accent: {
-          DEFAULT: "#FF7A00",
-          hover: "#E86B00",
-          soft: "#FF9B3D",
+          DEFAULT: "#F28E21", // decoration only (2.4:1 on white)
+          hover: "#D9761A",
+          soft: "#F6A54D",
+          dark: "#9D5C15", // small orange text (5.3:1 on white)
         },
-        ink: "#0B132B",
-        body: "#475569",
-        muted: "#94A3B8",
-        page: "#F3F8FD",
-        line: "#E2E8F0",
-        night: "#080C16",
-        status: "#10B981",
+        ink: "#373535",
+        body: "#555353",
+        muted: "#6B6969",
+        page: "#F7F7F7",
+        mist: "#EFEFEF",
+        line: "#E4E3E3",
+        night: "#2A2828",
+        status: "#0474A1",
       },
       fontFamily: {
         sans: ["var(--font-cairo)", "system-ui", "sans-serif"],
@@ -43,9 +47,9 @@ const config: Config = {
         stage: "28px",
       },
       boxShadow: {
-        card: "0 1px 2px rgba(11,19,43,0.04), 0 18px 40px -22px rgba(11,19,43,0.18)",
-        float: "0 30px 60px -25px rgba(10,40,90,0.45)",
-        "glow-orange": "0 10px 30px -10px rgba(255,122,0,0.55)",
+        card: "0 1px 2px rgba(55,53,53,0.05), 0 18px 40px -22px rgba(55,53,53,0.2)",
+        float: "0 30px 60px -25px rgba(4,60,90,0.45)",
+        "glow-orange": "0 10px 30px -10px rgba(242,142,33,0.5)",
       },
       keyframes: {
         "pulse-ring": {

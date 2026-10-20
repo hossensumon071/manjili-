@@ -1,0 +1,187 @@
+{
+ "s01": {
+  "breadcrumb": "Home",
+  "breadcrumbHref": "/",
+  "eyebrow": "Pillar 03 · Showroom Hardware",
+  "h1": "One Contract for Every Screen in Your Sales Gallery",
+  "subheadingBodyCopy": "Manzili specifies, installs, calibrates and maintains your touch tables, LED walls, immersive rooms and hologram displays under one Master Service Agreement.",
+  "primaryCta": "Book Technical Scoping",
+  "primaryCtaHref": "/contact-us",
+  "secondaryCta": "See Hardware Specs",
+  "secondaryCtaHref": "#matrix",
+  "specStrip": [
+   "One Master Service Agreement",
+   "Touch Tables",
+   "LED Walls",
+   "Immersive Rooms",
+   "Hologram Displays"
+  ],
+  "_tables": [],
+  "crumbs": [
+   {
+    "label": "Home",
+    "href": "/"
+   },
+   {
+    "label": "6-Pillar Infrastructure",
+    "href": "/#pillars"
+   },
+   {
+    "label": "Showroom Hardware",
+    "href": null
+   }
+  ]
+ },
+ "s02": {
+  "eyebrow": "What We Supply",
+  "h2": "One Supplier for Every Showroom Screen",
+  "subheadingBodyCopy": "When a gallery display freezes at a VIP launch, the AV integrator blames the software and the 3D studio blames the hardware. Manzili removes the finger-pointing by procuring, stress-testing and warranting the whole presentation setup under one contract.",
+  "block01NumberLabel": [
+   "01",
+   "Interactive Surfaces"
+  ],
+  "block01Title": "Commercial 4K Touch Tables",
+  "block01Body": "55- to 86-inch anti-glare capacitive touch tables, calibrated for several buyers exploring the masterplan at once. Built for all-day showroom use, with under 15 ms touch response, scratch-resistant glass and built-in thermal management.",
+  "block01Features": [
+   "Anti-Glare Glass",
+   "Resists showroom lighting reflections",
+   "Multi-Touch Precision",
+   "Several buyers can explore at once",
+   "Thermal Protection",
+   "Built for continuous commercial use"
+  ],
+  "block02NumberLabel": [
+   "02",
+   "Video Walls"
+  ],
+  "block02Title": "Fine-Pitch Direct-View LED Walls",
+  "block02Body": "Bezel-free LED video walls with pixel pitch down to 1.2 mm, calibrated for true architectural color, bright showroom daylight and a 120 Hz refresh rate, so the image stays sharp from every viewing distance.",
+  "block02Features": [
+   "1.2 mm Pixel Pitch",
+   "Sharp at close range",
+   "Daylight-Rated Brightness",
+   "Holds contrast next to showroom windows",
+   "Micro-LED Reliability",
+   "100,000-hour rated lifespan"
+  ],
+  "block03NumberLabel": [
+   "03",
+   "Showroom Centerpieces"
+  ],
+  "block03Title": "Immersive Rooms & Hologram Displays",
+  "block03Body": "270° and 360° immersive rooms and volumetric hologram displays, built as permanent showroom centerpieces. Supplied as owned assets with manufacturer warranty management, plus dedicated optical calibration and permanent installation.",
+  "block03Features": [
+   "Immersive Rooms",
+   "270° and 360° multi-surface spaces",
+   "Hologram Displays",
+   "Floating 3D masterplans and unit types",
+   "Turnkey Calibration",
+   "Optical and acoustic setup included"
+  ],
+  "block04NumberLabel": [
+   "04",
+   "Local Workstations"
+  ],
+  "block04Title": "Offline Graphics Workstations",
+  "block04Body": "Workstations with RTX 6000 Ada GPUs, installed in your sales gallery, run the Unreal Engine 5 app fully offline at a locked 60 FPS in 4K, with no network lag.",
+  "block04Features": [
+   "Dedicated GPU Rigs",
+   "Locked 60 FPS in 4K",
+   "Runs Offline, Syncs When Connected",
+   "Presentations don't depend on outside networks",
+   "Hot-Swap Backups",
+   "Automatic failover protects uptime"
+  ],
+  "_tables": []
+ },
+ "s03": {
+  "eyebrow": "Why It Matters",
+  "h2": "How Turnkey Hardware Protects Your Launch",
+  "card01Chip": "One Master Service Agreement",
+  "card01Title": "No Vendor Finger-Pointing",
+  "card01Body": "One contract covers display hardware, workstations, software and maintenance, so your CCO has one accountable partner.",
+  "card02Chip": "99.9% Presentation Uptime SLA",
+  "card02Title": "Presentation Uptime in the Contract",
+  "card02Body": "Commercial-grade components, redundant workstations and local power backup keep presentations running through busy launch weekends.",
+  "card03Chip": "2-hour dispatch on launch days · 4-hour standard support SLA",
+  "card03Title": "Rapid On-Site Support",
+  "card03Body": "Riyadh-based technicians handle fast dispatch, routine preventive maintenance and on-the-spot spare-part swaps.",
+  "_tables": []
+ },
+ "s04": {
+  "eyebrow": "Hardware Matrix",
+  "h2": "Specifications for Sales Gallery Deployments",
+  "subheadingBodyCopy": "Every component is selected, tested and integrated for stable performance in Saudi showroom conditions, including high heat and bright daylight.",
+  "headerRow": [
+   "Hardware Tier",
+   "Core Component",
+   "Specification",
+   "Gallery Use"
+  ],
+  "row1": [
+   "Interactive Surfaces",
+   "55″–86″ PCAP touch tables",
+   "4K UHD, 40-point multi-touch, anti-glare",
+   "Masterplan and unit exploration"
+  ],
+  "row2": [
+   "Video Walls",
+   "Direct-view micro-LED",
+   "1.2 mm pixel pitch, 1,200 nits, 120 Hz",
+   "Main showroom presentation"
+  ],
+  "row3": [
+   "Immersive Rooms",
+   "270° / 360° enclosure",
+   "Multi-projector blending or fine-pitch LED",
+   "Full-scale walkthroughs"
+  ],
+  "row4": [
+   "Hologram Displays",
+   "Volumetric 3D optics",
+   "High-lumen holographic rig",
+   "VIP centerpiece"
+  ],
+  "row5": [
+   "Local Workstations",
+   "Rack-mounted GPU workstations",
+   "Dual RTX 6000 Ada, 128 GB ECC RAM",
+   "Offline Unreal Engine 5 app"
+  ],
+  "_tables": []
+ },
+ "s05": {
+  "q1": "Why contract showroom hardware through Manzili instead of separate AV vendors?",
+  "a1": "So one partner is accountable for the whole setup. Under our Master Service Agreement, Manzili handles specification, installation, calibration and support, so a display failure at a VIP event doesn't turn into a dispute between vendors.",
+  "q2": "What happens if a showroom touch table fails during a launch?",
+  "a2": "Backup units and dual-configured presentation machines on site take over straight away, so sales carry on. Our technicians then replace the faulty unit under our support terms: 2-hour dispatch on launch days · 4-hour standard support SLA.",
+  "q3": "Who maintains the hardware after launch?",
+  "a3": "Manzili does, under the same MSA, with 2-hour dispatch on launch days · 4-hour standard support SLA. Our team installs, calibrates and maintains hardware across Riyadh, Jeddah and the Eastern Province.",
+  "_tables": []
+ },
+ "s06": {
+  "previousLink": [
+   "Previous pillar",
+   "Pillar 02 · CRM & Inventory Sync"
+  ],
+  "previousLinkHref": "/pillars/crm-inventory-integration",
+  "nextLink": [
+   "Next pillar",
+   "Pillar 04 · Sales Enablement"
+  ],
+  "nextLinkHref": "/pillars/saudi-sales-enablement",
+  "overviewLink": "View All 6 Pillars",
+  "overviewLinkHref": "/#pillars",
+  "_tables": []
+ },
+ "s07": {
+  "eyebrow": "One Master Service Agreement · 99.9% Presentation Uptime SLA",
+  "h2": "Equip Your Sales Gallery Under One Contract",
+  "subheadingBodyCopy": "Share your gallery layout and launch date, and we'll specify the screens, workstations and support plan.",
+  "primaryCta": "Book Technical Scoping",
+  "primaryCtaHref": "/contact-us",
+  "secondaryCta": "View Case Studies",
+  "secondaryCtaHref": "/case-studies",
+  "_tables": []
+ }
+}

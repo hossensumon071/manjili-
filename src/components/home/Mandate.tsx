@@ -2,13 +2,12 @@
 
 import { motion, useScroll, useTransform, type MotionValue } from "framer-motion";
 import { useRef } from "react";
-import { home } from "@/content/home";
+import type { Head, Cta } from "@/content/copy";
 import { images } from "@/content/images";
 import { Button } from "@/components/ui/Button";
 import { Media } from "@/components/ui/Media";
 import { SceneFrame } from "@/components/art/IsoScene";
 
-const { mandate } = home;
 
 /** One word of the statement; brightens as the reader scrolls past it. */
 function Word({ children, progress, range }: { children: string; progress: MotionValue<number>; range: [number, number] }) {
@@ -40,7 +39,8 @@ function PhotoCard({ which, className }: { which: "left" | "right"; className?: 
   );
 }
 
-export function Mandate() {
+export function Mandate({ c }: { c: Head & { cta: Cta } }) {
+  const mandate = c;
   const ref = useRef<HTMLElement>(null);
   const textRef = useRef<HTMLHeadingElement>(null);
   // 0 → section entering the viewport, 0.5 → centred, 1 → leaving
@@ -57,7 +57,7 @@ export function Mandate() {
   const cardScale = useTransform(scrollYProgress, [0.05, 0.45], [0.85, 1]);
   const mobileLeftY = useTransform(scrollYProgress, [0.1, 0.5], [-60, 0]);
   const mobileRightY = useTransform(scrollYProgress, [0.1, 0.5], [60, 0]);
-  const words = mandate.statement.split(" ");
+  const words = mandate.title.split(" ");
 
   return (
     <section ref={ref} className="relative overflow-hidden py-24 sm:py-32" aria-labelledby="mandate-title">
@@ -81,7 +81,7 @@ export function Mandate() {
           <h2
             id="mandate-title"
             ref={textRef}
-            className="mx-auto mt-5 max-w-[34ch] text-[clamp(1.35rem,2.6vw,2.15rem)] font-semibold leading-[1.35] tracking-[-0.01em] text-ink"
+            className="mx-auto mt-5 max-w-[24ch] font-display text-h2 font-bold text-ink"
           >
             {words.map((w, i) => (
               <Word key={i} progress={textProgress} range={[i / words.length, (i + 1) / words.length]}>
@@ -89,6 +89,7 @@ export function Mandate() {
               </Word>
             ))}
           </h2>
+          {mandate.body && <p className="mx-auto mt-5 max-w-[58ch] text-lead">{mandate.body}</p>}
           <div className="mt-9 flex justify-center">
             <Button href={mandate.cta.href} variant="accent">
               {mandate.cta.label}

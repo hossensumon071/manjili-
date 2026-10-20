@@ -1,0 +1,226 @@
+{
+ "hero": {
+  "crumb": "Technical Scoping",
+  "eyebrow": "Technical Scoping",
+  "title": "Request Technical Scoping",
+  "body": "Tell us about your project, and a solutions lead will scope the digital twin, showroom hardware and launch support it needs. We meet at your offices, in person in Riyadh and across the Kingdom, or online.",
+  "cta": "Start Your Request",
+  "fitTitle": "Best fit",
+  "fitRows": [
+   [
+    "Project scale",
+    "300+ residential units or 50,000+ m² commercial GFA"
+   ],
+   [
+    "Submitted by",
+    "The developer entity"
+   ],
+   [
+    "Reply time",
+    "Within 24 hours, Sunday–Thursday"
+   ]
+  ],
+  "fitFooter": "Smaller projects are welcome, and we'll tell you if we're the right fit."
+ },
+ "form": {
+  "title": "Tell Us About Your Launch",
+  "body": "Best fit: 300+ residential units or 50,000+ m² commercial GFA · Submitted by the developer entity",
+  "reassurance": "A solutions lead replies within 24 hours, Sunday–Thursday.",
+  "required": "* Required",
+  "legends": [
+   "01 · About you",
+   "02 · Your project",
+   "03 · Scope"
+  ],
+  "fields": [
+   {
+    "label": "Full name*",
+    "placeholder": "e.g. Sultan Al-Otaibi",
+    "helper": null,
+    "prefix": null
+   },
+   {
+    "label": "Job title*",
+    "placeholder": "e.g. VP of Sales",
+    "helper": null,
+    "prefix": null
+   },
+   {
+    "label": "Developer entity*",
+    "placeholder": "Registered company name",
+    "helper": "Must be the developer, not a broker or agency.",
+    "prefix": null
+   },
+   {
+    "label": "Work email*",
+    "placeholder": "name@company.sa",
+    "helper": "We reply to this address.",
+    "prefix": null
+   },
+   {
+    "label": "Mobile*",
+    "placeholder": "5X XXX XXXX",
+    "helper": "For scheduling only.",
+    "prefix": "+966"
+   },
+   {
+    "label": "Masterplan name & location*",
+    "placeholder": "e.g. Al Narjis Residences, North Riyadh",
+    "helper": null,
+    "prefix": null
+   },
+   {
+    "label": "Target off-plan launch date*",
+    "placeholder": "MM / YYYY",
+    "helper": "An estimate is fine.",
+    "prefix": null
+   },
+   {
+    "label": "Project scale (units or GFA, m²)*",
+    "placeholder": "e.g. 450 units or 62,000 m² GFA",
+    "helper": "Best fit: 300+ units or 50,000+ m² GFA.",
+    "prefix": null
+   },
+   {
+    "label": "Current technical asset state*",
+    "placeholder": "Select one",
+    "helper": null,
+    "prefix": null,
+    "options": [
+     "BIM / Revit model available",
+     "CAD drawings and renders only",
+     "Existing 3D model or digital twin (needs upgrade)",
+     "Concept stage, no 3D assets yet"
+    ]
+   },
+   {
+    "label": "Wafi licensing status*",
+    "placeholder": "Select one",
+    "helper": null,
+    "prefix": null,
+    "options": [
+     "Approved to sell",
+     "Application submitted",
+     "Preparing application",
+     "Not sure"
+    ]
+   },
+   {
+    "label": "Hardware & showroom scope*",
+    "placeholder": null,
+    "helper": "Select all that apply",
+    "prefix": null,
+    "options": [
+     "Touch tables",
+     "LED video wall",
+     "Immersive room",
+     "Hologram display",
+     "GPU workstations",
+     "Exhibition stand (Cityscape / RestateX)",
+     "Software only, no hardware"
+    ]
+   }
+  ],
+  "consent": "I agree that Manzili may process this information to respond to my request, as described in the Privacy Policy.",
+  "privacyLinkText": "Privacy Policy",
+  "submit": "Request Technical Scoping",
+  "nda": "Project files are only requested after an NDA is signed."
+ },
+ "errors": {
+  "required": [
+   "Enter your full name.",
+   "Enter your job title.",
+   "Enter your developer entity.",
+   "Enter your work email.",
+   "Enter your mobile number.",
+   "Enter your masterplan name and location.",
+   "Enter your target launch date.",
+   "Enter your project scale."
+  ],
+  "select": "Choose an option.",
+  "multi": "Choose at least one, or select Software only.",
+  "email": "Enter an email like name@company.sa.",
+  "freeMail": "Use your company email so we can verify the developer entity.",
+  "mobile": "Enter a Saudi mobile number starting with 5, e.g. 5X XXX XXXX.",
+  "pastDate": "Choose a month from now onward.",
+  "noNumber": "Add a unit count or area in m².",
+  "belowThreshold": "Projects under 300 units are usually outside our scope. You can still submit and we'll advise.",
+  "consent": "Agree to the Privacy Policy to continue.",
+  "tooLong": "Keep this under 120 characters.",
+  "summary": {
+   "many": "Check the [n] highlighted fields.",
+   "one": "Check the highlighted field."
+  }
+ },
+ "states": {
+  "loading": "Submitting…",
+  "successTitle": "Request Received",
+  "successBody": "A solutions lead will email you within 24 hours, Sunday–Thursday. Reference: [MZ-0000].",
+  "successLink": "Explore case studies while you wait",
+  "toast": "Request sent. We'll reply within 24 hours.",
+  "failure": "We couldn't send your request. Check your connection and try again, or email sales@manzili.sa.",
+  "retry": "Try again",
+  "duplicate": "We already have a request from this email. We'll be in touch shortly.",
+  "spam": "Please confirm you're not a robot and submit again."
+ },
+ "next": {
+  "eyebrow": "How It Works",
+  "title": "What Happens Next",
+  "steps": [
+   {
+    "index": "1",
+    "title": "We Review Your Request",
+    "body": "We confirm the project and the developer entity, and a solutions lead replies within 24 hours, Sunday–Thursday."
+   },
+   {
+    "index": "2",
+    "title": "Technical Scoping Session",
+    "body": "A 60-minute session at your offices or online, where our solutions team reviews your BIM files and showroom needs."
+   },
+   {
+    "index": "3",
+    "title": "Proposal & Master Service Agreement",
+    "body": "We send a proposal and one Master Service Agreement covering the software, hardware, training and launch support."
+   }
+  ],
+  "direct": "Prefer to talk first?"
+ },
+ "details": {
+  "eyebrow": "Contact",
+  "title": "We Come to You",
+  "body": "Our Riyadh office is administrative. We meet developers at their own offices and sales centers, in person in Riyadh and across the Kingdom, or online.",
+  "rows": [
+   {
+    "label": "Office",
+    "value": "Al Rayyan District, Riyadh 14212, Saudi Arabia"
+   },
+   {
+    "label": "Phone",
+    "value": "+966 53 484 4986"
+   },
+   {
+    "label": "WhatsApp",
+    "value": "+966 53 484 4986"
+   },
+   {
+    "label": "Sales & scoping",
+    "value": "sales@manzili.sa"
+   },
+   {
+    "label": "Client support",
+    "value": "support@manzili.sa"
+   },
+   {
+    "label": "Hours",
+    "value": "Sunday–Thursday, 9:00–18:00 (Riyadh time)"
+   },
+   {
+    "label": "Launch-day coverage",
+    "value": "2-hour dispatch on launch days · 4-hour standard support SLA"
+   }
+  ],
+  "mapLabel": "Manzili · Al Rayyan District, Riyadh",
+  "mapOverlay": "Administrative office",
+  "mapCta": "View on Google"
+ }
+}

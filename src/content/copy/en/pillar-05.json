@@ -1,0 +1,166 @@
+{
+ "s01": {
+  "breadcrumb": "Home",
+  "breadcrumbHref": "/",
+  "eyebrow": "Pillar 05 · Launch Command",
+  "h1": "Protect High-Stakes Launch-Day Revenue",
+  "subheadingBodyCopy": "Our Riyadh-based technical team works on site across the Kingdom, running live unit allocation, failover systems and VIP presentations at property exhibitions, developer offices and flagship sales centers.",
+  "primaryCta": "Book Technical Scoping",
+  "primaryCtaHref": "/contact-us",
+  "secondaryCta": "See Launch Operations",
+  "secondaryCtaHref": "#architecture",
+  "specStrip": [
+   "Riyadh-Based Team",
+   "Cityscape Global",
+   "RestateX",
+   "Sales Centers Across KSA"
+  ],
+  "_tables": [],
+  "crumbs": [
+   {
+    "label": "Home",
+    "href": "/"
+   },
+   {
+    "label": "6-Pillar Infrastructure",
+    "href": "/#pillars"
+   },
+   {
+    "label": "Launch Command",
+    "href": null
+   }
+  ]
+ },
+ "s02": {
+  "eyebrow": "Field Operations",
+  "h2": "Kingdom-Wide Launch Support From a Riyadh-Based Team",
+  "subheadingBodyCopy": "On launch day, most VIP demand arrives within a few hours. Manzili puts command engineers on site across your sales footprint to keep systems running, manage allocation surges and support high-value negotiations.",
+  "block01NumberLabel": [
+   "01",
+   "Real Estate Expos"
+  ],
+  "block01Title": "Major Property Exhibition Operations",
+  "block01Body": "Turnkey on-site setup at Cityscape Global in Riyadh, RestateX Riyadh, RestateX Jeddah and Cityscape Jeddah. We stage LED walls, touch table networks, private VIP negotiation suites and dedicated networks inside crowded exhibition halls.",
+  "block01Features": [
+   "Cityscape & RestateX Staging",
+   "Proven at KSA's largest expos",
+   "Private VIP Suites",
+   "Dedicated hardware for high-value deals",
+   "Independent Network Failover",
+   "No reliance on public event Wi-Fi"
+  ],
+  "block02NumberLabel": [
+   "02",
+   "Developer Venues"
+  ],
+  "block02Title": "Boardroom & Sales Center Staging",
+  "block02Body": "On-site technical management in your boardrooms, offices and flagship sales galleries. Our specialists work alongside your commercial team, keeping touch tables running and headquarters suites in sync with regional sales floors.",
+  "block02Features": [
+   "Boardroom VIP Previews",
+   "Executive presentations for institutional investors",
+   "Gallery Supervision",
+   "Technician coverage all launch day",
+   "Multi-Zone Displays",
+   "Synchronized content across presentation zones"
+  ],
+  "block03NumberLabel": [
+   "03",
+   "Surge Management"
+  ],
+  "block03Title": "Real-Time Launch War Room",
+  "block03Body": "A dedicated war room monitors unit allocation, Sub-500 ms inventory sync and floor traffic in real time. With hot-standby rigs and dual-carrier cellular backup, the team fixes technical issues before they reach the negotiation table.",
+  "block03Features": [
+   "Live Allocation Watch",
+   "Prevents double-bookings during traffic spikes",
+   "Dual-Carrier Failover",
+   "Satellite and 5G backup links",
+   "On-Site Spares",
+   "Component swaps in minutes"
+  ],
+  "_tables": []
+ },
+ "s03": {
+  "eyebrow": "Why It Matters",
+  "h2": "How On-Site Launch Command Protects Your Sales",
+  "card01Chip": "99.9% Presentation Uptime SLA",
+  "card01Title": "Launch Day Without Interruptions",
+  "card01Body": "Redundant hardware and dedicated on-site technicians keep screens, touch tables and reservation systems running through the event.",
+  "card02Chip": "Sub-500 ms Unit Locks",
+  "card02Title": "Handles Reservation Surges",
+  "card02Body": "The platform handles simultaneous VIP reservations, placing timed unit holds so units aren't double-booked across exhibition booths and remote channels.",
+  "card03Chip": "2-hour dispatch on launch days · 4-hour standard support SLA",
+  "card03Title": "Rapid Mobilization SLA",
+  "card03Body": "Our Riyadh-based specialists reach Riyadh venues within 2 hours on launch days and deploy Kingdom-wide to Jeddah, Khobar, Makkah and Madinah.",
+  "_tables": []
+ },
+ "s04": {
+  "eyebrow": "Deployment Matrix",
+  "h2": "Kingdom-Wide Event and Venue Coverage",
+  "subheadingBodyCopy": "Our Riyadh team coordinates logistics, hardware staging and war room monitoring at every major real estate venue in the Kingdom.",
+  "headerRow": [
+   "Environment",
+   "Venues & Events",
+   "Technical Setup",
+   "What It Delivers"
+  ],
+  "row1": [
+   "Major Property Expos",
+   "Cityscape Global (Riyadh), RestateX Riyadh & Jeddah",
+   "Multi-touch tables, fine-pitch LED stages, isolated Wi-Fi",
+   "High-density public surge management"
+  ],
+  "row2": [
+   "Flagship Sales Centers",
+   "Permanent developer galleries across KSA",
+   "Touch tables, local GPU workstations, live CRM link",
+   "Stable daily sales operations"
+  ],
+  "row3": [
+   "Developer Headquarters",
+   "Executive boardrooms and private suites",
+   "Rec.709 OLED displays, low-latency co-browsing rigs",
+   "Institutional and UHNW negotiations"
+  ],
+  "row4": [
+   "VIP Pop-Up Pavilions",
+   "Luxury hotel venues",
+   "Rapid-deploy presentation stages, LTE/5G dual uplinks",
+   "Single-evening VIP allocation events"
+  ],
+  "_tables": []
+ },
+ "s05": {
+  "q1": "Where is the Manzili launch team based?",
+  "a1": "In Riyadh. Our bilingual Saudi engineers and field technicians work on site at your venue and deploy Kingdom-wide, covering Riyadh, Jeddah, Makkah, Madinah and the Eastern Province.",
+  "q2": "Which real estate exhibitions does Manzili support in KSA?",
+  "a2": "The major ones, including Cityscape Global at the Riyadh Exhibition & Convention Center, RestateX Riyadh, RestateX Jeddah and Cityscape Jeddah, as well as private developer launch events.",
+  "q3": "How do you protect connectivity at crowded exhibitions?",
+  "a3": "We never rely on public exhibition Wi-Fi. We set up a private local network with dual-bonded 5G uplinks and run the Unreal Engine 5 app offline on local workstations, so presentations and reservations continue even if the hall network goes down.",
+  "_tables": []
+ },
+ "s06": {
+  "previousLink": [
+   "Previous pillar",
+   "Pillar 04 · Sales Enablement"
+  ],
+  "previousLinkHref": "/pillars/saudi-sales-enablement",
+  "nextLink": [
+   "Next pillar",
+   "Pillar 06 · Lifecycle & Matterport"
+  ],
+  "nextLinkHref": "/pillars/full-lifecycle-support",
+  "overviewLink": "View All 6 Pillars",
+  "overviewLinkHref": "/#pillars",
+  "_tables": []
+ },
+ "s07": {
+  "eyebrow": "2-hour dispatch on launch days · Riyadh-based team",
+  "h2": "Staff Your Next Cityscape Launch",
+  "subheadingBodyCopy": "Share your event dates and booth plan, and we'll scope the hardware, network and on-site team.",
+  "primaryCta": "Book Technical Scoping",
+  "primaryCtaHref": "/contact-us",
+  "secondaryCta": "View Case Studies",
+  "secondaryCtaHref": "/case-studies",
+  "_tables": []
+ }
+}

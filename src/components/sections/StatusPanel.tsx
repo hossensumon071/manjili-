@@ -8,11 +8,13 @@ import { Icon, type IconName } from "@/components/ui/Icon";
 export type StatusItem = {
   icon: IconName;
   label: string;
-  meta: string;
+  meta?: string;
   state?: "ok" | "active" | "idle";
 };
 
 export type StatusPanelProps = {
+  /** Localized labels for the item states */
+  stateLabels?: { ok: string; active: string; idle: string };
   title: string;
   live?: string;
   items: StatusItem[];
@@ -21,7 +23,7 @@ export type StatusPanelProps = {
 
 const stateStyle = {
   ok: { dot: "bg-status", text: "text-status", label: "Ready" },
-  active: { dot: "bg-accent", text: "text-accent", label: "Live" },
+  active: { dot: "bg-accent", text: "text-accent-dark", label: "Live" },
   idle: { dot: "bg-muted", text: "text-muted", label: "Standby" },
 };
 
@@ -30,7 +32,7 @@ const stateStyle = {
  * A scan highlight cycles through the rows (live system feel); hovering a
  * row takes over the highlight.
  */
-export function StatusPanel({ title, live = "Live", items, footer }: StatusPanelProps) {
+export function StatusPanel({ title, live = "Live", items, footer, stateLabels }: StatusPanelProps) {
   const reduce = useReducedMotion();
   const [scan, setScan] = useState(0);
   const [hover, setHover] = useState<number | null>(null);
@@ -44,15 +46,12 @@ export function StatusPanel({ title, live = "Live", items, footer }: StatusPanel
   const active = hover ?? scan;
 
   return (
-    <div className="relative overflow-hidden rounded-[22px] bg-white/95 p-4 shadow-[0_40px_80px_-30px_rgba(0,30,90,0.6)] ring-1 ring-white/60 backdrop-blur-xl sm:p-5">
+    <div className="relative overflow-hidden rounded-[22px] bg-white/95 p-4 shadow-[0_40px_80px_-30px_rgba(4,60,90,0.6)] ring-1 ring-white/60 backdrop-blur-xl sm:p-5">
       <div className="flex items-center justify-between gap-3 pb-4">
         <div className="flex min-w-0 items-center gap-1.5">
-          <span className="size-2.5 shrink-0 rounded-full bg-[#FF5F57]/80" />
-          <span className="size-2.5 shrink-0 rounded-full bg-[#FEBC2E]/80" />
-          <span className="size-2.5 shrink-0 rounded-full bg-[#28C840]/80" />
-          <span className="ms-3 truncate text-xs font-bold text-ink">{title}</span>
+          <span className="truncate text-xs font-bold text-ink">{title}</span>
         </div>
-        <span className="flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-status/10 px-2.5 py-1 text-[11px] font-bold text-status">
+        <span className="flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-status/10 px-2.5 py-1 text-[11px] font-bold text-brand-deep">
           <span className="relative flex size-1.5">
             <span className="absolute inset-0 animate-pulse-ring rounded-full bg-status" />
             <span className="relative size-1.5 rounded-full bg-status" />
@@ -64,6 +63,7 @@ export function StatusPanel({ title, live = "Live", items, footer }: StatusPanel
       <ul className="space-y-2" onMouseLeave={() => setHover(null)}>
         {items.map((item, i) => {
           const s = stateStyle[item.state ?? "ok"];
+          const stateLabel = stateLabels?.[item.state ?? "ok"] ?? s.label;
           const on = i === active;
           return (
             <motion.li
@@ -87,18 +87,18 @@ export function StatusPanel({ title, live = "Live", items, footer }: StatusPanel
               <span
                 className={cn(
                   "grid grid-cols-1 size-9 shrink-0 place-items-center rounded-lg transition-colors duration-500",
-                  on ? "bg-brand text-white" : "bg-white text-brand ring-1 ring-ink/5",
+                  on ? "bg-brand-dark text-white" : "bg-white text-brand-dark ring-1 ring-ink/5",
                 )}
               >
                 <Icon name={item.icon} size={17} />
               </span>
               <span className="min-w-0 flex-1">
                 <span className="block truncate text-[13px] font-bold text-ink">{item.label}</span>
-                <span className="block truncate text-[11px] text-body">{item.meta}</span>
+                {item.meta && <span className="block truncate text-[11px] text-body">{item.meta}</span>}
               </span>
               <span className={cn("flex shrink-0 items-center gap-1.5 text-[11px] font-bold", s.text)}>
                 <span className={cn("size-1.5 rounded-full", s.dot, on && "animate-pulse")} />
-                {s.label}
+                {stateLabel}
               </span>
             </motion.li>
           );

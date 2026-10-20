@@ -1,0 +1,160 @@
+{
+ "template": "B",
+ "hero": {
+  "eyebrow": "Case Study · Riyadh & Jeddah",
+  "title": "Show Villas in Two Cities, Toured From Either One",
+  "body": "Buyers in Riyadh and Jeddah tour Mohammed Al Habib Real Estate's built show villas in 3D, so off-plan villa sales no longer depend on traveling between the two cities.",
+  "chips": [
+   "Mohammed Al Habib Real Estate",
+   "Eyal Al Fursan (Riyadh)",
+   "Eyal Sadayem (Jeddah)",
+   "Show Villa 3D Tours"
+  ],
+  "mockupChips": [
+   "Show villa 3D tours",
+   "Riyadh",
+   "Jeddah"
+  ]
+ },
+ "sidebar": [
+  "Mohammed Al Habib Real Estate",
+  "Eyal Al Fursan & Eyal Sadayem · master-planned villa communities within NHC suburbs",
+  "Al Fursan, Riyadh & Sadayem, Jeddah",
+  "Show villa 3D tours · Sales gallery hardware · Sales team training"
+ ],
+ "challenge": {
+  "eyebrow": "The Challenge",
+  "title": "Selling Villas Off-Plan Across Two Cities",
+  "body": "Mohammed Al Habib was building villa communities in Riyadh and Jeddah at the same time. Off-plan buyers wanted to see proportions, privacy and finish quality, but unfinished sites and the distance between galleries slowed their decisions.",
+  "header": [
+   "Sales Friction",
+   "The Commercial Risk",
+   "What Manzili Delivered"
+  ],
+  "rows": [
+   [
+    "Hard-to-Reach Sites",
+    "Families hesitate to visit active construction sites to see unfinished plots.",
+    "Show villa walkthrough: a true-scale 3D tour of the built show villa, available in city sales centers."
+   ],
+   [
+    "Misjudged Room Sizes",
+    "Buyers misread room volumes, ceiling heights and courtyard privacy on brochures.",
+    "Dimensionally exact navigation: buyers explore the majlis, family living areas and courtyard light room by room."
+   ],
+   [
+    "Distance Between Cities",
+    "Riyadh buyers looking at Jeddah villas (and vice versa) can't easily visit in person.",
+    "Cross-gallery web sync: Riyadh advisors present live walkthroughs of Jeddah villas without travel."
+   ]
+  ]
+ },
+ "solution": {
+  "eyebrow": "Our Solution",
+  "title": "3D Show Villa Tours for Both Cities",
+  "body": "Manzili captured the built show villas at Eyal Al Fursan and Eyal Sadayem and built interactive 3D tours used across Mohammed Al Habib's sales galleries, touch tables and mobile channels.",
+  "blocks": [
+   {
+    "title": "Full Interior & Exterior Capture",
+    "points": [
+     "Detailed capture of the majlis, dining halls, family areas and garden courtyards.",
+     "Accurate daylight across ground, first and roof levels."
+    ]
+   },
+   {
+    "title": "Cross-Gallery Integration",
+    "points": [
+     "Riyadh touch screens show Eyal Sadayem, and Jeddah centers show Eyal Al Fursan.",
+     "Advisors in each city present the other city's inventory directly."
+    ]
+   },
+   {
+    "title": "Commercial Touch Screens",
+    "points": [
+     "Responsive touch screens in sales galleries in Riyadh and Jeddah.",
+     "Family groups review together with smooth zoom and floor switching."
+    ]
+   },
+   {
+    "title": "Instant Mobile Follow-Up",
+    "points": [
+     "Private web links sent to buyers by SMS or messaging apps after each visit.",
+     "Buyers revisit their preferred villa at home with the whole family."
+    ]
+   }
+  ]
+ },
+ "enablement": {
+  "eyebrow": "Sales Team Enablement",
+  "title": "Five-Minute Walkthroughs for Saudi Families",
+  "body": "Saudi families judge villas on privacy, hosting space and everyday comfort. Manzili trained Mohammed Al Habib's sales teams to run structured 5-minute walkthroughs covering privacy, kitchen flow and master suites.",
+  "steps": [
+   {
+    "index": "01",
+    "title": "Community & Plot Selection",
+    "body": "The advisor shows the community plan, villa position, street width and nearby mosques and parks."
+   },
+   {
+    "index": "02",
+    "title": "Show Villa Tour & Privacy Check",
+    "body": "The family walks through the 3D villa and sees how the guest majlis is separated from the private family areas."
+   },
+   {
+    "index": "03",
+    "title": "Finishes & Follow-Up Link",
+    "body": "Materials, bathroom fixtures and roof terraces come next. Before the family leaves, a private web link goes to the buyer's phone."
+   }
+  ]
+ },
+ "outcomes": {
+  "eyebrow": "Reported Performance",
+  "title": "Delivery Outcomes",
+  "stats": [
+   {
+    "value": "2",
+    "label": "Cities Connected",
+    "body": "Riyadh and Jeddah galleries show each other's inventory.",
+    "outcome": "Riyadh buyers see Jeddah villas without traveling."
+   },
+   {
+    "value": "1:1",
+    "label": "Show Villa Capture",
+    "body": "High-precision capture of both built show villas.",
+    "outcome": "Exact majlis proportions, ceiling heights and privacy partitions."
+   },
+   {
+    "value": "0",
+    "label": "App Downloads for Buyers",
+    "body": "Web links delivered by SMS and messaging apps.",
+    "outcome": "Families revisit the 3D villa from home."
+   },
+   {
+    "value": "99.9%",
+    "label": "Presentation Uptime",
+    "body": "Commercial-grade touch displays in every gallery.",
+    "outcome": "Stable presentations through busy weekend sales."
+   }
+  ]
+ },
+ "standards": {
+  "eyebrow": "Quality & Compliance",
+  "title": "Delivery Standards",
+  "rows": [
+   [
+    "Dimensional Accuracy",
+    "Calibrated LiDAR capture",
+    "Matches the official architectural drawings"
+   ],
+   [
+    "Performance in Both Cities",
+    "Low-latency content delivery",
+    "Fast loading in Riyadh and Jeddah sales centers and on buyers' phones"
+   ],
+   [
+    "Two-City Support",
+    "Technical maintenance in both regions",
+    "Engineering monitoring and hardware support in Riyadh and Jeddah"
+   ]
+  ]
+ }
+}

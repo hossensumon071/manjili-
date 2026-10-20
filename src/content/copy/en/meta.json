@@ -1,0 +1,94 @@
+{
+ "/": {
+  "title": "Off-Plan Sales Infrastructure for Saudi Developers · Manzili",
+  "description": "Digital twins, showroom hardware and the Connected Sales Environment, delivered and run by one Riyadh team for Saudi master developers."
+ },
+ "/platform-cse": {
+  "title": "Connected Sales Environment (CSE) · Manzili",
+  "description": "One platform from 3D masterplan to Nafath verification and a generated SPA, with live inventory, payment plans, timed unit holds and buyer intent data."
+ },
+ "/pillars/digital-twin-webgl": {
+  "title": "Digital Twin & Web Platform · Manzili",
+  "description": "One master 3D model runs the offline Unreal Engine 5 showroom app and a mobile web platform, so buyers see the exact view before they reserve."
+ },
+ "/pillars/crm-inventory-integration": {
+  "title": "Real-Time CRM & Inventory Sync · Manzili",
+  "description": "Pre-built connectors for Salesforce, Yardi Voyager, SAP RE-FX and HubSpot. Unit locks in under 500 ms across every connected screen and session."
+ },
+ "/pillars/sales-center-hardware": {
+  "title": "Showroom Hardware for Sales Centers · Manzili",
+  "description": "Touch tables, LED walls, immersive rooms and GPU workstations under one contract. 2-hour dispatch on launch days · 4-hour standard support SLA."
+ },
+ "/pillars/saudi-sales-enablement": {
+  "title": "Sales Enablement & Team Training · Manzili",
+  "description": "In-person and online coaching that trains your sales team to present masterplans in 3D, run remote showcases and answer buyer questions with confidence."
+ },
+ "/pillars/vip-launch-command": {
+  "title": "Launch Command for Exhibitions & Events · Manzili",
+  "description": "A Riyadh-based technical team on site at Cityscape Global, RestateX, sales galleries and VIP events, with 2-hour dispatch on launch days."
+ },
+ "/pillars/full-lifecycle-support": {
+  "title": "Lifecycle Support & Matterport Tours · Manzili",
+  "description": "One master model updated through every phase, from concept to handover, plus Matterport tours of model units and completed projects on the same platform."
+ },
+ "/case-studies": {
+  "title": "Case Studies · Manzili",
+  "description": "How Saudi master developers used Manzili digital twins, showroom hardware and the CSE to launch off-plan projects."
+ },
+ "/case-studies/thee-erth": {
+  "title": "Thee Erth Case Study · Manzili",
+  "description": "Erth Real Estate Development launched its 8-tower Riyadh masterplan at Cityscape Global with a Manzili 360 platform, offline failover and sales training."
+ },
+ "/case-studies/masar-maab": {
+  "title": "Masar Ma’ab Case Study · Manzili",
+  "description": "Manzili built the 3D twin, sales gallery hardware and sales training for Erth Real Estate Development's three-tower project in Makkah's Masar Destination."
+ },
+ "/case-studies/dyari-signature": {
+  "title": "Dyari Signature Case Study · Manzili",
+  "description": "Dyari Real Estate Development presented its 406-unit Riyadh community at RestateX with a Manzili multi-building twin, exhibition hardware and sales training."
+ },
+ "/case-studies/raffles-residences-jeddah": {
+  "title": "Raffles Residences Jeddah Case Study · Manzili",
+  "description": "Remote buyers tour the built show residence at Erth Real Estate Development's 48-floor Raffles Residences on the Jeddah Corniche in interactive 3D."
+ },
+ "/case-studies/nhc-alwareef": {
+  "title": "Alwareef Case Study · Manzili",
+  "description": "Alwareef, a 12,000-unit NHC community in Southeast Jeddah, launched at RestateX with a Manzili WebGL twin, exhibition hardware and on-site support."
+ },
+ "/case-studies/nhc-al-mukiman": {
+  "title": "Al-Mukiman Case Study · Manzili",
+  "description": "Families buying at Al-Mukiman, a 6,000-unit community in Madinah, explore their future homes on a Manzili 3D twin and showroom touch tables."
+ },
+ "/case-studies/nhc-malfa-al-assalah": {
+  "title": "Malfa Al-Assalah Case Study · Manzili",
+  "description": "Buyers at Malfa Al-Assalah in Southwest Riyadh explore each of its 633 villas plot by plot, on a Manzili 3D twin and showroom touch tables."
+ },
+ "/case-studies/nhc-tabuk-hills": {
+  "title": "Tabuk Hills Case Study · Manzili",
+  "description": "Manzili had the Tabuk Hills sales center running in 48 hours, with a WebGL twin of the 2.2M+ m² masterplan and sales playbooks for 4,600+ units."
+ },
+ "/case-studies/mohammed-al-habib": {
+  "title": "Mohammed Al Habib Show Villas Case Study · Manzili",
+  "description": "Buyers in Riyadh and Jeddah tour Mohammed Al Habib Real Estate's built show villas in 3D, without traveling between the two cities."
+ },
+ "/case-studies/al-basateen-offices": {
+  "title": "Al Basateen Offices Case Study · Manzili",
+  "description": "Interactive 3D tours of the offices, lobbies and amenities at Al Basateen Offices help leasing teams sign tenants for the 39,387 m² GLA Diriyah campus."
+ },
+ "/contact-us": {
+  "title": "Request Technical Scoping · Manzili",
+  "description": "Tell us about your off-plan launch. A solutions lead replies within 24 hours, Sunday–Thursday. Best fit: 300+ units or 50,000+ m² commercial GFA."
+ },
+ "/privacy": {
+  "title": "Privacy Policy · Manzili",
+  "description": "How Manzili collects, uses, hosts and protects personal data under the Saudi Personal Data Protection Law (PDPL), and how to exercise your rights."
+ },
+ "/terms": {
+  "title": "Terms of Service · Manzili",
+  "description": "The terms that govern use of the Manzili website, digital twins, web platforms and the Connected Sales Environment."
+ },
+ "*404*": {
+  "title": "Page Not Found · Manzili",
+  "description": "The page you're looking for has moved or no longer exists."
+ }
+}

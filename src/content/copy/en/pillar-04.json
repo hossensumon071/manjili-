@@ -1,0 +1,166 @@
+{
+ "s01": {
+  "breadcrumb": "Home",
+  "breadcrumbHref": "/",
+  "eyebrow": "Pillar 04 · Sales Enablement",
+  "h1": "Train Your Sales Team to Sell in 3D, Not Brochures",
+  "subheadingBodyCopy": "Saudi trainers coach your sales team in person and online, working with your sales director on showroom hardware, remote showcases and masterplan storytelling.",
+  "primaryCta": "Book Technical Scoping",
+  "primaryCtaHref": "/contact-us",
+  "secondaryCta": "See the Training Modules",
+  "secondaryCtaHref": "#matrix",
+  "specStrip": [
+   "In-Person & Online Coaching",
+   "Hardware Mastery",
+   "Remote Showcases",
+   "Masterplan Storytelling"
+  ],
+  "_tables": [],
+  "crumbs": [
+   {
+    "label": "Home",
+    "href": "/"
+   },
+   {
+    "label": "6-Pillar Infrastructure",
+    "href": "/#pillars"
+   },
+   {
+    "label": "Sales Enablement",
+    "href": null
+   }
+  ]
+ },
+ "s02": {
+  "eyebrow": "Training Tracks",
+  "h2": "In-Person and Online Coaching for Frontline Sales Teams",
+  "subheadingBodyCopy": "Sales teams stop using 3D tools they haven't been trained on. Manzili works with your sales director to run hands-on workshops and online certification that turn sales consultants into confident project storytellers.",
+  "block01NumberLabel": [
+   "01",
+   "Showroom Track"
+  ],
+  "block01Title": "Showroom Hardware Mastery",
+  "block01Body": "Hands-on coaching on your actual showroom equipment. Consultants learn to navigate touch tables, run LED wall presentations and pace a walkthrough, so they stay confident and keep eye contact in high-stakes VIP meetings.",
+  "block01Features": [
+   "Touch-Table Fluency",
+   "Multi-user navigation without hesitation",
+   "LED Wall Presentations",
+   "High-impact showroom sequences",
+   "VIP Gallery Etiquette",
+   "Consultative posture and rapport"
+  ],
+  "block02NumberLabel": [
+   "02",
+   "Remote Track"
+  ],
+  "block02Title": "Remote Showcase Playbook",
+  "block02Body": "A structured playbook for presenting to out-of-town and international buyers over video calls. Consultants learn co-browsing, how to orient buyers in the virtual masterplan, and fast digital follow-up that qualifies intent at a distance.",
+  "block02Features": [
+   "Co-Browsing",
+   "Guide remote buyers through the 3D web platform",
+   "Objection Handling on Video",
+   "Answer layout and view questions on calls",
+   "Fast Follow-Up",
+   "Send tailored unit links straight after the call"
+  ],
+  "block03NumberLabel": [
+   "03",
+   "Storytelling Track"
+  ],
+  "block03Title": "Masterplan Storytelling & Walkthroughs",
+  "block03Body": "A presentation structure that starts with Vision 2030 and regional connectivity, moves through neighborhood amenities and ends with the unit's views, privacy and long-term value.",
+  "block03Features": [
+   "Narrative Sequencing",
+   "Links the big picture to unit value",
+   "Balcony View Proof",
+   "Shows views and privacy live",
+   "Bilingual Saudi Delivery",
+   "Arabic and English, tuned for Saudi buyers"
+  ],
+  "_tables": []
+ },
+ "s03": {
+  "eyebrow": "Why It Matters",
+  "h2": "How Sales Enablement Speeds Up Off-Plan Sales",
+  "card01Chip": "3D as the Default",
+  "card01Title": "Full Floor Adoption",
+  "card01Body": "Consultants use the 3D tools as their main presentation instrument, replacing paper brochures and WhatsApp PDFs.",
+  "card02Chip": "Remote Buyers",
+  "card02Title": "GCC and International Reach",
+  "card02Body": "A standard remote showcase routine lets your team present masterplans and secure reservations from buyers across the GCC and beyond.",
+  "card03Chip": "Price Defense",
+  "card03Title": "Defended Price Premiums",
+  "card03Body": "Structured storytelling anchors buyers in the masterplan's lifestyle value, so consultants can hold their price per square meter and sell premium unit types.",
+  "_tables": []
+ },
+ "s04": {
+  "eyebrow": "Training Matrix",
+  "h2": "In-Person and Online Coaching Modules",
+  "subheadingBodyCopy": "Built with your sales leadership, the modules train in-house consultants and external broker networks to sell the same way.",
+  "headerRow": [
+   "Track",
+   "Delivery",
+   "Core Skill",
+   "Result"
+  ],
+  "row1": [
+   "Showroom Hardware Mastery",
+   "In-person showroom sessions",
+   "Touch table and LED wall presentation",
+   "Confident use of tech in VIP meetings"
+  ],
+  "row2": [
+   "Remote Showcase Playbook",
+   "Online interactive workshops",
+   "Co-browsing and remote negotiation",
+   "Reach GCC and international buyers"
+  ],
+  "row3": [
+   "Masterplan Storytelling",
+   "In-person and hybrid drills",
+   "Big-picture-to-unit sequencing",
+   "Buyers who can verify views and layout"
+  ],
+  "row4": [
+   "Sales Leadership Alignment",
+   "Executive strategy sessions",
+   "Adoption KPIs and floor governance",
+   "Protects your 3D and hardware investment"
+  ],
+  "_tables": []
+ },
+ "s05": {
+  "q1": "How are the sales enablement programs delivered?",
+  "a1": "Through in-person workshops in your sales center and structured online coaching, led by Saudi trainers. Showroom consultants, remote sales reps and external brokers all train to the same standard.",
+  "q2": "How do you work with our sales director and commercial team?",
+  "a2": "From pre-launch planning onward. We align coaching with your sales targets, phased pricing and CRM workflow, and give your sales director floor-adoption data and consultant benchmarks.",
+  "q3": "What does the storytelling curriculum cover?",
+  "a3": "How to sequence a masterplan presentation: from Vision 2030 and regional infrastructure, to neighborhood amenities, to the unit's views, privacy setbacks and long-term value.",
+  "_tables": []
+ },
+ "s06": {
+  "previousLink": [
+   "Previous pillar",
+   "Pillar 03 · Showroom Hardware"
+  ],
+  "previousLinkHref": "/pillars/sales-center-hardware",
+  "nextLink": [
+   "Next pillar",
+   "Pillar 05 · Launch Command"
+  ],
+  "nextLinkHref": "/pillars/vip-launch-command",
+  "overviewLink": "View All 6 Pillars",
+  "overviewLinkHref": "/#pillars",
+  "_tables": []
+ },
+ "s07": {
+  "eyebrow": "In person and online · Saudi trainers",
+  "h2": "Get Your Sales Team Selling in 3D Before Launch",
+  "subheadingBodyCopy": "Tell us your team size and launch date, and we'll plan the coaching tracks for your gallery.",
+  "primaryCta": "Book Technical Scoping",
+  "primaryCtaHref": "/contact-us",
+  "secondaryCta": "View Case Studies",
+  "secondaryCtaHref": "/case-studies",
+  "_tables": []
+ }
+}

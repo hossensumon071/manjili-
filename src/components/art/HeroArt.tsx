@@ -21,22 +21,22 @@ export function HeroArt({ className, clouds = false, id = "hero" }: { className?
     >
       <defs>
         <linearGradient id={g("sky")} x1="0" y1="0" x2="0.3" y2="1">
-          <stop offset="0" stopColor="#0B5BD8" />
-          <stop offset="0.55" stopColor="#2B85EE" />
-          <stop offset="1" stopColor="#1567DE" />
+          <stop offset="0" stopColor="#0B9AD8" />
+          <stop offset="0.55" stopColor="#2BB3EE" />
+          <stop offset="1" stopColor="#15A2DE" />
         </linearGradient>
         <radialGradient id={g("sun")} cx="0.72" cy="0.12" r="0.55">
-          <stop offset="0" stopColor="#CFE6FF" stopOpacity="0.75" />
-          <stop offset="1" stopColor="#CFE6FF" stopOpacity="0" />
+          <stop offset="0" stopColor="#CFF1FF" stopOpacity="0.75" />
+          <stop offset="1" stopColor="#CFF1FF" stopOpacity="0" />
         </radialGradient>
         <linearGradient id={g("fasciaL")} x1="0" y1="1" x2="1" y2="0">
-          <stop offset="0" stopColor="#C9DBF2" />
-          <stop offset="0.6" stopColor="#F4F8FD" />
+          <stop offset="0" stopColor="#C9E6F2" />
+          <stop offset="0.6" stopColor="#F4FAFD" />
           <stop offset="1" stopColor="#FFFFFF" />
         </linearGradient>
         <linearGradient id={g("fasciaR")} x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#E8F0FA" />
-          <stop offset="1" stopColor="#AFC6E6" />
+          <stop offset="0" stopColor="#E8F5FA" />
+          <stop offset="1" stopColor="#AFD5E6" />
         </linearGradient>
         <linearGradient id={g("wood")} x1="0" y1="0" x2="1" y2="1">
           <stop offset="0" stopColor="#6B4426" />
@@ -44,26 +44,26 @@ export function HeroArt({ className, clouds = false, id = "hero" }: { className?
           <stop offset="1" stopColor="#C68D57" />
         </linearGradient>
         <linearGradient id={g("glass")} x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#0E2F66" />
-          <stop offset="0.45" stopColor="#1D4F95" />
-          <stop offset="1" stopColor="#3C7CCB" />
+          <stop offset="0" stopColor="#0E4C66" />
+          <stop offset="0.45" stopColor="#1D7195" />
+          <stop offset="1" stopColor="#3CA0CB" />
         </linearGradient>
         <linearGradient id={g("reflect")} x1="0" y1="0" x2="1" y2="0">
           <stop offset="0" stopColor="#fff" stopOpacity="0" />
-          <stop offset="0.5" stopColor="#BFE0FF" stopOpacity="0.55" />
+          <stop offset="0.5" stopColor="#BFECFF" stopOpacity="0.55" />
           <stop offset="1" stopColor="#fff" stopOpacity="0" />
         </linearGradient>
         <linearGradient id={g("rail")} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#D8ECFF" stopOpacity="0.55" />
-          <stop offset="1" stopColor="#8EC0F5" stopOpacity="0.18" />
+          <stop offset="0" stopColor="#D8F3FF" stopOpacity="0.55" />
+          <stop offset="1" stopColor="#8ED6F5" stopOpacity="0.18" />
         </linearGradient>
         <linearGradient id={g("slab")} x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stopColor="#B9D0EE" />
-          <stop offset="1" stopColor="#F2F7FD" />
+          <stop offset="0" stopColor="#B9DEEE" />
+          <stop offset="1" stopColor="#F2FAFD" />
         </linearGradient>
         <linearGradient id={g("haze")} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#0B5CD6" stopOpacity="0" />
-          <stop offset="1" stopColor="#0B5CD6" stopOpacity="0.45" />
+          <stop offset="0" stopColor="#0577AA" stopOpacity="0" />
+          <stop offset="1" stopColor="#0577AA" stopOpacity="0.45" />
         </linearGradient>
         <filter id={g("soft")} x="-20%" y="-20%" width="140%" height="140%">
           <feGaussianBlur stdDeviation="18" />
@@ -93,12 +93,12 @@ export function HeroArt({ className, clouds = false, id = "hero" }: { className?
       )}
 
       {/* Left wing: flat roof + glazing */}
-      <path d="M0 312 L380 268 L380 292 L0 338 Z" fill="#F7FAFE" />
+      <path d="M0 312 L380 268 L380 292 L0 338 Z" fill="#F7FCFE" />
       <path d="M0 338 L380 292 L380 342 L0 396 Z" fill={`url(#${g("slab")})`} />
-      <path d="M150 300 L330 279 L330 252 L150 270 Z" fill="#EAF2FC" />
+      <path d="M150 300 L330 279 L330 252 L150 270 Z" fill="#EAF7FC" />
       <path d="M0 396 L380 342 L380 900 L0 900 Z" fill={`url(#${g("glass")})`} />
       {[60, 140, 220, 300].map((x) => (
-        <line key={x} x1={x} y1={396 - x * 0.142} x2={x} y2="900" stroke="#9CC4F0" strokeOpacity="0.35" strokeWidth="3" />
+        <line key={x} x1={x} y1={396 - x * 0.142} x2={x} y2="900" stroke="#9CD7F0" strokeOpacity="0.35" strokeWidth="3" />
       ))}
 
       {/* Main glazed volume */}
@@ -116,7 +116,7 @@ export function HeroArt({ className, clouds = false, id = "hero" }: { className?
           />
         )}
         {mullions.map((x) => (
-          <line key={x} x1={x} y1="200" x2={x} y2="900" stroke="#CFE4FB" strokeOpacity="0.45" strokeWidth="3" />
+          <line key={x} x1={x} y1="200" x2={x} y2="900" stroke="#CFEEFB" strokeOpacity="0.45" strokeWidth="3" />
         ))}
       </g>
 
@@ -150,8 +150,8 @@ export function HeroArt({ className, clouds = false, id = "hero" }: { className?
       <path d="M1010 96 L1046 94 L1440 372 L1440 404 Z" fill="#FFFFFF" opacity="0.95" />
 
       {/* Balcony slab + glass balustrade */}
-      <path d="M600 640 L1440 520 L1440 470 L600 570 Z" fill={`url(#${g("rail")})`} stroke="#E6F3FF" strokeOpacity="0.7" strokeWidth="2" />
-      <path d="M580 642 L1440 520 L1440 548 L590 676 Z" fill="#F3F8FE" />
+      <path d="M600 640 L1440 520 L1440 470 L600 570 Z" fill={`url(#${g("rail")})`} stroke="#E6F7FF" strokeOpacity="0.7" strokeWidth="2" />
+      <path d="M580 642 L1440 520 L1440 548 L590 676 Z" fill="#F3FBFE" />
       <path d="M590 676 L1440 548 L1440 610 L606 742 Z" fill={`url(#${g("fasciaR")})`} />
 
       {/* Atmospheric haze at the base so text sits cleanly on top */}

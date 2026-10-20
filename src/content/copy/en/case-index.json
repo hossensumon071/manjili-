@@ -1,0 +1,162 @@
+{
+ "hero": {
+  "breadcrumb": "Home",
+  "breadcrumbHref": "/",
+  "eyebrow": "Case Studies",
+  "h1": "Off-Plan Launches We've Powered Across KSA",
+  "subheadingBodyCopy": "How Saudi master developers use Manzili digital twins, showroom hardware, sales enablement and launch support to present, launch and sell off-plan projects.",
+  "primaryCta": "Plan a Similar Launch",
+  "primaryCtaHref": "/contact-us",
+  "specStrip": [
+   "Cityscape Global",
+   "RestateX Riyadh & Jeddah",
+   "Riyadh · Jeddah · Makkah · Madinah · Tabuk"
+  ],
+  "_tables": [],
+  "crumbs": [
+   {
+    "label": "Home",
+    "href": "/"
+   },
+   {
+    "label": "Case Studies",
+    "href": null
+   }
+  ]
+ },
+ "tabs": [
+  "All",
+  "Digital Twins",
+  "Virtual Tours",
+  "Commercial Leasing",
+  "Launch Operations"
+ ],
+ "cards": [
+  {
+   "tag": "NHC Masterplan · 12,000+ Units",
+   "client": "Institutional Residential Developer",
+   "title": "Alwareef",
+   "location": "Southeast Jeddah",
+   "body": "WebGL digital twin, exhibition hardware and on-site launch support for a 12,000-unit community at RestateX.",
+   "filters": [
+    1,
+    4
+   ],
+   "href": "/case-studies/nhc-alwareef"
+  },
+  {
+   "tag": "Mixed-Use Masterplan · 8 Towers",
+   "client": "Erth Real Estate Development",
+   "title": "Thee Erth",
+   "location": "King Fahad Road, Riyadh",
+   "body": "Interactive 360 platform, offline failover and on-site sales training for an 8-tower masterplan at Cityscape Global.",
+   "filters": [
+    1,
+    4
+   ],
+   "href": "/case-studies/thee-erth"
+  },
+  {
+   "tag": "NHC Masterplan · 6,000+ Units",
+   "client": "Institutional Residential Developer",
+   "title": "Al-Mukiman",
+   "location": "Central Madinah",
+   "body": "Browser-based 3D twin, showroom touch tables and sales playbooks for a 6,000-unit family community.",
+   "filters": [
+    1
+   ],
+   "href": "/case-studies/nhc-al-mukiman"
+  },
+  {
+   "tag": "NHC Masterplan · 4,600+ Units",
+   "client": "Institutional Residential Developer",
+   "title": "Tabuk Hills",
+   "location": "Tabuk",
+   "body": "WebGL twin of a 2.2M+ m² masterplan and a turnkey sales center commissioned in 48 hours.",
+   "filters": [
+    1
+   ],
+   "href": "/case-studies/nhc-tabuk-hills"
+  },
+  {
+   "tag": "Luxury Towers · SAR 2B+",
+   "client": "Erth Real Estate Development",
+   "title": "Masar Ma’ab",
+   "location": "Masar Destination, Makkah",
+   "body": "Browser-based 3D twin, sales gallery hardware and team training for a three-tower development.",
+   "filters": [
+    1
+   ],
+   "href": "/case-studies/masar-maab"
+  },
+  {
+   "tag": "NHC Villa Community · 633 Villas",
+   "client": "Institutional Residential Developer",
+   "title": "Malfa Al-Assalah",
+   "location": "Southwest Riyadh",
+   "body": "Plot-level 3D twin, showroom touch tables and sales playbooks for 633 family villas.",
+   "filters": [
+    1
+   ],
+   "href": "/case-studies/nhc-malfa-al-assalah"
+  },
+  {
+   "tag": "Branded Residences · 48 Floors",
+   "client": "Erth Real Estate Development",
+   "title": "Raffles Residences Jeddah",
+   "location": "Jeddah Corniche",
+   "body": "Built show residence captured as an interactive 3D tour for remote luxury buyers.",
+   "filters": [
+    2
+   ],
+   "href": "/case-studies/raffles-residences-jeddah"
+  },
+  {
+   "tag": "Show Villa Tours · 2 Cities",
+   "client": "Mohammed Al Habib Real Estate",
+   "title": "Eyal Al Fursan & Eyal Sadayem",
+   "location": "Riyadh & Jeddah",
+   "body": "Built show villas captured as 3D tours and shared across sales galleries in both cities.",
+   "filters": [
+    2
+   ],
+   "href": "/case-studies/mohammed-al-habib"
+  },
+  {
+   "tag": "Residential Community · 406 Units",
+   "client": "Dyari Real Estate Development",
+   "title": "Dyari Signature",
+   "location": "Al Mounsiya, Riyadh",
+   "body": "Multi-building digital twin, exhibition hardware and sales training for a RestateX launch.",
+   "filters": [
+    1,
+    4
+   ],
+   "href": "/case-studies/dyari-signature"
+  },
+  {
+   "tag": "Grade-A Office Campus · 39,387 m² GLA",
+   "client": "Al Basateen Real Estate Company",
+   "title": "Al Basateen Offices",
+   "location": "King Khalid Road, Diriyah",
+   "body": "3D tours of lobbies, office floors and courtyards that help leasing teams sign corporate tenants.",
+   "filters": [
+    2,
+    3
+   ],
+   "href": "/case-studies/al-basateen-offices"
+  }
+ ],
+ "cardLink": "View Case Study",
+ "counter": "[n] case studies",
+ "standards": {
+  "eyebrow": "Quality & Compliance",
+  "h2": "How Every Deployment Is Delivered",
+  "item": [
+   "One Master Service Agreement covering 3D assets, showroom hardware and sales coaching.",
+   "On-site launch support, with hot-standby engineers at your sales gallery.",
+   "In-Kingdom hosting under Saudi PDPL, built for REGA and Wafi off-plan workflows."
+  ],
+  "_tables": []
+ }
+}

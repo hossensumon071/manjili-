@@ -1,0 +1,160 @@
+{
+ "template": "B",
+ "hero": {
+  "eyebrow": "Case Study · Diriyah",
+  "title": "3D Zone Tours for a Grade-A Office Campus",
+  "body": "Interactive 3D tours of the offices, lobbies and campus amenities at Al Basateen Offices help the leasing team sign corporate tenants in Diriyah.",
+  "chips": [
+   "Al Basateen Real Estate Company",
+   "Grade-A Office Campus",
+   "39,387 m² GLA",
+   "King Khalid Road, Diriyah"
+  ],
+  "mockupChips": [
+   "3D zone tours",
+   "39,387 m² GLA",
+   "Diriyah"
+  ]
+ },
+ "sidebar": [
+  "Al Basateen Real Estate Company",
+  "Al Basateen Offices · Grade-A corporate office campus · 39,387 m² GLA on a 98,925 m² site · 1 bay per 23 m² GLA",
+  "King Khalid Road, Diriyah",
+  "3D office zone tours · Campus amenity walkthroughs · Leasing team training"
+ ],
+ "challenge": {
+  "eyebrow": "The Challenge",
+  "title": "Pre-Leasing a Campus Before It's Complete",
+  "body": "Corporate tenants on King Khalid Road wanted proof of the campus's quality: the lobbies, executive drop-offs and courtyards. Brochures and flat floor plans couldn't show it.",
+  "header": [
+   "Sales Friction",
+   "The Commercial Risk",
+   "What Manzili Delivered"
+  ],
+  "rows": [
+   [
+    "Static 2D Floor Plans",
+    "Tenant representatives can't picture entrance scale, lobby finishes or floor flow.",
+    "3D office zone tours: tenants move through lobbies, typical floors and courtyards."
+   ],
+   [
+    "Hidden Campus Amenities",
+    "Tenants can't judge drop-offs, courtyards or parking access.",
+    "3D campus walkthroughs: drop-off plazas, landscaping and underground vehicle access."
+   ],
+   [
+    "Overseas Decision-Makers",
+    "Decision-makers in London or Dubai hesitate without visiting Riyadh.",
+    "No-install WebGL access: tours stream by secure link without firewall issues."
+   ]
+  ]
+ },
+ "solution": {
+  "eyebrow": "Our Solution",
+  "title": "Interactive 3D Zone Tours for Office Leasing",
+  "body": "Manzili built 3D tours of the Al Basateen campus, covering lobbies, office floors and landscaped courtyards, so leasing teams could show the campus's quality and fill office space.",
+  "blocks": [
+   {
+    "title": "3D Office Zone Tours",
+    "points": [
+     "High-resolution tours of lobbies, typical office floors and double-height receptions, at accurate dimensions.",
+     "Tenants check layouts, ceiling heights and core circulation before completion."
+    ]
+   },
+   {
+    "title": "Amenity & Courtyard Walkthroughs",
+    "points": [
+     "Landscaped plazas, outdoor work areas and paths between buildings.",
+     "Shows corporate occupiers the campus's quality of life."
+    ]
+   },
+   {
+    "title": "Underground Parking & Access",
+    "points": [
+     "3D routing shows direct King Khalid Road ramp access, visitor drop-offs and executive parking.",
+     "Confirms the 1 bay per 23 m² GLA parking ratio for tenant representatives."
+    ]
+   },
+   {
+    "title": "Multi-Tenant Availability Viewer",
+    "points": [
+     "Leasing status, floor allocations and suite boundaries shown inside the tour.",
+     "Leasing teams present available suites and contiguous floors live."
+    ]
+   }
+  ]
+ },
+ "enablement": {
+  "eyebrow": "Leasing Team Enablement",
+  "title": "Leasing Presentations for Corporate Brokers",
+  "body": "Manzili trained Al Basateen's leasing team and appointed brokers to guide tenant representatives through the 3D tours on touch displays and in web sessions.",
+  "steps": [
+   {
+    "index": "01",
+    "title": "Campus & Connectivity",
+    "body": "The advisor introduces the Diriyah location, airport and ring road access, and campus amenities."
+   },
+   {
+    "index": "02",
+    "title": "Zone & Typical Floor Walkthrough",
+    "body": "Next, the tour moves through lobbies, core layouts, natural light and floor flow to answer tenant questions."
+   },
+   {
+    "index": "03",
+    "title": "Amenities & Commercial Terms",
+    "body": "The session ends with courtyard amenities, parking allocation and a review of the lease documents."
+   }
+  ]
+ },
+ "outcomes": {
+  "eyebrow": "Reported Performance",
+  "title": "Delivery Outcomes",
+  "stats": [
+   {
+    "value": "39,387 m²",
+    "label": "GLA Modeled",
+    "body": "Full 3D coverage of lobbies, office zones and floors.",
+    "outcome": "The whole campus visible digitally."
+   },
+   {
+    "value": "100%",
+    "label": "Office Zone Coverage",
+    "body": "Every lobby, typical floor and courtyard is navigable.",
+    "outcome": "Clear answers on layout and space for tenant representatives."
+   },
+   {
+    "value": "0",
+    "label": "Plugins or Installs Required",
+    "body": "Pure browser-based WebGL.",
+    "outcome": "Multinational committees inspect remotely behind corporate firewalls."
+   },
+   {
+    "value": "1:1",
+    "label": "Showroom & Web Parity",
+    "body": "The same tour quality on touch screens and executive laptops.",
+    "outcome": "Consistent presentation in every leasing channel."
+   }
+  ]
+ },
+ "standards": {
+  "eyebrow": "Quality & Compliance",
+  "title": "Delivery Standards",
+  "rows": [
+   [
+    "BOMA Measurement Alignment",
+    "Precise area verification",
+    "Accurate rentable and usable areas reduce square-meter disputes after signing"
+   ],
+   [
+    "Corporate IT Compatibility",
+    "Pure WebGL, no plugins",
+    "Works behind strict bank and corporate proxy networks"
+   ],
+   [
+    "In-Kingdom Hosting",
+    "KSA data center",
+    "Lease negotiations and terms hosted in-Kingdom under the Saudi PDPL"
+   ]
+  ]
+ }
+}

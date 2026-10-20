@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { EASE } from "@/lib/utils";
 import { SectionHeader } from "./SectionHeader";
 
-type Props = { eyebrow: string; title: string; lead?: string; steps: { title: string; body: string }[] };
+type Props = { eyebrow: string; title: string; lead?: string; steps: { title: string; body: string; index?: string }[] };
 
 /** Numbered build pipeline. */
 export function StepsGrid({ eyebrow, title, lead, steps }: Props) {
@@ -23,8 +23,8 @@ export function StepsGrid({ eyebrow, title, lead, steps }: Props) {
               className="group relative rounded-card bg-white p-7 shadow-card ring-1 ring-ink/5"
             >
               <div className="flex items-center gap-4">
-                <span className="text-5xl font-extrabold leading-none text-ink/10 transition-colors duration-500 group-hover:text-brand">
-                  {String(i + 1).padStart(2, "0")}
+                <span aria-hidden="true" className="text-5xl font-extrabold leading-none text-ink/10 transition-colors duration-500 group-hover:text-brand-dark">
+                  {s.index ?? String(i + 1).padStart(2, "0")}
                 </span>
                 {i < steps.length - 1 && (
                   <motion.span

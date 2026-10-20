@@ -2,7 +2,8 @@
 
 import { motion, useScroll, useSpring } from "framer-motion";
 import { useRef } from "react";
-import { home } from "@/content/home";
+import type { Cta, Head } from "@/content/copy";
+import type { IconName } from "@/components/ui/Icon";
 import { images } from "@/content/images";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
@@ -10,9 +11,10 @@ import { Media } from "@/components/ui/Media";
 import { Reveal } from "@/components/ui/Reveal";
 import { CseMockup } from "@/components/mockups/CseMockup";
 
-const { cse } = home;
+const ICONS: IconName[] = ["map", "wallet", "fingerprint", "activity"];
 
-export function CseSection() {
+export function CseSection({ c }: { c: Head & { cards: Record<string, string>[]; cta: Cta } }) {
+  const cse = c;
   const listRef = useRef<HTMLUListElement>(null);
   const { scrollYProgress } = useScroll({ target: listRef, offset: ["start 75%", "end 55%"] });
   const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 24, mass: 0.4 });
@@ -24,9 +26,9 @@ export function CseSection() {
           <div>
             <p className="eyebrow">{cse.eyebrow}</p>
             <h2 id="cse-title" className="h-section mt-4 max-w-[22ch]">
-              {cse.headline}
+              {cse.title}
             </h2>
-            <p className="mt-5 max-w-[62ch]">{cse.lead}</p>
+            <p className="mt-5 max-w-[62ch]">{cse.body}</p>
           </div>
           <Button href={cse.cta.href} variant="accent" className="w-fit">
             {cse.cta.label}
@@ -45,22 +47,22 @@ export function CseSection() {
           </Reveal>
 
           <ul ref={listRef} className="relative self-center">
-            <span aria-hidden="true" className="absolute bottom-6 left-5 top-6 w-px bg-line" />
+            <span aria-hidden="true" className="absolute bottom-6 start-5 top-6 w-px bg-line" />
             <motion.span
               aria-hidden="true"
               style={{ scaleY: progress }}
-              className="absolute bottom-6 left-5 top-6 w-px origin-top bg-accent"
+              className="absolute bottom-6 start-5 top-6 w-px origin-top bg-accent"
             />
-            {cse.features.map((f) => (
+            {cse.cards.map((f, i) => (
               <li key={f.title} className="relative flex gap-5 pb-8 last:pb-0">
                 <motion.span
-                  initial={{ backgroundColor: "#FFF1E5", color: "#FF7A00" }}
-                  whileInView={{ backgroundColor: "#FF7A00", color: "#FFFFFF" }}
+                  initial={{ backgroundColor: "#FDF1E4", color: "#F28E21" }}
+                  whileInView={{ backgroundColor: "#F28E21", color: "#FFFFFF" }}
                   viewport={{ margin: "0px 0px -40% 0px" }}
                   transition={{ duration: 0.4 }}
                   className="relative z-10 grid grid-cols-1 size-10 shrink-0 place-items-center rounded-full ring-4 ring-page"
                 >
-                  <Icon name={f.icon} size={18} />
+                  <Icon name={ICONS[i % 4]} size={18} />
                 </motion.span>
                 <div className="pt-1.5">
                   <h3 className="text-h4 font-semibold text-ink">{f.title}</h3>

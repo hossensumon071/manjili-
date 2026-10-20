@@ -1,0 +1,188 @@
+{
+ "template": "A",
+ "hero": {
+  "eyebrow": "Case Study · Cityscape Global",
+  "title": "An 8-Tower Masterplan Launch at Cityscape Global",
+  "body": "Erth Real Estate Development launched its 8-tower Riyadh masterplan at Cityscape Global with a Manzili 360 platform, offline failover and on-site sales training.",
+  "chips": [
+   "Erth Real Estate Development",
+   "8-Tower Masterplan",
+   "King Fahad Road, Riyadh",
+   "Cityscape Global"
+  ],
+  "mockupChips": [
+   "Live twin",
+   "8 towers",
+   "Cityscape Global"
+  ]
+ },
+ "sidebar": [
+  "Erth Real Estate Development",
+  "Thee Erth · 8-tower mixed-use masterplan with Raffles Hotel & Residences, Sofitel serviced apartments, Grade-A offices and a luxury retail mall",
+  "King Fahad Road, Riyadh",
+  "Browser-based 360 web platform · Interactive 3D tours · In-person sales training · Cityscape Global launch support"
+ ],
+ "challenge": {
+  "eyebrow": "The Challenge",
+  "title": "Launching 8 Towers on a Fixed Exhibition Date",
+  "body": "Erth needed a digital sales platform that could present the scale, views and finishes of an 8-tower masterplan to investors and off-plan buyers at Cityscape Global in Riyadh.",
+  "cards": [
+   {
+    "index": "01",
+    "category": "Schedule Risk",
+    "title": "A Fixed Opening-Day Deadline",
+    "body": "Delivery was tied to the opening morning of Cityscape Global, leaving no margin for schedule slippage or build errors."
+   },
+   {
+    "index": "02",
+    "category": "Network Risk",
+    "title": "Overloaded Exhibition Wi-Fi",
+    "body": "Crowded convention halls overload event Wi-Fi, risking lag, dropped frames or crashes during VIP buyer meetings."
+   },
+   {
+    "index": "03",
+    "category": "Team Readiness",
+    "title": "Sales Teams Under Pressure",
+    "body": "Without hands-on training, sales teams under exhibition pressure fall back on paper brochures."
+   }
+  ]
+ },
+ "solution": {
+  "eyebrow": "Our Solution",
+  "title": "One Connected Setup for Web, Showroom and Exhibition Floor",
+  "body": "Manzili combined browser-based 360 navigation, showroom hardware, local network failover and in-person sales coaching.",
+  "blocks": [
+   {
+    "index": "01",
+    "label": "No Plugins",
+    "title": "Browser-Based 360 Web Platform",
+    "body": "A lightweight WebGL model of all 8 towers, podium streetscapes and unit-level view corridors, loading in under 3 seconds on buyers' phones and sales iPads with nothing to download.",
+    "features": [
+     {
+      "title": "8-Tower Navigation",
+      "body": "Full masterplan coverage"
+     },
+     {
+      "title": "Unit View Corridors",
+      "body": "Sightline and daylight simulation"
+     },
+     {
+      "title": "Instant Mobile Access",
+      "body": "Opens over standard 4G and 5G"
+     }
+    ]
+   },
+   {
+    "index": "02",
+    "label": "3D Tours",
+    "title": "Interactive 3D Environments",
+    "body": "Walkthroughs of Raffles Residences, Sofitel apartments and Grade-A office floors let buyers check layouts, ceiling heights and finishes before they reserve.",
+    "features": [
+     {
+      "title": "Hospitality-Grade Tours",
+      "body": "Detailed luxury residence inspection"
+     },
+     {
+      "title": "Office Floor Plates",
+      "body": "Column-free space for corporate tenants"
+     },
+     {
+      "title": "Unit-Type Selectors",
+      "body": "Fast layout filtering across 8 towers"
+     }
+    ]
+   },
+   {
+    "index": "03",
+    "label": "Failover",
+    "title": "Exhibition-Ready Failover Setup",
+    "body": "Progressive loading and local edge caching kept presentations running independently of public exhibition Wi-Fi.",
+    "features": [
+     {
+      "title": "Local Edge Caching",
+      "body": "Protection against venue network dropouts"
+     },
+     {
+      "title": "Dual-Carrier Failover",
+      "body": "5G backup for live data sync"
+     },
+     {
+      "title": "Hardware Swap Kits",
+      "body": "Standby spares on site"
+     }
+    ]
+   },
+   {
+    "index": "04",
+    "label": "Sales Coaching",
+    "title": "In-Person Sales Team Training",
+    "body": "On-site coaching certified Erth's sales consultants on interactive presentations, answering layout and view questions, and digital reservations before the doors opened.",
+    "features": [
+     {
+      "title": "Touch Table Mastery",
+      "body": "Confident use under pressure"
+     },
+     {
+      "title": "Presentation Pacing",
+      "body": "Walkthroughs from masterplan to unit"
+     },
+     {
+      "title": "Digital Reservations",
+      "body": "From interest to timed unit hold"
+     }
+    ]
+   }
+  ]
+ },
+ "outcomes": {
+  "eyebrow": "Reported Performance Across Cityscape Global",
+  "title": "Delivery Outcomes",
+  "stats": [
+   {
+    "value": "100%",
+    "label": "Uptime Across Cityscape Global",
+    "title": "No Event Downtime",
+    "body": "No downtime or frame-rate drops were recorded on touch tables or displays across the multi-day exhibition."
+   },
+   {
+    "value": "<3 s",
+    "label": "Load Time",
+    "title": "Instant Access",
+    "body": "Under 3 seconds to load on showroom touch tables, sales iPads and buyer smartphones, even at peak hall traffic."
+   },
+   {
+    "value": "0",
+    "label": "Plugins or Downloads Needed",
+    "title": "Open on Any Device",
+    "body": "Buyers and consultants opened the platform in a standard browser, with no plugins or app installs."
+   },
+   {
+    "value": "8",
+    "label": "Towers Visualized",
+    "title": "Physical Scale Model Replaced",
+    "body": "One digital asset replaced costly physical scale models and is reused in permanent sales centers and web campaigns."
+   }
+  ]
+ },
+ "standards": {
+  "eyebrow": "Quality & Compliance",
+  "title": "Delivery Standards",
+  "rows": [
+   [
+    "Open Web Architecture",
+    "Standard WebGL / HTML5 core",
+    "No third-party plugins and no firewall exceptions for buyers or IT teams"
+   ],
+   [
+    "Data & Asset Protection",
+    "Encrypted asset streaming",
+    "Architectural CAD and BIM geometry protected against unauthorized extraction"
+   ],
+   [
+    "On-Time Delivery",
+    "Every milestone delivered on schedule",
+    "On-site engineers on the exhibition floor for the full event"
+   ]
+  ]
+ }
+}

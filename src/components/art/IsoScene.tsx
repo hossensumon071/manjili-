@@ -54,7 +54,7 @@ function buildLayout(variant: SceneVariant, seed: number) {
   switch (variant) {
     case "masterplan": {
       size = 260;
-      plates.push({ x: 40, y: 40, w: 180, d: 180, fill: "#DCE8F7" });
+      plates.push({ x: 40, y: 40, w: 180, d: 180, fill: "#DCEFF7" });
       boxes.push({ x: 50, y: 50, w: 160, d: 160, h: 14, kind: "podium" });
       const spots = [
         [60, 60], [110, 58], [160, 62], [62, 112], [160, 112], [60, 162], [112, 162], [162, 160],
@@ -68,7 +68,7 @@ function buildLayout(variant: SceneVariant, seed: number) {
     }
     case "towers": {
       size = 240;
-      plates.push({ x: 60, y: 60, w: 120, d: 120, fill: "#DCE8F7" });
+      plates.push({ x: 60, y: 60, w: 120, d: 120, fill: "#DCEFF7" });
       boxes.push({ x: 66, y: 66, w: 108, d: 108, h: 12, kind: "podium" });
       boxes.push({ x: 74, y: 76, w: 34, d: 34, h: 210, kind: "tower" });
       boxes.push({ x: 128, y: 74, w: 34, d: 34, h: 180, kind: "tower", highlight: true });
@@ -86,7 +86,7 @@ function buildLayout(variant: SceneVariant, seed: number) {
       for (let row = 0; row < 4; row++)
         for (let col = 0; col < 5; col++) {
           const x = 20 + col * 44 + (row % 2) * 4, y = 20 + row * 56;
-          plates.push({ x: x - 4, y: y - 4, w: 38, d: 44, fill: (row + col) % 3 ? "#E3EEFA" : "#D6EBDF" });
+          plates.push({ x: x - 4, y: y - 4, w: 38, d: 44, fill: (row + col) % 3 ? "#E3F3FA" : "#D6EBDF" });
           boxes.push({ x, y, w: 26, d: 22, h: 16, kind: "villa", highlight: row === 1 && col === 3 });
           boxes.push({ x: x + 4, y: y + 3, w: 16, d: 14, h: 28, kind: "villa", highlight: row === 1 && col === 3 });
           tree(x + 30, y + 30);
@@ -109,7 +109,7 @@ function buildLayout(variant: SceneVariant, seed: number) {
             for (let t = 0; t < 7; t++) tree(x0 + 4 + r() * 36, y0 + 4 + r() * 36);
             continue;
           }
-          plates.push({ x: x0, y: y0, w: 44, d: 44, fill: "#E3EEFA" });
+          plates.push({ x: x0, y: y0, w: 44, d: 44, fill: "#E3F3FA" });
           for (let i = 0; i < 2; i++)
             for (let j = 0; j < 2; j++)
               boxes.push({ x: x0 + 3 + i * 21, y: y0 + 3 + j * 21, w: 17, d: 17, h: 10 + r() * 22, kind: "block" });
@@ -132,7 +132,7 @@ function buildLayout(variant: SceneVariant, seed: number) {
     case "campus": {
       size = 250;
       plates.push({ x: 82, y: 82, w: 86, d: 86, fill: "#CDEBD8" });
-      plates.push({ x: 10, y: 200, w: 230, d: 34, fill: "#D3DEEC" });
+      plates.push({ x: 10, y: 200, w: 230, d: 34, fill: "#D3E4EC" });
       boxes.push({ x: 30, y: 30, w: 70, d: 44, h: 64, kind: "block" });
       boxes.push({ x: 150, y: 30, w: 70, d: 44, h: 76, kind: "block", highlight: true });
       boxes.push({ x: 30, y: 120, w: 44, d: 70, h: 54, kind: "block" });
@@ -144,7 +144,7 @@ function buildLayout(variant: SceneVariant, seed: number) {
     }
     case "waterfront": {
       size = 250;
-      plates.push({ x: 0, y: 170, w: 250, d: 80, fill: "#7FB8F0" });
+      plates.push({ x: 0, y: 170, w: 250, d: 80, fill: "#7FCEF0" });
       plates.push({ x: 0, y: 156, w: 250, d: 14, fill: "#F4E6C8" });
       boxes.push({ x: 90, y: 90, w: 50, d: 50, h: 14, kind: "podium" });
       boxes.push({ x: 98, y: 96, w: 34, d: 38, h: 250, kind: "tower", highlight: true });
@@ -210,24 +210,24 @@ export function IsoScene({ variant, seed = 3, label, className, density = "full"
       <defs>
         <linearGradient id={id("top")} x1="0" y1="0" x2="1" y2="1">
           <stop offset="0" stopColor="#FFFFFF" />
-          <stop offset="1" stopColor="#EEF4FC" />
+          <stop offset="1" stopColor="#EEF8FC" />
         </linearGradient>
         <linearGradient id={id("left")} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#E9F0FA" />
-          <stop offset="1" stopColor="#C7D7EE" />
+          <stop offset="0" stopColor="#E9F5FA" />
+          <stop offset="1" stopColor="#C7E2EE" />
         </linearGradient>
         <linearGradient id={id("right")} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#C2D4EE" />
-          <stop offset="1" stopColor="#97B3DD" />
+          <stop offset="0" stopColor="#C2E1EE" />
+          <stop offset="1" stopColor="#97C8DD" />
         </linearGradient>
         <linearGradient id={id("hl")} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#FFB15C" />
-          <stop offset="1" stopColor="#FF7A00" />
+          <stop offset="0" stopColor="#F7B266" />
+          <stop offset="1" stopColor="#F28E21" />
         </linearGradient>
         <linearGradient id={id("scan")} x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stopColor="#7DB4FF" stopOpacity="0" />
+          <stop offset="0" stopColor="#7DD8FF" stopOpacity="0" />
           <stop offset="0.5" stopColor="#FFFFFF" stopOpacity="0.55" />
-          <stop offset="1" stopColor="#7DB4FF" stopOpacity="0" />
+          <stop offset="1" stopColor="#7DD8FF" stopOpacity="0" />
         </linearGradient>
         <clipPath id={id("ground")}>
           <polygon points={ground} />
@@ -238,10 +238,10 @@ export function IsoScene({ variant, seed = 3, label, className, density = "full"
       </defs>
 
       {/* Ground plate */}
-      <polygon points={ground} fill="#F2F7FD" />
+      <polygon points={ground} fill="#F2FAFD" />
       <g clipPath={`url(#${id("ground")})`}>
         {Array.from({ length: Math.ceil(size / 20) + 1 }, (_, i) => i * 20).map((v) => (
-          <g key={v} stroke="#D4E2F4" strokeWidth="0.6">
+          <g key={v} stroke="#D4EAF4" strokeWidth="0.6">
             <line x1={iso(v, 0, 0)[0]} y1={iso(v, 0, 0)[1]} x2={iso(v, size, 0)[0]} y2={iso(v, size, 0)[1]} />
             <line x1={iso(0, v, 0)[0]} y1={iso(0, v, 0)[1]} x2={iso(size, v, 0)[0]} y2={iso(size, v, 0)[1]} />
           </g>
@@ -267,14 +267,14 @@ export function IsoScene({ variant, seed = 3, label, className, density = "full"
           />
         )}
       </g>
-      <polygon points={ground} fill="none" stroke="#BFD3EE" strokeWidth="1" />
+      <polygon points={ground} fill="none" stroke="#BFE0EE" strokeWidth="1" />
 
       {/* Trees */}
       {trees.map((t, i) => {
         const [sx, sy] = iso(t.x, t.y, 0);
         return (
           <g key={`t${i}`}>
-            <ellipse cx={sx + 2} cy={sy + 1} rx={t.r} ry={t.r * 0.5} fill="#0B132B" opacity="0.12" />
+            <ellipse cx={sx + 2} cy={sy + 1} rx={t.r} ry={t.r * 0.5} fill="#373535" opacity="0.12" />
             <circle cx={sx} cy={sy - t.r} r={t.r} fill={i % 3 ? "#3FAE7A" : "#2E9466"} />
             <circle cx={sx - t.r * 0.35} cy={sy - t.r * 1.3} r={t.r * 0.4} fill="#7FD3A6" opacity="0.7" />
           </g>
@@ -299,7 +299,7 @@ export function IsoScene({ variant, seed = 3, label, className, density = "full"
             viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay }}
           >
-            {!ctx && b.kind !== "podium" && <polygon points={shadow} fill="#0B3A80" opacity="0.1" filter={`url(#${id("shadow")})`} />}
+            {!ctx && b.kind !== "podium" && <polygon points={shadow} fill="#0B5D80" opacity="0.1" filter={`url(#${id("shadow")})`} />}
             <polygon points={left} fill={`url(#${id("left")})`} stroke="#FFFFFF" strokeOpacity="0.6" strokeWidth="0.5" />
             <polygon points={right} fill={`url(#${id("right")})`} stroke="#FFFFFF" strokeOpacity="0.4" strokeWidth="0.5" />
             {!ctx &&
@@ -307,12 +307,12 @@ export function IsoScene({ variant, seed = 3, label, className, density = "full"
                 <g key={z}>
                   <polygon
                     points={pts([iso(b.x + 1, b.y + b.d, z), iso(b.x + b.w - 1, b.y + b.d, z), iso(b.x + b.w - 1, b.y + b.d, z + 4), iso(b.x + 1, b.y + b.d, z + 4)])}
-                    fill={isHl ? "#FF9B3D" : "#5E92D8"}
+                    fill={isHl ? "#F6A54D" : "#5EB3D8"}
                     opacity={isHl ? 0.55 : 0.5}
                   />
                   <polygon
                     points={pts([iso(b.x + b.w, b.y + 1, z), iso(b.x + b.w, b.y + b.d - 1, z), iso(b.x + b.w, b.y + b.d - 1, z + 4), iso(b.x + b.w, b.y + 1, z + 4)])}
-                    fill={isHl ? "#E86B00" : "#2F63B3"}
+                    fill={isHl ? "#D9761A" : "#2F8BB3"}
                     opacity={isHl ? 0.5 : 0.55}
                   />
                 </g>
@@ -320,7 +320,7 @@ export function IsoScene({ variant, seed = 3, label, className, density = "full"
             {b.kind === "villa" && (
               <polygon
                 points={pts([iso(b.x + 3, b.y + b.d, 4), iso(b.x + b.w - 3, b.y + b.d, 4), iso(b.x + b.w - 3, b.y + b.d, b.h - 4), iso(b.x + 3, b.y + b.d, b.h - 4)])}
-                fill="#5E92D8"
+                fill="#5EB3D8"
                 opacity="0.45"
               />
             )}
@@ -329,7 +329,7 @@ export function IsoScene({ variant, seed = 3, label, className, density = "full"
               const [cx, cy] = iso(b.x + b.w / 2, b.y + b.d / 2, b.h);
               return (
                 <>
-                  <path d={`M${cx - 12} ${cy} a12 12 0 0 1 24 0 z`} fill="#FFFFFF" stroke="#FFB15C" />
+                  <path d={`M${cx - 12} ${cy} a12 12 0 0 1 24 0 z`} fill="#FFFFFF" stroke="#F7B266" />
                   <rect x={cx + 14} y={cy - 30} width="3" height="34" fill="#FFFFFF" />
                 </>
               );
@@ -341,24 +341,24 @@ export function IsoScene({ variant, seed = 3, label, className, density = "full"
       {/* Highlight pin */}
       {pin && density === "full" && (
         <g transform={`translate(${pin[0]} ${pin[1]}) scale(${k})`}>
-          <line x1="0" y1="0" x2="0" y2="-26" stroke="#FF7A00" strokeWidth="1.5" />
+          <line x1="0" y1="0" x2="0" y2="-26" stroke="#F28E21" strokeWidth="1.5" />
           {!reduce && (
             <motion.circle
               cx="0"
               cy="-30"
               r="5"
               fill="none"
-              stroke="#FF7A00"
+              stroke="#F28E21"
               initial={{ scale: 1, opacity: 0.9 }}
               animate={{ scale: 3, opacity: 0 }}
               transition={{ duration: 1.8, repeat: Infinity, ease: "easeOut" }}
               style={{ transformOrigin: "0px -30px" }}
             />
           )}
-          <circle cx="0" cy="-30" r="5" fill="#FF7A00" stroke="#fff" strokeWidth="2" />
+          <circle cx="0" cy="-30" r="5" fill="#F28E21" stroke="#fff" strokeWidth="2" />
           {label && (
             <g transform="translate(10 -46)">
-              <rect width={label.length * 5.6 + 18} height="22" rx="11" fill="#0B132B" opacity="0.88" />
+              <rect width={label.length * 5.6 + 18} height="22" rx="11" fill="#373535" opacity="0.88" />
               <text x="10" y="15" fontSize="10.5" fontWeight="700" fill="#fff" style={{ fontFamily: "var(--font-cairo), sans-serif" }}>
                 {label}
               </text>
@@ -382,7 +382,7 @@ export function SceneFrame({
   return (
     <div
       className={cn(
-        "relative overflow-hidden bg-[radial-gradient(120%_90%_at_20%_0%,#5AA8FF_0%,#1F7BEA_42%,#0754CF_100%)]",
+        "relative overflow-hidden bg-[radial-gradient(120%_90%_at_20%_0%,#3DB2E3_0%,#069AD7_45%,#0583BA_100%)]",
         className,
       )}
     >

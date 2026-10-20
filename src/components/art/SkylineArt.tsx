@@ -15,7 +15,7 @@ const EASE = [0.22, 1, 0.36, 1] as const;
  *    buildings under the cursor and the back layer drifts with parallax.
  * 3. Ambient life: twinkling windows, aviation beacons, bridge traffic.
  */
-export function SkylineArt({ className, fill = "#2378DE" }: { className?: string; fill?: string }) {
+export function SkylineArt({ className, fill = "#0477AB" }: { className?: string; fill?: string }) {
   const ref = useRef<SVGSVGElement>(null);
   const inView = useInView(ref, { once: true, margin: "0px 0px -10% 0px" });
   const reduce = useReducedMotion();
@@ -41,9 +41,9 @@ export function SkylineArt({ className, fill = "#2378DE" }: { className?: string
 
   const cars = [
     { dur: 7, delay: 0, color: "#FFFFFF" },
-    { dur: 9, delay: 2.5, color: "#FFB15C" },
+    { dur: 9, delay: 2.5, color: "#F7B266" },
     { dur: 8, delay: 5, color: "#FFFFFF" },
-    { dur: 10, delay: 1.2, color: "#FFB15C", reverse: true },
+    { dur: 10, delay: 1.2, color: "#F7B266", reverse: true },
   ];
 
   return (
@@ -59,8 +59,8 @@ export function SkylineArt({ className, fill = "#2378DE" }: { className?: string
       <defs>
         <radialGradient id="skyline-glow">
           <stop offset="0" stopColor="#FFFFFF" stopOpacity="0.55" />
-          <stop offset="0.45" stopColor="#9CCBFF" stopOpacity="0.25" />
-          <stop offset="1" stopColor="#9CCBFF" stopOpacity="0" />
+          <stop offset="0.45" stopColor="#9CE1FF" stopOpacity="0.25" />
+          <stop offset="1" stopColor="#9CE1FF" stopOpacity="0" />
         </radialGradient>
         <clipPath id="skyline-clip">
           {SKYLINE_FRONT_CHUNKS.map((c) => (
@@ -83,7 +83,7 @@ export function SkylineArt({ className, fill = "#2378DE" }: { className?: string
             cy={c.cy}
             rx={c.rx}
             ry={c.rx * 0.18}
-            fill="#D6E7FB"
+            fill="#D6F0FB"
             animate={{ x: [0, 60, 0] }}
             transition={{ duration: c.d, repeat: Infinity, ease: "easeInOut" }}
           />
@@ -137,7 +137,7 @@ export function SkylineArt({ className, fill = "#2378DE" }: { className?: string
             width="2.6"
             height="3.4"
             rx="0.6"
-            fill={i % 4 === 0 ? "#FFD9A0" : "#CFE5FF"}
+            fill={i % 4 === 0 ? "#FFD9A0" : "#CFF1FF"}
             className={reduce ? "opacity-60" : "skyline-twinkle"}
             style={{ animationDelay: `${(i * 0.37) % 6}s`, animationDuration: `${3 + (i % 5)}s` }}
           />

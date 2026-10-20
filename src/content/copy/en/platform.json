@@ -1,0 +1,186 @@
+{
+ "s01": {
+  "breadcrumb": "Home",
+  "breadcrumbHref": "/",
+  "eyebrow": "Flagship Platform",
+  "h1": "The Connected Sales Environment for Off-Plan Real Estate",
+  "subheadingBodyCopy": "A platform built for REGA and Wafi off-plan workflows that takes buyers from masterplan to Nafath verification and a generated SPA, with no paper handoffs.",
+  "primaryCta": "Request a CSE Demo",
+  "primaryCtaHref": "/contact-us",
+  "secondaryCta": "See Buyer Intent Data",
+  "secondaryCtaHref": "#telemetry",
+  "specStrip": [
+   "Built for REGA and Wafi off-plan workflows",
+   "Nafath Verification",
+   "Milestone Payment Plans",
+   "Live Buyer Intent Data"
+  ],
+  "_tables": [],
+  "crumbs": [
+   {
+    "label": "Home",
+    "href": "/"
+   },
+   {
+    "label": "Platform (CSE)",
+    "href": null
+   }
+  ]
+ },
+ "s02": {
+  "eyebrow": "Platform Capabilities",
+  "h2": "Turn Off-Plan Browsing into Digital Reservations",
+  "subheadingBodyCopy": "Off-plan buyers drop out between static brochures and paper handoffs. The CSE connects 3D exploration, live inventory and digital reservation in one continuous flow.",
+  "block01NumberLabel": [
+   "01",
+   "Exploration"
+  ],
+  "block01Title": "Masterplan-to-Unit 3D Navigation",
+  "block01Body": "Buyers move from the community masterplan into unit-level tours, checking local infrastructure, sunlight and the actual balcony view before they open the floor plan.",
+  "block01Features": [
+   "Masterplan-to-Unit Navigation",
+   "One continuous journey without reloading",
+   "Calibrated Balcony Views",
+   "Real-world elevation and angle simulation",
+   "Sun-Path Modeling",
+   "Accurate sunlight across every season"
+  ],
+  "block02NumberLabel": [
+   "02",
+   "Inventory & Payment Plans"
+  ],
+  "block02Title": "Live Inventory & Dynamic Financing",
+  "block02Body": "Shows live unit availability synced with your CRM and ERP, alongside interactive floor plans and milestone payment calculators. Buyers adjust the down payment and construction-linked schedule to fit their budget.",
+  "block02Features": [
+   "Real-Time Availability",
+   "Sub-500 ms sync prevents double-bookings",
+   "Milestone Payment Calculators",
+   "Construction-linked payment schedules",
+   "Interactive Floor Plans",
+   "Dimensioned layouts and elevation filters"
+  ],
+  "block03NumberLabel": [
+   "03",
+   "Digital Reservation"
+  ],
+  "block03Title": "Nafath-Verified Digital Reservations",
+  "block03Body": "Buyers verify their identity through Nafath, the platform generates the Sales and Purchase Agreement (SPA), and a timed unit hold linked to the project's Wafi escrow process reserves the unit, all without paper handoffs.",
+  "block03Features": [
+   "Nafath Identity Verification",
+   "National identity check in seconds",
+   "Automated SPA Generation",
+   "Contract drafted without manual paperwork",
+   "Timed Unit Hold",
+   "Linked to the project's Wafi escrow process"
+  ],
+  "_tables": []
+ },
+ "s03": {
+  "eyebrow": "Buyer Intent",
+  "h2": "Replace Agent Notes with Measured Buyer Intent",
+  "subheadingBodyCopy": "Off-plan sales still run on agent notes and website pageviews. The CSE records every buyer interaction, so sales leaders can see who is ready to buy and why.",
+  "card01Chip": "Second-by-Second Dwell Tracking",
+  "card01Title": "Engagement by Unit and View",
+  "card01Body": "Measures second-by-second dwell time on each unit type, corner layout and view orientation, so you can see which features draw serious interest.",
+  "card02Chip": "Indicated Budget Range",
+  "card02Title": "Financial Intent Signals",
+  "card02Body": "Shows how buyers adjust down-payment sliders and milestone schedules, so your team has an indicated budget range before the first call.",
+  "card03Chip": "Zero Pipeline Blind Spots",
+  "card03Title": "Funnel Bottleneck Detection",
+  "card03Body": "Pinpoints where buyers drop off, from masterplan exploration to Nafath verification and SPA generation, so your team follows up with deal-ready buyers first.",
+  "_tables": []
+ },
+ "s04": {
+  "eyebrow": "Side by Side",
+  "h2": "Static Showroom Sales vs. Connected Sales Environment",
+  "subheadingBodyCopy": "How the CSE replaces manual off-plan sales steps with one connected, measurable workflow.",
+  "headerRow": [
+   "Capability",
+   "Legacy Off-Plan Sales",
+   "Manzili CSE"
+  ],
+  "row1": [
+   "Buyer Exploration",
+   "Printed brochures and static PDF floor plans",
+   "3D masterplan navigation and unit virtual tours"
+  ],
+  "row2": [
+   "Inventory Status",
+   "Spreadsheets reconciled by hand, with frequent double-bookings",
+   "Sub-500 ms inventory sync with timed unit holds"
+  ],
+  "row3": [
+   "Payment Schedules",
+   "One-size-fits-all payment sheets",
+   "Milestone calculator buyers adjust themselves"
+  ],
+  "row4": [
+   "Buyer Authentication",
+   "In-person ID scans and paper photocopies",
+   "Digital identity verification through Nafath"
+  ],
+  "row5": [
+   "Contract Execution",
+   "Days of manual SPA drafting, couriers and wet signatures",
+   "SPA generated on the platform"
+  ],
+  "row6": [
+   "Buyer Intent",
+   "Anecdotal notes",
+   "Dwell time, financing and drop-off telemetry"
+  ],
+  "_tables": []
+ },
+ "s05": {
+  "q5": "How does Nafath verification work in the CSE?",
+  "a5": "Before placing a timed unit hold, buyers confirm their identity through Nafath, the national single sign-on.",
+  "_tables": []
+ },
+ "s06": {
+  "eyebrow": "Behind the Platform",
+  "h2": "Powered by the 6-Pillar Infrastructure",
+  "primaryCta": "View All 6 Pillars",
+  "primaryCtaHref": "/#pillars",
+  "tile01": [
+   "Pillar 01",
+   "Digital Twin"
+  ],
+  "tile01Href": "/pillars/digital-twin-webgl",
+  "tile02": [
+   "Pillar 02",
+   "CRM & Inventory Sync"
+  ],
+  "tile02Href": "/pillars/crm-inventory-integration",
+  "tile03": [
+   "Pillar 03",
+   "Showroom Hardware"
+  ],
+  "tile03Href": "/pillars/sales-center-hardware",
+  "tile04": [
+   "Pillar 04",
+   "Sales Enablement"
+  ],
+  "tile04Href": "/pillars/saudi-sales-enablement",
+  "tile05": [
+   "Pillar 05",
+   "Launch Command"
+  ],
+  "tile05Href": "/pillars/vip-launch-command",
+  "tile06": [
+   "Pillar 06",
+   "Lifecycle & Matterport"
+  ],
+  "tile06Href": "/pillars/full-lifecycle-support",
+  "_tables": []
+ },
+ "s07": {
+  "eyebrow": "Built for REGA and Wafi off-plan workflows",
+  "h2": "Turn Your BIM into a Launch-Ready Sales Twin",
+  "subheadingBodyCopy": "Share your Revit, IFC or CAD files under NDA. We scope the twin, showroom hardware and launch support, and deliver a launch-ready twin within 14 working days of data freeze.",
+  "primaryCta": "Book Technical Scoping",
+  "primaryCtaHref": "/contact-us",
+  "secondaryCta": "View Case Studies",
+  "secondaryCtaHref": "/case-studies",
+  "_tables": []
+ }
+}

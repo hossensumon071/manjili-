@@ -1,28 +1,23 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
-import { home } from "@/content/home";
+import { Fragment, useRef } from "react";
+import type { Hero as HeroCopy } from "@/content/copy";
 import { images } from "@/content/images";
 import { EASE } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
 import { Media } from "@/components/ui/Media";
 import { HeroArt } from "@/components/art/HeroArt";
 
-const { hero } = home;
-
-export function Hero() {
+export function Hero({ c }: { c: HeroCopy }) {
+  const hero = c;
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
   const artY = useTransform(scrollYProgress, [0, 1], ["0%", "16%"]);
   const contentOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
 
-  const words = [
-    ...hero.headline.light.split(" ").map((w) => ({ w, weight: "" })),
-    ...hero.headline.strong.split(" ").map((w) => ({ w, weight: "" })),
-    { w: "\n", weight: "" },
-    ...hero.headline.rest.split(" ").map((w) => ({ w, weight: "" })),
-  ];
+  // Word-by-word animation; each word keeps a real trailing space for screen readers / Google
+  const words = hero.title.split(" ").map((w) => ({ w, weight: "" }));
 
   return (
     <section ref={ref} className="px-2 pt-2 sm:px-3 sm:pt-3" aria-labelledby="hero-title">
@@ -43,8 +38,8 @@ export function Hero() {
           />
         </motion.div>
         {/* Legibility washes */}
-        <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#0650C4] via-[#0A5BD3]/40 to-transparent" />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#0650C4]/60 via-[#0650C4]/10 to-transparent" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#0477AB] via-[#0479AE]/60 to-transparent" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#0477AB]/80 via-[#0479AE]/35 to-transparent" />
 
         <motion.div
           style={{ opacity: contentOpacity }}
@@ -64,11 +59,9 @@ export function Hero() {
           </motion.span>
 
           <h1 id="hero-title" className="h-display max-w-4xl">
-            {words.map((item, i) =>
-              item.w === "\n" ? (
-                <br key={i} className="hidden sm:block" />
-              ) : (
-                <span key={i} className="inline-block overflow-hidden pb-[0.08em] align-bottom">
+            {words.map((item, i) => (
+              <Fragment key={i}>
+                <span className="inline-block overflow-hidden pb-[0.08em] align-bottom">
                   <motion.span
                     className={`inline-block ${item.weight}`}
                     initial={{ y: "105%" }}
@@ -76,20 +69,20 @@ export function Hero() {
                     transition={{ duration: 0.9, ease: EASE, delay: 0.45 + i * 0.06 }}
                   >
                     {item.w}
-                    {"\u00A0"}
                   </motion.span>
                 </span>
-              ),
-            )}
+                {i < words.length - 1 && " "}
+              </Fragment>
+            ))}
           </h1>
 
           <motion.p
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: EASE, delay: 1.0 }}
-            className="mt-5 max-w-[60ch] text-lead font-medium text-white/85"
+            className="mt-5 max-w-[60ch] text-lead font-medium text-white/95"
           >
-            {hero.subheader}
+            {hero.body}
           </motion.p>
 
           <motion.div
@@ -98,11 +91,11 @@ export function Hero() {
             transition={{ duration: 0.8, ease: EASE, delay: 1.15 }}
             className="mt-8 flex flex-wrap gap-3"
           >
-            <Button href={hero.primaryCta.href} variant="light">
-              {hero.primaryCta.label}
+            <Button href={hero.primary!.href} variant="primary">
+              {hero.primary!.label}
             </Button>
-            <Button href={hero.secondaryCta.href} variant="outline" icon="arrowDown">
-              {hero.secondaryCta.label}
+            <Button href={hero.secondary!.href} variant="outline" icon="arrowDown">
+              {hero.secondary!.label}
             </Button>
           </motion.div>
 
@@ -110,10 +103,10 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.4 }}
-            className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-medium text-white/70"
-            aria-label="Runtime status"
+            className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-medium text-white/95"
+           
           >
-            {hero.status.map((s, i) => (
+            {hero.chips.map((s, i) => (
               <li key={s} className="flex items-center gap-3">
                 {i > 0 && <span className="size-1 rounded-full bg-white/40" aria-hidden="true" />}
                 {s}

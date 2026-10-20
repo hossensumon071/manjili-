@@ -22,7 +22,8 @@ export function Media({ src, alt, fallback, className, sizes = "100vw", priority
       {src ? (
         <Image src={src} alt={alt} fill sizes={sizes} priority={priority} className={cn("object-cover", imgClassName)} />
       ) : (
-        <div role="img" aria-label={alt} className="absolute inset-0">
+        // Built-in illustrations are decorative (copy rule: decorative art is aria-hidden)
+        <div aria-hidden="true" className="absolute inset-0">
           {fallback}
         </div>
       )}

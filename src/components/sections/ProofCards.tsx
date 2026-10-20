@@ -9,7 +9,7 @@ type Props = { eyebrow: string; title: string; items: Proof[]; id?: string };
 /** Commercial proof band: three outcomes, each led by its metric. */
 export function ProofCards({ eyebrow, title, items, id }: Props) {
   return (
-    <section id={id} className="scroll-mt-24 px-2 sm:px-3" aria-label={title}>
+    <section id={id} className="scroll-mt-32 px-2 sm:px-3" aria-label={title}>
       <div className="stage surface-blue">
         <Sheen />
         <div className="container-x py-20 sm:py-24">
@@ -23,7 +23,7 @@ export function ProofCards({ eyebrow, title, items, id }: Props) {
                   </p>
                   <span className="my-5 h-px w-12 bg-accent" aria-hidden="true" />
                   <h3 className="text-h4 font-semibold text-white">{p.title}</h3>
-                  <p className="mt-2 text-[15px] leading-relaxed text-white/80">{p.body}</p>
+                  <p className="mt-2 text-[15px] leading-relaxed text-white/95">{p.body}</p>
                 </article>
               </Reveal>
             ))}

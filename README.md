@@ -1,122 +1,108 @@
-# Manzili Enterprise Website
+# Manzili Website
 
-Next.js 15 (App Router) · TypeScript · Tailwind CSS 3 · Framer Motion
+Next.js 15 (App Router) · TypeScript · Tailwind CSS 3 · Framer Motion · English + Arabic (RTL)
 
 ## Run it
 
 ```bash
 npm install
-npm run dev        # http://localhost:3000
+npm run dev                  # http://localhost:3000
 npm run build && npm start   # production
 ```
 
 Node 18.18+ (Node 20 LTS recommended). Deploys to Vercel with zero config.
 
-## Where things live
+## Routes (23 pages × 2 languages)
+
+| English | Arabic | View |
+| --- | --- | --- |
+| `/` | `/ar` | `HomeView` |
+| `/platform-cse` | `/ar/platform-cse` | `PlatformView` |
+| `/pillars/[slug]` (6) | `/ar/pillars/[slug]` | `PillarView` |
+| `/case-studies` | `/ar/case-studies` | `CaseIndexView` |
+| `/case-studies/[slug]` (10) | `/ar/case-studies/[slug]` | `CaseStudyView` |
+| `/contact-us` | `/ar/contact-us` | `ContactView` |
+| `/privacy`, `/terms` | `/ar/privacy`, `/ar/terms` | `LegalPage` |
+
+- English routes live in `src/app/(en)/`, Arabic in `src/app/(ar)/ar/`. Each group has its own root
+  layout, so Arabic pages render `<html lang="ar" dir="rtl">`. Switching language is a full page
+  load by design (different root layout).
+- Views are in `src/components/views/` and render either language from a `locale` prop.
+- 301 redirects (`next.config.mjs`): `/products/connected-sales-environment` → `/platform-cse`,
+  `/contact` → `/contact-us`, `/solutions` → `/#pillars` (and the `/ar` equivalents).
+
+## Copy (English + Arabic)
+
+All page text comes from Buddy's final copy files in `/copy`:
+`Manzili_Website_Copy_EN.md` and `Manzili_Website_Copy_AR.md`.
+
+They are converted to `src/content/copy/{en,ar}/*.json`. **Never edit the JSON by hand.** To update copy,
+replace the `.md` files and run:
+
+```bash
+bash scripts/copy/run.sh
+```
 
 | What | Where |
 | --- | --- |
-| All homepage text | `src/content/home.ts` |
-| Nav, pillars, footer, contact details | `src/content/site.ts` |
+| Page copy (generated) | `src/content/copy/{en,ar}/` |
+| Copy loader | `src/content/copy/index.ts` |
+| Contact details, routes, pillar icons | `src/content/site.ts` |
+| Pillar hero mock-ups (EN + AR strings) | `src/content/pillarPanels.ts` |
+| Case-study 3D scene settings | `src/content/caseScenes.ts` |
 | Real photos (optional) | `src/content/images.ts` + `public/images/` |
-| Colours, type scale, radii | `tailwind.config.ts` |
-| Homepage sections | `src/components/home/*` |
-| Navbar / Footer / Logo | `src/components/layout/*` |
-| Illustrations (SVG) | `src/components/art/*` |
-| Product UI mockups | `src/components/mockups/*` |
 
-## Using real photos
+## SEO
 
-Every visual ships with a built-in illustration. To swap one for a photo, put the
-file in `public/images/` and set its path in `src/content/images.ts`, e.g.
-`hero: "/images/hero.jpg"`. Images are served through `next/image` (AVIF/WebP).
+`pageMetadata(locale, slug)` (`src/lib/seo.ts`) sets the title and description from the copy file,
+canonical `https://manzili.sa/...`, hreflang (en / ar / x-default) and Open Graph.
+`robots.txt`, `sitemap.xml` (both languages) and `manifest.webmanifest` are generated.
+
+The site is **noindex by default** (staging). On the live domain only, set
+`NEXT_PUBLIC_ALLOW_INDEXING=true` and `NEXT_PUBLIC_SITE_URL=https://manzili.sa`.
+
+## Contact form (/contact-us)
+
+11 fields in 3 fieldsets, inline validation (two warnings that still allow submit), Arabic plural
+error summary and six submission states, all from the copy files. It posts to `/api/rfp`, which
+validates server-side and emails the request via Resend (Reply-To = the submitter) and/or forwards
+JSON to a webhook.
+
+Vercel → Settings → Environment Variables (see `.env.example`):
+
+| Variable | Value |
+| --- | --- |
+| `RESEND_API_KEY` | API key from resend.com |
+| `RFP_TO_EMAIL` | Inbox(es) that receive requests, comma-separated |
+| `RFP_FROM_EMAIL` | `Manzili Website <rfp@manzili.sa>` once manzili.sa is verified in Resend |
+| `RFP_WEBHOOK_URL` | Optional CRM / Zapier webhook |
+
+With nothing configured, the form shows the failure message instead of silently dropping requests.
 
 ## Brand system
 
-Official palette (brand kit): **Blue #069AD7 · Grey #373535 · Orange #F28E21 · Light Grey #EFEFEF**.
-Tokens live in `tailwind.config.ts`. Brand blue and orange are below 4.5:1 on white, so text uses
-AA shades: `brand-dark` #0474A1 (links, small text, primary buttons), `brand-deep` #045A86
-(dark surfaces), `accent-dark` #9D5C15 (small orange text). Body text `body` #555353, captions
-`muted` #6B6969. Use plain `brand` / `accent` only for icons, fills and large display type.
+Palette (brand kit): **Blue #069AD7 · Grey #373535 · Orange #F28E21 · Light Grey #EFEFEF**.
+Tokens in `tailwind.config.ts`. Small text uses AA shades: `brand-dark` #0474A1, `brand-deep` #045A86,
+`accent-dark` #9D5C15; body `#555353`, captions `#6B6969`.
 
-Buttons: one system in `src/components/ui/Button.tsx` — `primary`/`secondary` on light surfaces,
-`light`/`outline` on blue surfaces, all 48px with 15px labels.
+Buttons (`src/components/ui/Button.tsx`): one primary (brand orange) and one secondary (outline) style,
+48px tall with 15px labels.
 
-Logos: `public/brand/` (colour, white, vertical, icon). Favicons, Apple icon and share image are
-in `src/app/` (`favicon.ico`, `icon.svg`, `apple-icon.png`, `opengraph-image.png`, `twitter-image.png`).
-Replace `opengraph-image.png` / `twitter-image.png` (1200×630) when the final share image arrives.
+Logos: `public/brand/`. Favicons and Apple icon: `src/app/`. Share image: `public/og/manzili-share.png`
+(1200×630).
 
 ## Fonts
 
-**Cairo** everywhere (brand rule), loaded via `next/font` with Latin + Arabic
-subsets. Type scale follows the brief: H1 ExtraBold 800 / 1.12, H2 Bold 700 / 1.20,
-H3 SemiBold 600 / 1.30, H4 SemiBold 600 / 1.35, Lead Medium 500 / 1.50,
-Body Regular 400 / 1.65, Eyebrow SemiBold 600 / +0.05em.
-
-## Routes
-
-| Route | Content file |
-| --- | --- |
-| `/` | `src/content/home.ts` |
-| `/solutions` | `src/content/pages/solutions.ts` |
-| `/products/connected-sales-environment` | `src/content/pages/cse.ts` |
-| `/pillars/[slug]` (6 pages) | `src/content/pillars/pillar-01.ts` … `pillar-06.ts` |
-| `/case-studies` | `src/content/pages/case-studies-hub.ts` |
-| `/case-studies/[slug]` (10 pages) | `src/content/case-studies/*.ts` |
-| `/contact` | `src/content/pages/contact.ts` |
-| `/privacy`, `/terms` | `src/content/legal/privacy.ts`, `terms.ts` |
-
-Pillar pages and case studies each render from one template and are statically
-generated. To add a case study, copy one file in `src/content/case-studies/`,
-edit it, and add it to `index.ts` — it appears on the hub automatically.
+**Cairo** everywhere (brand rule), via `next/font`, Latin + Arabic subsets.
 
 ## Visuals
 
-Illustrations are animated isometric "digital twin" scenes
-(`src/components/art/IsoScene.tsx`) — each case study picks a `variant` and `seed`
-so every project gets its own masterplan. The footer skyline
-(`SkylineArt.tsx`) animates windows, aviation beacons and bridge traffic.
-Real photos can still replace any visual via `src/content/images.ts`.
-
-## RFP form (/contact)
-
-The form posts to `/api/rfp`, which validates every field server-side and rejects
-free webmail domains, then emails the submission via Resend and/or forwards it to a
-webhook. Configure in Vercel → Settings → Environment Variables (see `.env.example`):
-`RESEND_API_KEY`, `RFP_TO_EMAIL`, `RFP_FROM_EMAIL` (verified domain), optional
-`RFP_WEBHOOK_URL`. With nothing configured the form shows an error instead of
-silently dropping submissions.
-
-## SEO / indexing
-
-`robots.txt`, `sitemap.xml` and `manifest.webmanifest` are generated. The site is
-**noindex by default** (staging). Set `NEXT_PUBLIC_ALLOW_INDEXING=true` and
-`NEXT_PUBLIC_SITE_URL=https://your-domain` only on the live production domain.
-
-## Social links
-
-Add profile URLs in `src/content/site.ts` → `socials`. Icons with an empty URL are hidden.
-
-Matterport tours (Pillar 06): paste the share URL into `embedUrl` in `pillar-06.ts`.
-
-
-## Languages (English + Arabic) and copy
-
-- English pages: `src/app/(en)/`. Arabic pages: `src/app/(ar)/ar/`. Each group has its own root
-  layout, so Arabic pages render `<html lang="ar" dir="rtl">` (Cairo, 1.75 line height).
-- One view component per page (`src/components/views/`) renders either language.
-- **All copy comes from Buddy's final files** in `/copy` (`Manzili_Website_Copy_EN.md`, `..._AR.md`).
-  They are converted to `src/content/copy/{en,ar}/*.json`. Never edit the JSON by hand; to update
-  copy, replace the .md files and run:
-
-  ```bash
-  bash scripts/copy/run.sh
-  ```
-- `lp(locale, path)` builds locale-aware links; `pageMetadata(locale, slug)` sets title, description,
-  canonical `https://manzili.sa/...`, hreflang (en / ar / x-default) and Open Graph.
-- Routes: `/platform-cse`, `/contact-us`; `/solutions` removed. 301 redirects in `next.config.mjs`.
+Animated isometric "digital twin" scenes (`src/components/art/IsoScene.tsx`) and the footer skyline
+(`SkylineArt.tsx`). Any visual can be replaced by a photo through `src/content/images.ts`.
+Matterport tours (Pillar 06): pass the share URL as `embedUrl` in `src/components/views/PillarView.tsx`.
 
 ## Accessibility & motion
 
-Skip link, keyboard-accessible menus and FAQ, visible focus rings, and all
-animation respects the visitor's "reduce motion" setting.
+Skip link, keyboard-accessible menus and FAQ, visible focus rings, labelled form errors
+(`aria-describedby`), decorative art hidden from screen readers, and all animation respects
+"reduce motion".

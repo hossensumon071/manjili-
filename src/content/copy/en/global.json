@@ -1,7 +1,7 @@
 {
  "nav": {
   "cse": "Platform (CSE)",
-  "pillars": "6-Pillar Infrastructure",
+  "pillars": "Services",
   "caseStudies": "Case Studies",
   "toggle": "العربية",
   "cta": "Book Technical Scoping",
@@ -31,7 +31,7 @@
     "descriptor": "From concept design to handover"
    }
   ],
-  "viewAll": "View All 6 Pillars",
+  "viewAll": "View All Services",
   "openMenu": "Open menu",
   "closeMenu": "Close menu"
  },
@@ -42,7 +42,7 @@
    "In-Kingdom hosting under Saudi PDPL",
    "One Master Service Agreement"
   ],
-  "pillarsHeader": "6-Pillar Infrastructure",
+  "pillarsHeader": "Services",
   "pillars": [
    "01 Digital Twin",
    "02 CRM & Inventory Sync",
@@ -108,7 +108,7 @@
  "faq": {
   "eyebrow": "FAQ",
   "title": "Questions From Procurement Teams",
-  "sideTitle": "Not sure which pillars your launch needs?",
+  "sideTitle": "Not sure which services your launch needs?",
   "sideBody": "A solutions engineer will map your masterplan to the right scope.",
   "cta": "Book Technical Scoping",
   "shared": [

@@ -180,3 +180,9 @@ html[lang="ar"] h1,
 html[lang="ar"] h2 {
   letter-spacing: 0;
 }
+
+/* Revision "nice to have": Arabic small labels at least 13px */
+html[lang="ar"] .text-xs,
+html[lang="ar"] .text-eyebrow {
+  font-size: 0.8125rem;
+}

@@ -51,7 +51,7 @@ export function StatusPanel({ title, live = "Live", items, footer, stateLabels }
         <div className="flex min-w-0 items-center gap-1.5">
           <span className="truncate text-xs font-bold text-ink">{title}</span>
         </div>
-        <span className="flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-status/10 px-2.5 py-1 text-[11px] font-bold text-brand-deep">
+        <span className="flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-status/10 px-2.5 py-1 text-xs font-bold text-brand-deep">
           <span className="relative flex size-1.5">
             <span className="absolute inset-0 animate-pulse-ring rounded-full bg-status" />
             <span className="relative size-1.5 rounded-full bg-status" />
@@ -93,10 +93,10 @@ export function StatusPanel({ title, live = "Live", items, footer, stateLabels }
                 <Icon name={item.icon} size={17} />
               </span>
               <span className="min-w-0 flex-1">
-                <span className="block truncate text-[13px] font-bold text-ink">{item.label}</span>
-                {item.meta && <span className="block truncate text-[11px] text-body">{item.meta}</span>}
+                <span className="block text-[13px] font-bold leading-snug text-ink sm:truncate">{item.label}</span>
+                {item.meta && <span className="block text-xs leading-snug text-body sm:truncate">{item.meta}</span>}
               </span>
-              <span className={cn("flex shrink-0 items-center gap-1.5 text-[11px] font-bold", s.text)}>
+              <span className={cn("flex shrink-0 items-center gap-1.5 text-xs font-bold", s.text)}>
                 <span className={cn("size-1.5 rounded-full", s.dot, on && "animate-pulse")} />
                 {stateLabel}
               </span>
@@ -106,7 +106,7 @@ export function StatusPanel({ title, live = "Live", items, footer, stateLabels }
       </ul>
 
       {footer && (
-        <p className="mt-4 flex items-center gap-2 border-t border-line pt-3 text-[11px] font-semibold text-body">
+        <p className="mt-4 flex items-center gap-2 border-t border-line pt-3 text-xs font-semibold text-body">
           <Icon name="shield" size={14} className="text-status" />
           {footer}
         </p>

@@ -117,9 +117,9 @@ type IconProps = Omit<SVGProps<SVGSVGElement>, "name"> & { name: IconName; size?
 /** Directional icons mirror automatically on RTL (Arabic) pages. */
 const DIRECTIONAL = new Set<IconName>(["arrowRight", "arrowUpRight"]);
 
-export function Icon({ name, size = 20, className, ...rest }: IconProps) {
+export function Icon({ name, size = 20, className, mirror = true, ...rest }: IconProps & { mirror?: boolean }) {
   const isFill = name in fillIcons;
-  if (DIRECTIONAL.has(name)) className = className ? `${className} rtl:-scale-x-100` : "rtl:-scale-x-100";
+  if (mirror && DIRECTIONAL.has(name)) className = className ? `${className} rtl:-scale-x-100` : "rtl:-scale-x-100";
   const content = isFill
     ? fillIcons[name as keyof typeof fillIcons]
     : strokeIcons[name as keyof typeof strokeIcons];

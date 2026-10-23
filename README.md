@@ -49,6 +49,7 @@ bash scripts/copy/run.sh
 | Copy loader | `src/content/copy/index.ts` |
 | Contact details, routes, pillar icons | `src/content/site.ts` |
 | Pillar hero mock-ups (EN + AR strings) | `src/content/pillarPanels.ts` |
+| New UI strings from the Oct 21 revision list | `src/content/revisions.ts` |
 | Case-study 3D scene settings | `src/content/caseScenes.ts` |
 | Real photos (optional) | `src/content/images.ts` + `public/images/` |
 
@@ -85,8 +86,8 @@ Palette (brand kit): **Blue #069AD7 · Grey #373535 · Orange #F28E21 · Light G
 Tokens in `tailwind.config.ts`. Small text uses AA shades: `brand-dark` #0474A1, `brand-deep` #045A86,
 `accent-dark` #9D5C15; body `#555353`, captions `#6B6969`.
 
-Buttons (`src/components/ui/Button.tsx`): one primary (brand orange) and one secondary (outline) style,
-48px tall with 15px labels.
+Buttons (`src/components/ui/Button.tsx`): one primary (brand orange, ink `#373535` label, hover `#F59E3F`)
+and one secondary (outline) style, 48px tall with 15px labels.
 
 Logos: `public/brand/`. Favicons and Apple icon: `src/app/`. Share image: `public/og/manzili-share.png`
 (1200×630).

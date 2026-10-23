@@ -403,7 +403,7 @@ export function SceneFrame({
           {chips.map((c, i) => (
             <span
               key={c}
-              className="flex items-center gap-1.5 rounded-full bg-white/90 px-2.5 py-1 text-[11px] font-semibold text-ink shadow-sm backdrop-blur"
+              className="flex items-center gap-1.5 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold text-ink shadow-sm backdrop-blur"
             >
               {i === 0 && <span className="size-1.5 rounded-full bg-status" />}
               {c}

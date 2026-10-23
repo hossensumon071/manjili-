@@ -12,7 +12,7 @@ export function MetadataGrid({ items }: { items: { label: string; value: string 
       <div className="container-x">
         <Reveal>
           <div className="overflow-hidden rounded-card bg-white shadow-card ring-1 ring-ink/5">
-          <dl className="-mb-px -mr-px grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <dl className="-mb-px -me-px grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1fr_2fr_1fr_2fr]">
             {items.map((m) => (
               <div key={m.label} className="border-b border-r border-line p-5 sm:p-6">
                 <dt className="text-xs font-semibold text-muted">{m.label}</dt>

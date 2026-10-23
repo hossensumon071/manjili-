@@ -2,7 +2,7 @@
  "s01": {
   "breadcrumb": "Home",
   "breadcrumbHref": "/",
-  "eyebrow": "Pillar 06 · Lifecycle & Matterport",
+  "eyebrow": "06 · Lifecycle & Matterport",
   "h1": "Sell Every Phase From One Model, Concept to Handover",
   "subheadingBodyCopy": "We support developers at every project stage: turning concepts into off-plan digital twins, capturing Matterport tours of model units, and bringing every 3D asset into one web platform for unbuilt and completed stock.",
   "primaryCta": "Book Technical Scoping",
@@ -22,7 +22,7 @@
     "href": "/"
    },
    {
-    "label": "6-Pillar Infrastructure",
+    "label": "Services",
     "href": "/#pillars"
    },
    {
@@ -118,13 +118,13 @@
  },
  "s06": {
   "previousLink": [
-   "Previous pillar",
-   "Pillar 05 · Launch Command"
+   "Previous service",
+   "05 · Launch Command"
   ],
   "previousLinkHref": "/pillars/vip-launch-command",
   "nextLink": "Explore the CSE Platform",
   "nextLinkHref": "/platform-cse",
-  "overviewLink": "View All 6 Pillars",
+  "overviewLink": "View All Services",
   "overviewLinkHref": "/#pillars",
   "_tables": []
  },

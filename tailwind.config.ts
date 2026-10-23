@@ -40,7 +40,7 @@ const config: Config = {
         h3: ["clamp(1.25rem, 1.8vw, 1.625rem)", { lineHeight: "1.3", letterSpacing: "-0.5px" }],
         h4: ["clamp(1.0625rem, 1.3vw, 1.25rem)", { lineHeight: "1.35" }],
         lead: ["clamp(1rem, 1.4vw, 1.3125rem)", { lineHeight: "1.5" }],
-        eyebrow: ["clamp(0.6875rem, 0.9vw, 0.8125rem)", { lineHeight: "1", letterSpacing: "0.05em" }],
+        eyebrow: ["clamp(0.75rem, 0.9vw, 0.8125rem)", { lineHeight: "1.2", letterSpacing: "0.05em" }],
       },
       borderRadius: {
         card: "20px",

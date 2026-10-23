@@ -2,7 +2,7 @@
  "s01": {
   "breadcrumb": "Home",
   "breadcrumbHref": "/",
-  "eyebrow": "Pillar 02 · CRM & Inventory Sync",
+  "eyebrow": "02 · CRM & Inventory Sync",
   "h1": "Stop Double-Booked Units Across Every Sales Channel",
   "subheadingBodyCopy": "Manzili connects your 3D showroom and web platform to your CRM and ERP, so unit status updates in under 500 ms and buyer activity flows straight to your sales team.",
   "primaryCta": "Book Technical Scoping",
@@ -23,7 +23,7 @@
     "href": "/"
    },
    {
-    "label": "6-Pillar Infrastructure",
+    "label": "Services",
     "href": "/#pillars"
    },
    {
@@ -141,16 +141,16 @@
  },
  "s06": {
   "previousLink": [
-   "Previous pillar",
-   "Pillar 01 · Digital Twin"
+   "Previous service",
+   "01 · Digital Twin"
   ],
   "previousLinkHref": "/pillars/digital-twin-webgl",
   "nextLink": [
-   "Next pillar",
-   "Pillar 03 · Showroom Hardware"
+   "Next service",
+   "03 · Showroom Hardware"
   ],
   "nextLinkHref": "/pillars/sales-center-hardware",
-  "overviewLink": "View All 6 Pillars",
+  "overviewLink": "View All Services",
   "overviewLinkHref": "/#pillars",
   "_tables": []
  },

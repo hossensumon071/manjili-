@@ -55,7 +55,7 @@
   "blocks": [
    {
     "index": "01",
-    "label": "Pillar 01 · Digital Twin",
+    "label": "01 · Digital Twin",
     "title": "Browser-Based Masterplan Twin",
     "body": "A 2.2M+ m² WebGL model of all 4,600+ homes, parks, schools and commercial facilities, running smoothly at 60 FPS on every device.",
     "features": [
@@ -75,7 +75,7 @@
    },
    {
     "index": "02",
-    "label": "Pillar 03 · Showroom Hardware",
+    "label": "03 · Showroom Hardware",
     "title": "Pre-Built Showroom Hardware",
     "body": "Touch tables and presenter consoles shipped pre-configured in flight racks, with remote health monitoring that cuts the need for on-site technician visits.",
     "features": [
@@ -95,7 +95,7 @@
    },
    {
     "index": "03",
-    "label": "Pillar 04 · Sales Enablement",
+    "label": "04 · Sales Enablement",
     "title": "Sales Team Certification",
     "body": "Hands-on coaching taught Tabuk consultants to guide first-time off-plan buyers through the 3D twin step by step.",
     "features": [

@@ -1,5 +1,10 @@
 import { RAW } from "./raw";
 import type { Locale } from "@/lib/i18n";
+import { revisions } from "@/content/revisions";
+import enGlobal from "./en/global.json";
+import arGlobal from "./ar/global.json";
+
+const globalFooter = (locale: Locale): string[] => (locale === "ar" ? arGlobal : enGlobal).footer.pillars;
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 type Sec = Record<string, any>;
@@ -68,6 +73,10 @@ const blocks = (s: Sec) => {
 };
 const banner = (s: Sec) => ({ ...head(s), primary: cta(s, "primaryCta")!, secondary: cta(s, "secondaryCta") });
 
+/** Service names without the number, e.g. "Digital Twin" (from the footer column copy). */
+const serviceNames = (locale: Locale) =>
+  globalFooter(locale).map((s: string) => s.replace(/^\d+\s+/, ""));
+
 /* ---------------- Homepage ---------------- */
 export function getHome(locale: Locale) {
   const p = page(locale, "home");
@@ -85,6 +94,8 @@ export function getHome(locale: Locale) {
         title: one(s6[`card${n2(i)}Title`]),
         body: one(s6[`card${n2(i)}Body`]),
         link: { label: one(s6[`card${n2(i)}Link`]), href: one(s6[`card${n2(i)}LinkHref`]) },
+        // Revision item 10: "Learn more" links get a specific screen-reader name
+        ariaLabel: revisions.learnMore[locale](serviceNames(locale)[i - 1]),
       })),
     },
     process: { ...head(p.s07), steps: cards(p.s07, "step", ["number", "title", "body"]) },
@@ -140,7 +151,15 @@ export function getPillar(locale: Locale, n: 1 | 2 | 3 | 4 | 5 | 6) {
       ? { ...head(s("s03")), cards: cards(s("s03"), "card", ["label", "tag", "title", "body"]) }
       : undefined,
     faq: faqItems(s("s05")),
-    nav: { previous: navLink("previousLink"), next: navLink("nextLink"), overview: navLink("overviewLink") },
+    nav: {
+      previous: navLink("previousLink"),
+      // Revision item 1: the Lifecycle page's Next link becomes a full card ("Next" label)
+      next: (() => {
+        const nx = navLink("nextLink");
+        return nx && !nx.kicker ? { ...nx, kicker: revisions.lifecycleNext[locale].kicker } : nx;
+      })(),
+      overview: navLink("overviewLink"),
+    },
     banner: banner(s("s07")),
   };
 }

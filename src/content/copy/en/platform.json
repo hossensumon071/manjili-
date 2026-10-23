@@ -138,36 +138,36 @@
  },
  "s06": {
   "eyebrow": "Behind the Platform",
-  "h2": "Powered by the 6-Pillar Infrastructure",
-  "primaryCta": "View All 6 Pillars",
+  "h2": "Six Services That Power the Platform",
+  "primaryCta": "View All Services",
   "primaryCtaHref": "/#pillars",
   "tile01": [
-   "Pillar 01",
+   "01",
    "Digital Twin"
   ],
   "tile01Href": "/pillars/digital-twin-webgl",
   "tile02": [
-   "Pillar 02",
+   "02",
    "CRM & Inventory Sync"
   ],
   "tile02Href": "/pillars/crm-inventory-integration",
   "tile03": [
-   "Pillar 03",
+   "03",
    "Showroom Hardware"
   ],
   "tile03Href": "/pillars/sales-center-hardware",
   "tile04": [
-   "Pillar 04",
+   "04",
    "Sales Enablement"
   ],
   "tile04Href": "/pillars/saudi-sales-enablement",
   "tile05": [
-   "Pillar 05",
+   "05",
    "Launch Command"
   ],
   "tile05Href": "/pillars/vip-launch-command",
   "tile06": [
-   "Pillar 06",
+   "06",
    "Lifecycle & Matterport"
   ],
   "tile06Href": "/pillars/full-lifecycle-support",

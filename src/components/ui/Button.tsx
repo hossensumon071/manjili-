@@ -6,8 +6,8 @@ import { Icon, type IconName } from "./Icon";
 /**
  * QA B6 — one primary and one secondary style site-wide, 48px tall, 15px labels.
  *
- *   primary   — brand orange #F28E21 with a white label, as in the approved design
- *               (QA B1 keeps the orange CTAs orange; buttons are not in the C1 list).
+ *   primary   — brand orange #F28E21 with a brand-ink #373535 label (5.0:1, revision item 9).
+ *               Hover lightens to #F59E3F (5.7:1) — never darker, which would drop below 4.5:1.
  *   secondary — outline: brand blue on light surfaces ("secondary"),
  *               white on blue surfaces ("outline").
  *
@@ -20,8 +20,8 @@ const resolve = (v: Variant): Style => (v === "secondary" || v === "outline" ? v
 
 const styles: Record<Style, { root: string; dot: string }> = {
   primary: {
-    root: "bg-accent font-bold text-white hover:bg-accent-hover shadow-[0_10px_24px_-12px_rgba(242,142,33,0.65)]",
-    dot: "bg-white text-accent-dark",
+    root: "bg-accent font-bold text-ink hover:bg-[#F59E3F] shadow-[0_10px_24px_-12px_rgba(242,142,33,0.65)]",
+    dot: "bg-white text-ink",
   },
   secondary: {
     root: "border-2 border-brand-dark text-brand-dark hover:bg-brand-light",
@@ -86,9 +86,9 @@ export function Button({ href, children, variant = "primary", icon = "arrowRight
 }
 
 /** Text link with arrow micro-interaction ("Explore … →"). */
-export function ArrowLink({ href, children, className }: { href: string; children: ReactNode; className?: string }) {
+export function ArrowLink({ href, children, className, ariaLabel }: { href: string; children: ReactNode; className?: string; ariaLabel?: string }) {
   return (
-    <Link href={href} className={cn("group inline-flex items-center gap-1.5 text-sm font-semibold", className)}>
+    <Link href={href} aria-label={ariaLabel} className={cn("group inline-flex items-center gap-1.5 text-sm font-semibold", className)}>
       <span className="bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_1px] bg-left-bottom bg-no-repeat pb-0.5 transition-[background-size] duration-300 group-hover:bg-[length:100%_1px]">
         {children}
       </span>

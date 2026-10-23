@@ -54,8 +54,8 @@ export function ToursShowcase({ id, eyebrow, title, lead, tours }: Props) {
         <SectionHeader eyebrow={eyebrow} title={title} lead={lead} id={id ? `${id}-title` : undefined} />
         <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2">
           {tours.map((t, i) => (
-            <Reveal key={t.title} delay={i * 0.1}>
-              <article className="group overflow-hidden rounded-card bg-white shadow-card ring-1 ring-ink/5">
+            <Reveal key={t.title} delay={i * 0.1} className="h-full">
+              <article className="group flex h-full flex-col overflow-hidden rounded-card bg-white shadow-card ring-1 ring-ink/5">
                 <div className="relative aspect-[16/11] overflow-hidden">
                   {t.embedUrl ? (
                     <iframe
@@ -79,7 +79,7 @@ export function ToursShowcase({ id, eyebrow, title, lead, tours }: Props) {
                     </>
                   )}
                 </div>
-                <div className="p-6">
+                <div className="flex-1 p-6">
                   <p className="text-xs font-semibold text-accent-dark">{t.type}</p>
                   <h3 className="mt-2 text-h3 font-semibold text-ink">{t.title}</h3>
                   <p className="mt-2 text-[15px] leading-relaxed">{t.description}</p>

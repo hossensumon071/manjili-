@@ -18,7 +18,7 @@ export function PillarNav({ previous, next, overview }: Props) {
     >
       {l.kicker && (
         <span className="flex items-center gap-2 text-sm font-semibold text-muted">
-          {dir === "prev" && <Icon name="arrowRight" size={16} className="rotate-180 rtl:rotate-0" />}
+          {dir === "prev" && <Icon name="arrowRight" size={16} mirror={false} className="rotate-180 rtl:rotate-0" />}
           {l.kicker}
           {dir === "next" && <Icon name="arrowRight" size={16} />}
         </span>

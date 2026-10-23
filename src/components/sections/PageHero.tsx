@@ -55,7 +55,7 @@ export function PageHero({ breadcrumb, eyebrow, title, subheader, primary, secon
                 <li key={c.label} className="flex items-center gap-1.5">
                   {i > 0 && <Icon name="chevronDown" size={13} className="-rotate-90 opacity-60 rtl:rotate-90" />}
                   {c.href ? (
-                    <Link href={c.href} className="transition-colors hover:text-white">
+                    <Link href={c.href} className="inline-flex min-h-6 items-center py-1 transition-colors hover:text-white">
                       {c.label}
                     </Link>
                   ) : (

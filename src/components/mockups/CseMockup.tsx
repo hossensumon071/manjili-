@@ -27,6 +27,9 @@ const T = {
     availableNow: "Available now",
     units: (n: number) => `${n} ${n === 1 ? "unit" : "units"}`,
     reserve: "Reserve with Nafath",
+    header: "CSE · Masterplan Phase 2",
+    unit: (id: string, area: number) => `Villa ${id} · ${area} m²`,
+    beds: (n: number) => `${n} bed`,
   },
   ar: {
     status: { available: "متاحة", reserved: "محجوزة", sold: "مباعة" } as Record<Status, string>,
@@ -38,6 +41,10 @@ const T = {
     availableNow: "متاح الآن",
     units: (n: number) => (n === 1 ? "وحدة واحدة" : n === 2 ? "وحدتان" : n <= 10 ? `${n} وحدات` : `${n} وحدة`),
     reserve: "احجز عبر نفاذ",
+    // Revision item 5
+    header: "CSE · المخطط العام · المرحلة 2",
+    unit: (id: string, area: number) => `فيلا ${id} · ${area} م²`,
+    beds: (n: number) => `${n} غرف نوم`,
   },
 };
 
@@ -120,9 +127,9 @@ export function CseMockup() {
   return (
     <div className="absolute inset-0 flex flex-col bg-white p-3 sm:p-4">
       {/* window chrome */}
-      <div className="flex items-center justify-between gap-3 pb-3">
+      <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1.5 pb-3">
         <div className="flex min-w-0 items-center gap-1.5">
-          <span className="truncate text-xs font-bold text-ink">CSE · Masterplan Phase 2</span>
+          <span className="min-w-0 text-xs font-bold leading-tight text-ink sm:truncate">{t.header}</span>
         </div>
         <span className="flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-status/10 px-2.5 py-1 text-[11px] font-bold text-brand-deep">
           <span className="relative flex size-1.5">
@@ -250,10 +257,10 @@ export function CseMockup() {
             <motion.div key={plots[shown].id} initial={{ opacity: 0, x: 8 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -8 }} transition={{ duration: 0.2 }}>
               <p className="text-[10px] font-semibold text-muted">{hover !== null && hover !== selected ? t.previewing : t.selected}</p>
               <p className="text-sm font-bold leading-tight text-ink">
-                Villa {plots[shown].id} · {plots[shown].area} m²
+                {t.unit(plots[shown].id, plots[shown].area)}
               </p>
               <p className="text-[11px] text-body">
-                {plots[shown].beds} bed ·{" "}
+                {t.beds(plots[shown].beds)} ·{" "}
                 <span className="font-semibold" style={{ color: STATUS_TEXT[plots[shown].status] }}>
                   {t.status[plots[shown].status]}
                 </span>
@@ -280,7 +287,15 @@ export function CseMockup() {
               style={{ "--fill": `${((down - 10) / 30) * 100}%` } as CSSProperties}
             />
             <p className="mt-1 text-[11px] text-body">
-              <span className="font-bold text-ink">SAR {fmt(deposit)}</span> of {fmt(unit.price)}
+              {locale === "ar" ? (
+                <>
+                  <span className="font-bold text-ink">{fmt(deposit)} ريال</span> من {fmt(unit.price)}
+                </>
+              ) : (
+                <>
+                  <span className="font-bold text-ink">SAR {fmt(deposit)}</span> of {fmt(unit.price)}
+                </>
+              )}
             </p>
           </div>
 

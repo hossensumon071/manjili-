@@ -66,7 +66,7 @@ export function OfficeMap({ label = "Manzili · Al Rayyan District, Riyadh", ove
       <div className="absolute start-4 top-4 rounded-xl bg-white/95 px-4 py-3 shadow-float backdrop-blur">
         <p className="text-sm font-bold text-ink">{label}</p>
       </div>
-      <div className="absolute bottom-4 end-4 flex items-center gap-2 rounded-full bg-white px-3 py-1.5 text-[11px] font-bold text-ink shadow-card">
+      <div className="absolute bottom-4 end-4 flex items-center gap-2 rounded-full bg-white px-3 py-1.5 text-xs font-bold text-ink shadow-card">
         <span className="size-1.5 rounded-full bg-status" /> {overlay}
       </div>
     </div>

@@ -6,12 +6,14 @@ import { PillarView } from "@/components/views/PillarView";
 type Params = { params: Promise<{ slug: string }> };
 const slugs = pillars.map((p) => p.href.split("/").pop()!);
 
-export const dynamicParams = false;
+// Unknown slugs reach the page and call notFound(), so the 404 renders inside this
+// language's root layout (correct lang/dir) instead of Next.js's generic 404.
 export function generateStaticParams() {
   return slugs.map((slug) => ({ slug }));
 }
 export async function generateMetadata({ params }: Params) {
   const { slug } = await params;
+  if (!slugs.includes(slug)) return {};
   return pageMetadata("ar", `/pillars/${slug}`);
 }
 export default async function PillarPageAr({ params }: Params) {

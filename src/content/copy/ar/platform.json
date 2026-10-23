@@ -138,36 +138,36 @@
  },
  "s06": {
   "eyebrow": "ما وراء المنصة",
-  "h2": "منظومة الركائز الست تشغّل المنصة",
-  "primaryCta": "عرض الركائز الست",
+  "h2": "ست خدمات تشغّل المنصة",
+  "primaryCta": "عرض جميع الخدمات",
   "primaryCtaHref": "/ar#pillars",
   "tile01": [
-   "الركيزة 01",
+   "01",
    "التوأم الرقمي"
   ],
   "tile01Href": "/ar/pillars/digital-twin-webgl",
   "tile02": [
-   "الركيزة 02",
+   "02",
    "ربط CRM والمخزون"
   ],
   "tile02Href": "/ar/pillars/crm-inventory-integration",
   "tile03": [
-   "الركيزة 03",
+   "03",
    "تجهيزات صالات العرض"
   ],
   "tile03Href": "/ar/pillars/sales-center-hardware",
   "tile04": [
-   "الركيزة 04",
+   "04",
    "تمكين فرق المبيعات"
   ],
   "tile04Href": "/ar/pillars/saudi-sales-enablement",
   "tile05": [
-   "الركيزة 05",
+   "05",
    "إدارة الإطلاق"
   ],
   "tile05Href": "/ar/pillars/vip-launch-command",
   "tile06": [
-   "الركيزة 06",
+   "06",
    "دورة حياة المشروع وجولات Matterport"
   ],
   "tile06Href": "/ar/pillars/full-lifecycle-support",

@@ -47,7 +47,7 @@ export function IngestionOverlay() {
             <span className={`grid size-4 place-items-center rounded-full ${f.pct === 100 ? "bg-status text-white" : "bg-brand-light text-brand-dark"}`}>
               {f.pct === 100 ? <Icon name="check" size={10} strokeWidth={3} /> : <span className="size-1.5 rounded-full bg-brand" />}
             </span>
-            <span className="flex-1 truncate">{f.name}</span>
+            <span className="min-w-0 flex-1 break-words leading-tight">{f.name}</span>
             <span className="text-muted">{f.pct}%</span>
           </li>
         ))}
@@ -75,7 +75,7 @@ export function RuntimeMockup() {
             <span className={`grid size-4 place-items-center rounded ${r.on ? "bg-accent text-white" : "border border-line"}`}>
               {r.on && <Icon name="check" size={10} strokeWidth={3} />}
             </span>
-            <span className="flex-1 truncate text-[11px] font-semibold text-ink">{r.label}</span>
+            <span className="min-w-0 flex-1 text-[11px] font-semibold leading-tight text-ink">{r.label}</span>
             <span className="text-[10px] text-muted">{r.meta}</span>
           </div>
         ))}
@@ -110,7 +110,7 @@ export function InventoryMockup() {
           <div key={r.name} className="grid grid-cols-[1fr_auto_64px] items-center gap-3 border-b border-line py-2.5 last:border-0">
             <span className="flex min-w-0 items-center gap-2 text-[11px] font-semibold text-ink">
               <span className="size-5 shrink-0 rounded bg-gradient-to-br from-brand-sky to-brand-deep" />
-              <span className="truncate">{r.name}</span>
+              <span className="leading-tight">{r.name}</span>
             </span>
             <span className="text-[11px] text-body">{r.units}</span>
             <span className="h-1.5 overflow-hidden rounded-full bg-brand-light">

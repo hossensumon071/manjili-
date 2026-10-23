@@ -107,7 +107,7 @@ export function EcosystemStrip({ c }: PoweredProps) {
                   </span>
                   <span className="min-w-0">
                     <span className="block text-xs font-semibold text-muted">{t.label}</span>
-                    <span className="block truncate text-sm font-semibold text-ink">{t.title}</span>
+                    <span className="block text-sm font-semibold leading-snug text-ink">{t.title}</span>
                   </span>
                 </Link>
               </li>

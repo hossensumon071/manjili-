@@ -28,8 +28,8 @@
 
 ## Sitewide Rules
 
-- **Pillar names (nav, cards, footer, dropdowns):** the names are fixed. The number prefix renders as `01 Digital Twin` (nav, footer) or `Pillar 01 · Digital Twin` (cards, eyebrows, tiles), with no period after the number: `01 Digital Twin` · `02 CRM & Inventory Sync` · `03 Showroom Hardware` · `04 Sales Enablement` · `05 Launch Command` · `06 Lifecycle & Matterport`. Outcome H1s appear only on each pillar page (Part 3).
-- **Umbrella name:** `6-Pillar Infrastructure` everywhere.
+- **Pillar names (nav, cards, footer, dropdowns):** the names are fixed. The number prefix renders as `01 Digital Twin` (nav, footer) or `01 · Digital Twin` (cards, eyebrows, tiles), with no period after the number: `01 Digital Twin` · `02 CRM & Inventory Sync` · `03 Showroom Hardware` · `04 Sales Enablement` · `05 Launch Command` · `06 Lifecycle & Matterport`. Outcome H1s appear only on each pillar page (Part 3).
+- **Umbrella name:** `Services` everywhere.
 - **Primary CTA:** `Book Technical Scoping` → `/contact-us` on every page, except:
   - `Request a CSE Demo` (Platform hero)
   - `Plan a Similar Launch` (Case Studies hero + case-study heroes)
@@ -93,7 +93,7 @@
 - **Build note:** Remove "Overview" and "Tender & RFP Scoping", then order the items as listed. Logo `aria-label`: `Manzili home`. Keep the existing "Skip to content" link as the first focusable element.
 - **Logo:** `منزلي MANZILI` → `/`
 - **Nav Item 1:** `Platform (CSE)` → `/platform-cse`
-- **Nav Item 2 (dropdown button):** `6-Pillar Infrastructure` → opens dropdown (Section 02)
+- **Nav Item 2 (dropdown button):** `Services` → opens dropdown (Section 02)
 - **Nav Item 3:** `Case Studies` → `/case-studies`
 - **Language Toggle:** `EN` (active) · `العربية` → the matching `/ar` page
 - **Primary CTA:** `Book Technical Scoping` → `/contact-us`
@@ -112,7 +112,7 @@
   - **Item 04:** `04 Sales Enablement` · descriptor `Train your team to sell in 3D` → `/pillars/saudi-sales-enablement`
   - **Item 05:** `05 Launch Command` · descriptor `On-site support for launch events` → `/pillars/vip-launch-command`
   - **Item 06:** `06 Lifecycle & Matterport` · descriptor `From concept design to handover` → `/pillars/full-lifecycle-support`
-  - **Panel footer link:** `View All 6 Pillars` → `/#pillars`
+  - **Panel footer link:** `View All Services` → `/#pillars`
 
 ### SECTION [03]: Mobile Menu
 - **Location / Component:** Full-screen menu behind the hamburger (≤ 1024 px)
@@ -122,7 +122,7 @@
   - Keep the CTA pinned at the bottom of the panel.
 - **Menu button `aria-label`:** `Open menu` / `Close menu` (current, keep)
 - **Item 1:** `Platform (CSE)` → `/platform-cse`
-- **Item 2 (accordion):** `6-Pillar Infrastructure` → expands to the 6 items in Section 02 (names only, no descriptors) + `View All 6 Pillars` → `/#pillars`
+- **Item 2 (accordion):** `Services` → expands to the 6 items in Section 02 (names only, no descriptors) + `View All Services` → `/#pillars`
 - **Item 3:** `Case Studies` → `/case-studies`
 - **Language Toggle:** `EN` · `العربية` → the matching `/ar` page
 - **Primary CTA (full-width button):** `Book Technical Scoping` → `/contact-us`
@@ -140,7 +140,7 @@
 
 ### SECTION [02]: Column — 6-Pillar Infrastructure
 - **Location / Component:** Footer, column 2
-- **Column Header (`<p>` styled as label; not a heading tag):** `6-Pillar Infrastructure`
+- **Column Header (`<p>` styled as label; not a heading tag):** `Services`
 - **Links:**
   - `01 Digital Twin` → `/pillars/digital-twin-webgl`
   - `02 CRM & Inventory Sync` → `/pillars/crm-inventory-integration`
@@ -239,7 +239,7 @@
   - First item open on load, as today.
 - **Eyebrow:** `FAQ`
 - **H2:** `Questions From Procurement Teams`
-- **Side Card Title (`<p>`, bold):** `Not sure which pillars your launch needs?`
+- **Side Card Title (`<p>`, bold):** `Not sure which services your launch needs?`
 - **Side Card Body (`<p>`):** `A solutions engineer will map your masterplan to the right scope.`
 - **Primary CTA:** `Book Technical Scoping` → `/contact-us`
 
@@ -276,7 +276,7 @@
 | "<800ms Unit Reservation Lock" | Case Studies index, Alwareef + 4 related-case cards | `Sub-500 ms` |
 | "2-Hour Riyadh Dispatch", "4-Hour Technician SLA", "4-hour local Riyadh support", "2-hour field dispatch across Riyadh…" | Pillars 03, 05, Contact, Malfa | `2-hour dispatch on launch days · 4-hour standard support SLA` |
 | "Saudi PDPL Compliant", "Saudi PDPL Aligned" | Footer | `In-Kingdom hosting under Saudi PDPL` |
-| "6-Pillar Architecture", "6-Pillar Sales Infrastructure" | Nav, footer, cards | `6-Pillar Infrastructure` |
+| "6-Pillar Architecture", "6-Pillar Sales Infrastructure" | Nav, footer, cards | `Services` |
 | "deterministic", "Spatial Core", "spatial hesitation", "Commercial Counterparty", "air-gapped", "Audited Performance" | Various | The new copy for that section in this file |
 | `manzili360.com` | Meta tags, links | `manzili.sa` |
 | Links to `/solutions` | Nav, footer, buttons | `/#pillars` (301-redirect `/solutions` → `/#pillars`) |
@@ -291,7 +291,7 @@
 - **Skip link:** `Skip to content` → `#main` (current, keep)
 - **Logo `aria-label`:** `Manzili home`
 - **Menu button `aria-label`:** `Open menu` / `Close menu`
-- **Dropdown button:** `6-Pillar Infrastructure` (`aria-expanded` toggles)
+- **Dropdown button:** `Services` (`aria-expanded` toggles)
 - **Image alt rule (future rasters):** describe the subject, e.g. `Aerial render of [Project] masterplan, [City]`. Decorative art: `alt=""` or `aria-hidden="true"`. Never "Cta Image" or a stock description.
 
 ### SECTION [02]: 404 Page
@@ -323,7 +323,7 @@
 - **H1:** `Sell Off-Plan Units Faster, From 3D Masterplan to Signed SPA`
 - **Subheading / Body Copy:** `Digital twins, showroom hardware and the Connected Sales Environment, delivered and run by one Riyadh team for Saudi master developers.`
 - **Primary CTA:** `Book Technical Scoping` → `/contact-us`
-- **Secondary CTA:** `Explore 6 Pillars` → `#pillars`
+- **Secondary CTA:** `Explore Our Services` → `#pillars`
 - **Spec Strip (chips):** `Unreal Engine 5` · `4K at 60 FPS` · `REGA-aligned workflows` · `Hosted in KSA`
 - **Image Alt Text:** Decorative inline SVG: keep `aria-hidden="true"`. If it's replaced with a render: `Aerial render of [Project] masterplan, [City]`.
 
@@ -388,27 +388,27 @@
   - Use one link-label pattern on every card, at every breakpoint.
   - Keep `id="pillars"`. The nav and hero link to it.
 - **Eyebrow:** `How We Deliver`
-- **H2:** `The 6-Pillar Infrastructure`
+- **H2:** `Six Services, One Team`
 - **Subheading / Body Copy:** `Developers usually hire a different vendor for each of these six services. Manzili delivers all six under one Master Service Agreement.`
 - **Cards / Sub-Elements:**
-  - **Card 01 Label:** `Pillar 01` · **Title (H3):** `Digital Twin`
+  - **Card 01 Label:** `01` · **Title (H3):** `Digital Twin`
   - **Card 01 Body:** `One master 3D model powers an offline Unreal Engine 5 app for showroom presentations and a lightweight web platform buyers open on any phone.`
-  - **Card 01 Link:** `Explore Pillar 01` → `/pillars/digital-twin-webgl`
-  - **Card 02 Label:** `Pillar 02` · **Title (H3):** `CRM & Inventory Sync`
+  - **Card 01 Link:** `Learn more` → `/pillars/digital-twin-webgl`
+  - **Card 02 Label:** `02` · **Title (H3):** `CRM & Inventory Sync`
   - **Card 02 Body:** `Pre-built, two-way connectors for Salesforce, Yardi, SAP and HubSpot keep unit status live on every screen and stop double-bookings.`
-  - **Card 02 Link:** `Explore Pillar 02` → `/pillars/crm-inventory-integration`
-  - **Card 03 Label:** `Pillar 03` · **Title (H3):** `Showroom Hardware`
+  - **Card 02 Link:** `Learn more` → `/pillars/crm-inventory-integration`
+  - **Card 03 Label:** `03` · **Title (H3):** `Showroom Hardware`
   - **Card 03 Body:** `Touch tables, LED video walls, immersive rooms and hologram displays, staged and maintained by Manzili. Supplied as owned assets with manufacturer warranty management.`
-  - **Card 03 Link:** `Explore Pillar 03` → `/pillars/sales-center-hardware`
-  - **Card 04 Label:** `Pillar 04` · **Title (H3):** `Sales Enablement`
+  - **Card 03 Link:** `Learn more` → `/pillars/sales-center-hardware`
+  - **Card 04 Label:** `04` · **Title (H3):** `Sales Enablement`
   - **Card 04 Body:** `Saudi trainers coach your sales team in person and online, working with your sales director on hardware skills, remote showcase routines and masterplan storytelling.`
-  - **Card 04 Link:** `Explore Pillar 04` → `/pillars/saudi-sales-enablement`
-  - **Card 05 Label:** `Pillar 05` · **Title (H3):** `Launch Command`
+  - **Card 04 Link:** `Learn more` → `/pillars/saudi-sales-enablement`
+  - **Card 05 Label:** `05` · **Title (H3):** `Launch Command`
   - **Card 05 Body:** `A Riyadh-based technical team on site at Cityscape Global, RestateX, sales galleries and boardroom presentations, with 2-hour dispatch on launch days.`
-  - **Card 05 Link:** `Explore Pillar 05` → `/pillars/vip-launch-command`
-  - **Card 06 Label:** `Pillar 06` · **Title (H3):** `Lifecycle & Matterport`
+  - **Card 05 Link:** `Learn more` → `/pillars/vip-launch-command`
+  - **Card 06 Label:** `06` · **Title (H3):** `Lifecycle & Matterport`
   - **Card 06 Body:** `From concept modeling to Matterport tours of model units and completed projects, all on the same web platform.`
-  - **Card 06 Link:** `Explore Pillar 06` → `/pillars/full-lifecycle-support`
+  - **Card 06 Link:** `Learn more` → `/pillars/full-lifecycle-support`
 
 ### SECTION [07]: Deployment in 3 Steps
 - **Location / Component:** Section 7, three step cards with UI mockups
@@ -476,7 +476,7 @@
 - **Cards / Sub-Elements:**
   - **Q1 (H3):** `What is the Connected Sales Environment (CSE)?`
   - **A1:** `The CSE is Manzili's digital sales platform. It combines 3D masterplan navigation, live inventory synced with your CRM, payment-plan calculators and Nafath identity verification, so buyers can go from browsing to a timed unit hold and a generated SPA online. It's built for REGA and Wafi off-plan workflows.`
-  - **Q2 (H3):** `How does the 6-Pillar model eliminate vendor fragmentation?`
+  - **Q2 (H3):** `How does Manzili replace multiple vendors?`
   - **A2:** `One Master Service Agreement covers the software, hardware, training, launch operations and support, so one team is accountable for uptime.`
   - **Q3 (H3):** `At what stage does Manzili deploy with master developers?`
   - **A3:** `From concept modeling onward. We can build and present your project at any stage, including before Wafi approval. Securing the Wafi license to sell remains the developer's responsibility.`
@@ -579,15 +579,15 @@
 ### SECTION [06]: Powered by the 6-Pillar Infrastructure
 - **Location / Component:** Ecosystem strip, 6 linked tiles
 - **Eyebrow:** `Behind the Platform`
-- **H2:** `Powered by the 6-Pillar Infrastructure`
-- **Primary CTA:** `View All 6 Pillars` → `/#pillars`
+- **H2:** `Six Services That Power the Platform`
+- **Primary CTA:** `View All Services` → `/#pillars`
 - **Cards / Sub-Elements:**
-  - **Tile 01:** `Pillar 01` · `Digital Twin` → `/pillars/digital-twin-webgl`
-  - **Tile 02:** `Pillar 02` · `CRM & Inventory Sync` → `/pillars/crm-inventory-integration`
-  - **Tile 03:** `Pillar 03` · `Showroom Hardware` → `/pillars/sales-center-hardware`
-  - **Tile 04:** `Pillar 04` · `Sales Enablement` → `/pillars/saudi-sales-enablement`
-  - **Tile 05:** `Pillar 05` · `Launch Command` → `/pillars/vip-launch-command`
-  - **Tile 06:** `Pillar 06` · `Lifecycle & Matterport` → `/pillars/full-lifecycle-support`
+  - **Tile 01:** `01` · `Digital Twin` → `/pillars/digital-twin-webgl`
+  - **Tile 02:** `02` · `CRM & Inventory Sync` → `/pillars/crm-inventory-integration`
+  - **Tile 03:** `03` · `Showroom Hardware` → `/pillars/sales-center-hardware`
+  - **Tile 04:** `04` · `Sales Enablement` → `/pillars/saudi-sales-enablement`
+  - **Tile 05:** `05` · `Launch Command` → `/pillars/vip-launch-command`
+  - **Tile 06:** `06` · `Lifecycle & Matterport` → `/pillars/full-lifecycle-support`
 
 ### SECTION [07]: CTA Banner
 - **Location / Component:** **Shared CTA Banner** (Part 1)
@@ -606,8 +606,8 @@
 - Navbar, Footer and the FAQ module shell (eyebrow `FAQ`, H2 `Questions From Procurement Teams`, side card) are as specified in Part 1. Meta titles and descriptions are in Part 1, Sitewide Metadata.
 - **Hero CTAs:** every pillar hero uses `Book Technical Scoping` → `/contact-us` as the primary CTA, plus one secondary CTA that scrolls to an on-page anchor.
 - **Bottom banner:** every pillar gets its **own** banner H2, using the same component as the shared banner. Remove the phone button.
-- **Breadcrumb:** `Home` → `/` · `6-Pillar Infrastructure` → `/#pillars` · `[Pillar name]`. "Solutions" → `/solutions` is retired.
-- **Pillar navigation strip:** the previous and next links use the fixed names. "Back to overview", "Return to 6-Pillar Overview" and "View Full 6-Pillar Infrastructure" → `/solutions` all become `View All 6 Pillars` → `/#pillars`.
+- **Breadcrumb:** `Home` → `/` · `Services` → `/#pillars` · `[Pillar name]`. "Solutions" → `/solutions` is retired.
+- **Pillar navigation strip:** the previous and next links use the fixed names. "Back to overview", "Return to 6-Pillar Overview" and "View Full 6-Pillar Infrastructure" → `/solutions` all become `View All Services` → `/#pillars`.
 - **Mockups:** every hard-coded latency in a mockup reads `Sub-500 ms`, with a space before "ms".
 - **Mobile tables:** the mobile card versions of the matrix tables (`<h3>`/`<dl>`) must use exactly the strings in the table here.
 
@@ -626,8 +626,8 @@
   - `Safari · Chrome · Edge · < 3s load` → `Safari · Chrome · Edge · under 3 s load`
   - Footer line → `Both versions rebuild from one model after every design change`
   - Keep `Core 3D master model`, `Revit · CAD · IFC ingested`, `Unreal Engine 5 application`, `Offline · 4K · 60 FPS`, `WebGL web platform`, `Touch tables & LED walls` and `Gallery hardware calibrated`.
-- **Breadcrumb:** `Home` → `/` · `6-Pillar Infrastructure` → `/#pillars` · `Digital Twin` (current page)
-- **Eyebrow:** `Pillar 01 · Digital Twin`
+- **Breadcrumb:** `Home` → `/` · `Services` → `/#pillars` · `Digital Twin` (current page)
+- **Eyebrow:** `01 · Digital Twin`
 - **H1:** `Let Buyers See the Exact View Before They Reserve`
 - **Subheading / Body Copy:** `From one master 3D model, Manzili builds an Unreal Engine 5 app that runs offline on your showroom hardware and a lightweight web platform buyers open on any phone.`
 - **Primary CTA:** `Book Technical Scoping` → `/contact-us`
@@ -638,7 +638,7 @@
 - **Location / Component:** `id="architecture"`, intro + 2 large blocks with 3 features each
 - **Eyebrow:** `How It Works`
 - **H2:** `One Master Model, Two Ways to Sell`
-- **Subheading / Body Copy:** `Most developers juggle visual files from several agencies. Manzili builds one master 3D model from your BIM and CAD files, then produces two versions of it to cover the whole buyer journey.`
+- **Subheading / Body Copy:** `Many developers work with visual files from several different agencies. Manzili builds one master 3D model from your BIM and CAD files, then makes two versions of it that cover the whole buyer journey.`
 - **Cards / Sub-Elements:**
   - **Block 01 Number + Label:** `01` · `Sales Gallery & VIP Suites`
   - **Block 01 Title (H3):** `Enterprise Unreal Engine 5 Application`
@@ -651,7 +651,7 @@
   - **Block 02 Number + Label:** `02` · `Mobile & Remote Buyers`
   - **Block 02 Title (H3):** `Lightweight WebGL Web Platform`
   - **Block 02 Subtitle:** `Runs in Any Mobile Browser`
-  - **Block 02 Body:** `Compressed automatically from the same master model, the web platform loads 3D masterplans in standard phone and desktop browsers. Buyers explore and select units over 4G or 5G, with nothing to download.`
+  - **Block 02 Body:** `The web platform is a lighter version of the same master model. It opens 3D masterplans in normal phone and desktop browsers, and buyers explore and choose units over 4G or 5G with nothing to download.`
   - **Block 02 Features:**
     - `No App Download` / `Opens in Safari, Chrome and Edge`
     - `Mobile-First` / `Loads in under 3 seconds on mobile networks`
@@ -669,22 +669,22 @@
   - **Card 02 Title (H3):** `Every Screen Shows the Same Plans`
   - **Card 02 Body:** `Both versions come from one master model, so unit types, prices and design updates match across showroom displays and the web platform.`
   - **Card 03 Chip:** `Online to Showroom`
-  - **Card 03 Title (H3):** `Remote Leads, Showroom Close`
-  - **Card 03 Body:** `Capture high-intent buyers remotely on the web platform, then bring them into the showroom app to choose their unit and reserve.`
+  - **Card 03 Title (H3):** `Start Online, Finish in the Showroom`
+  - **Card 03 Body:** `Reach serious buyers online through the web platform, then welcome them to the showroom to choose their unit and reserve.`
 
 ### SECTION [04]: The Build Pipeline
 - **Location / Component:** 3 numbered steps
 - **Eyebrow:** `The Build Pipeline`
 - **H2:** `From BIM Files to Two Sales Tools`
 - **Cards / Sub-Elements:**
-  - **Step 01:** `01` · **H3** `Core 3D Master Build` · **Body** `We ingest your Revit, CAD and IFC files and build one high-precision master model with accurate structure and coordinates.`
-  - **Step 02:** `02` · **H3** `Offline UE5 App Packaging` · **Body** `The master model compiles into an Unreal Engine 5 app configured for your showroom touch tables, LED walls and presentation machines.`
-  - **Step 03:** `03` · **H3** `Web Platform Optimization` · **Body** `An automated pipeline compresses the geometry for fast browser streaming, ready to publish when you are.`
+  - **Step 01:** `01` · **H3** `Core 3D Master Build` · **Body** `We take your Revit, CAD and IFC files and build one high-precision master model with accurate structure and coordinates.`
+  - **Step 02:** `02` · **H3** `Offline UE5 App Setup` · **Body** `We turn the master model into an Unreal Engine 5 app set up for your showroom touch tables, LED walls and presentation screens.`
+  - **Step 03:** `03` · **H3** `Web Platform Optimization` · **Body** `We compress the model automatically so it loads fast in a browser, ready to publish when you are.`
 
 ### SECTION [05]: FAQ
 - **Location / Component:** Shared FAQ module shell (Part 1)
 - **Cards / Sub-Elements:**
-  - **Q1 (H3):** `Why deploy both an offline UE5 app and a web platform?`
+  - **Q1 (H3):** `Why do we need both an offline UE5 app and a web platform?`
   - **A1:** `Showroom presentations need full graphics power and no dependence on the internet, which the offline Unreal Engine 5 app delivers. Remote buyers need instant access with nothing to install, which the web platform delivers.`
   - **Q2 (H3):** `What happens to the offline UE5 app if showroom Wi-Fi disconnects?`
   - **A2:** `The buyer won't notice anything. The app runs entirely on local hardware, so presentations, touch controls and 4K navigation carry on. Inventory updates queue locally and sync as soon as the connection returns.`
@@ -693,8 +693,8 @@
 
 ### SECTION [06]: Pillar Navigation
 - **Location / Component:** Previous / next strip above the banner
-- **Previous link:** `View All 6 Pillars` → `/#pillars`
-- **Next link:** `Next pillar` · `Pillar 02 · CRM & Inventory Sync` → `/pillars/crm-inventory-integration`
+- **Previous link:** `View All Services` → `/#pillars`
+- **Next link:** `Next service` · `02 · CRM & Inventory Sync` → `/pillars/crm-inventory-integration`
 
 ### SECTION [07]: CTA Banner (Pillar-Specific)
 - **Location / Component:** Full-width banner above the footer
@@ -723,8 +723,8 @@
     - `SAP RE-FX` / `OData / RFC middleware · Sub-500 ms`
     - `HubSpot` / `Bidirectional REST API · Sub-500 ms`
   - Mockup footer: `PDPL compliant · In-Kingdom data residency` → `In-Kingdom hosting under Saudi PDPL`
-- **Breadcrumb:** `Home` → `/` · `6-Pillar Infrastructure` → `/#pillars` · `CRM & Inventory Sync` (current page)
-- **Eyebrow:** `Pillar 02 · CRM & Inventory Sync`
+- **Breadcrumb:** `Home` → `/` · `Services` → `/#pillars` · `CRM & Inventory Sync` (current page)
+- **Eyebrow:** `02 · CRM & Inventory Sync`
 - **H1:** `Stop Double-Booked Units Across Every Sales Channel`
 - **Subheading / Body Copy:** `Manzili connects your 3D showroom and web platform to your CRM and ERP, so unit status updates in under 500 ms and buyer activity flows straight to your sales team.`
 - **Primary CTA:** `Book Technical Scoping` → `/contact-us`
@@ -797,9 +797,9 @@
   - **A3:** `Interaction events, such as views checked, floor plans toggled and sun studies run, are sent by webhook to each buyer's CRM timeline, so your team sees their intent before the first call.`
 
 ### SECTION [06]: Pillar Navigation
-- **Previous link:** `Previous pillar` · `Pillar 01 · Digital Twin` → `/pillars/digital-twin-webgl`
-- **Next link:** `Next pillar` · `Pillar 03 · Showroom Hardware` → `/pillars/sales-center-hardware`
-- **Overview link:** `View All 6 Pillars` → `/#pillars`
+- **Previous link:** `Previous service` · `01 · Digital Twin` → `/pillars/digital-twin-webgl`
+- **Next link:** `Next service` · `03 · Showroom Hardware` → `/pillars/sales-center-hardware`
+- **Overview link:** `View All Services` → `/#pillars`
 
 ### SECTION [07]: CTA Banner (Pillar-Specific)
 - **Eyebrow:** `Sub-500 ms unit locks · Pre-built connectors`
@@ -823,8 +823,8 @@
   - Mockup spec line → `1.2 mm pitch · 1,200 nits · 120 Hz`. Add the unit spaces.
   - Mockup footer: `4-hour Riyadh technician SLA · one Master Service Agreement` → `2-hour dispatch on launch days · 4-hour standard support SLA`
   - Keep the other mockup rows.
-- **Breadcrumb:** `Home` → `/` · `6-Pillar Infrastructure` → `/#pillars` · `Showroom Hardware` (current page)
-- **Eyebrow:** `Pillar 03 · Showroom Hardware`
+- **Breadcrumb:** `Home` → `/` · `Services` → `/#pillars` · `Showroom Hardware` (current page)
+- **Eyebrow:** `03 · Showroom Hardware`
 - **H1:** `One Contract for Every Screen in Your Sales Gallery`
 - **Subheading / Body Copy:** `Manzili specifies, installs, calibrates and maintains your touch tables, LED walls, immersive rooms and hologram displays under one Master Service Agreement.`
 - **Primary CTA:** `Book Technical Scoping` → `/contact-us`
@@ -905,9 +905,9 @@
   - **A3:** `Manzili does, under the same MSA, with 2-hour dispatch on launch days · 4-hour standard support SLA. Our team installs, calibrates and maintains hardware across Riyadh, Jeddah and the Eastern Province.`
 
 ### SECTION [06]: Pillar Navigation
-- **Previous link:** `Previous pillar` · `Pillar 02 · CRM & Inventory Sync` → `/pillars/crm-inventory-integration`
-- **Next link:** `Next pillar` · `Pillar 04 · Sales Enablement` → `/pillars/saudi-sales-enablement`
-- **Overview link:** `View All 6 Pillars` → `/#pillars`
+- **Previous link:** `Previous service` · `02 · CRM & Inventory Sync` → `/pillars/crm-inventory-integration`
+- **Next link:** `Next service` · `04 · Sales Enablement` → `/pillars/saudi-sales-enablement`
+- **Overview link:** `View All Services` → `/#pillars`
 
 ### SECTION [07]: CTA Banner (Pillar-Specific)
 - **Eyebrow:** `One Master Service Agreement · 99.9% Presentation Uptime SLA`
@@ -930,8 +930,8 @@
 - **Build note:**
   - Mockup track names → `Showroom Hardware Mastery` · `Remote Showcase Playbook` · `Masterplan Storytelling` · `Sales Leadership Alignment`
   - Mockup footer: `Delivered by bilingual Saudi directors` → `Delivered by bilingual Saudi trainers`
-- **Breadcrumb:** `Home` → `/` · `6-Pillar Infrastructure` → `/#pillars` · `Sales Enablement` (current page)
-- **Eyebrow:** `Pillar 04 · Sales Enablement`
+- **Breadcrumb:** `Home` → `/` · `Services` → `/#pillars` · `Sales Enablement` (current page)
+- **Eyebrow:** `04 · Sales Enablement`
 - **H1:** `Train Your Sales Team to Sell in 3D, Not Brochures`
 - **Subheading / Body Copy:** `Saudi trainers coach your sales team in person and online, working with your sales director on showroom hardware, remote showcases and masterplan storytelling.`
 - **Primary CTA:** `Book Technical Scoping` → `/contact-us`
@@ -1004,9 +1004,9 @@
   - **A3:** `How to sequence a masterplan presentation: from Vision 2030 and regional infrastructure, to neighborhood amenities, to the unit's views, privacy setbacks and long-term value.`
 
 ### SECTION [06]: Pillar Navigation
-- **Previous link:** `Previous pillar` · `Pillar 03 · Showroom Hardware` → `/pillars/sales-center-hardware`
-- **Next link:** `Next pillar` · `Pillar 05 · Launch Command` → `/pillars/vip-launch-command`
-- **Overview link:** `View All 6 Pillars` → `/#pillars`
+- **Previous link:** `Previous service` · `03 · Showroom Hardware` → `/pillars/sales-center-hardware`
+- **Next link:** `Next service` · `05 · Launch Command` → `/pillars/vip-launch-command`
+- **Overview link:** `View All Services` → `/#pillars`
 
 ### SECTION [07]: CTA Banner (Pillar-Specific)
 - **Eyebrow:** `In person and online · Saudi trainers`
@@ -1031,8 +1031,8 @@
   - `Restatex Riyadh & Jeddah` → `RestateX Riyadh & Jeddah`
   - `< 500ms unit lock · dual 5G failover` → `Sub-500 ms unit lock · dual 5G failover`
   - Mockup footer → `2-hour dispatch on launch days · Kingdom-wide deployment`
-- **Breadcrumb:** `Home` → `/` · `6-Pillar Infrastructure` → `/#pillars` · `Launch Command` (current page)
-- **Eyebrow:** `Pillar 05 · Launch Command`
+- **Breadcrumb:** `Home` → `/` · `Services` → `/#pillars` · `Launch Command` (current page)
+- **Eyebrow:** `05 · Launch Command`
 - **H1:** `Protect High-Stakes Launch-Day Revenue`
 - **Subheading / Body Copy:** `Our Riyadh-based technical team works on site across the Kingdom, running live unit allocation, failover systems and VIP presentations at property exhibitions, developer offices and flagship sales centers.`
 - **Primary CTA:** `Book Technical Scoping` → `/contact-us`
@@ -1105,9 +1105,9 @@
   - **A3:** `We never rely on public exhibition Wi-Fi. We set up a private local network with dual-bonded 5G uplinks and run the Unreal Engine 5 app offline on local workstations, so presentations and reservations continue even if the hall network goes down.`
 
 ### SECTION [06]: Pillar Navigation
-- **Previous link:** `Previous pillar` · `Pillar 04 · Sales Enablement` → `/pillars/saudi-sales-enablement`
-- **Next link:** `Next pillar` · `Pillar 06 · Lifecycle & Matterport` → `/pillars/full-lifecycle-support`
-- **Overview link:** `View All 6 Pillars` → `/#pillars`
+- **Previous link:** `Previous service` · `04 · Sales Enablement` → `/pillars/saudi-sales-enablement`
+- **Next link:** `Next service` · `06 · Lifecycle & Matterport` → `/pillars/full-lifecycle-support`
+- **Overview link:** `View All Services` → `/#pillars`
 
 ### SECTION [07]: CTA Banner (Pillar-Specific)
 - **Eyebrow:** `2-hour dispatch on launch days · Riyadh-based team`
@@ -1128,8 +1128,8 @@
 ### SECTION [01]: Hero
 - **Location / Component:** Page hero, copy left + lifecycle mockup right
 - **Build note:** Mockup footer: `Every spatial asset feeds one central web platform` → `Every 3D asset feeds one web platform`. Keep the other mockup rows.
-- **Breadcrumb:** `Home` → `/` · `6-Pillar Infrastructure` → `/#pillars` · `Lifecycle & Matterport` (current page)
-- **Eyebrow:** `Pillar 06 · Lifecycle & Matterport`
+- **Breadcrumb:** `Home` → `/` · `Services` → `/#pillars` · `Lifecycle & Matterport` (current page)
+- **Eyebrow:** `06 · Lifecycle & Matterport`
 - **H1:** `Sell Every Phase From One Model, Concept to Handover`
 - **Subheading / Body Copy:** `We support developers at every project stage: turning concepts into off-plan digital twins, capturing Matterport tours of model units, and bringing every 3D asset into one web platform for unbuilt and completed stock.`
 - **Primary CTA:** `Book Technical Scoping` → `/contact-us`
@@ -1203,9 +1203,9 @@
   - **A3:** `Changes go into the single master model and publish to the showroom app and web platform together, so both always show the same plans.`
 
 ### SECTION [06]: Pillar Navigation
-- **Previous link:** `Previous pillar` · `Pillar 05 · Launch Command` → `/pillars/vip-launch-command`
+- **Previous link:** `Previous service` · `05 · Launch Command` → `/pillars/vip-launch-command`
 - **Next link:** `Explore the CSE Platform` → `/platform-cse`
-- **Overview link:** `View All 6 Pillars` → `/#pillars`
+- **Overview link:** `View All Services` → `/#pillars`
 
 ### SECTION [07]: CTA Banner (Pillar-Specific)
 - **Eyebrow:** `Concept to handover · Matterport Pro3 tours`
@@ -1635,13 +1635,13 @@
 - **H2:** `An Exhibition-Ready Setup for RestateX`
 - **Subheading / Body Copy:** `The RestateX setup paired WebGL masterplan navigation with local hardware, cellular failover and fast reservation workflows for the sales team.`
 - **Cards / Sub-Elements:**
-  - **Block 01:** Label `Pillar 01 · Digital Twin` · **H3** `10M+ m² WebGL Masterplan Twin`
+  - **Block 01:** Label `01 · Digital Twin` · **H3** `10M+ m² WebGL Masterplan Twin`
     - **Body:** `A no-download WebGL twin of all 10M+ m² of Alwareef, showing residential zones, parks, schools and highway junctions in 4K at 60 FPS.`
     - **Features:** `Destination-Scale Coverage` / `All 12,000+ planned homes` · `Infrastructure Context` / `Transit, schools and commercial centers` · `Under 3-Second Load` / `On sales iPads and buyers' phones`
-  - **Block 02:** Label `Pillar 03 · Showroom Hardware` · **H3** `Exhibition Hardware & Local Computing`
+  - **Block 02:** Label `03 · Showroom Hardware` · **H3** `Exhibition Hardware & Local Computing`
     - **Body:** `Durable touch podiums and presenter stations backed by local edge computers that run without venue internet.`
     - **Features:** `Exhibition Touch Podiums` / `Built for continuous exhibition traffic` · `Synchronized Video Walls` / `Consultant walkthroughs mirrored on booth screens` · `Plug-and-Play Assembly` / `Pre-configured flight cases, set up in 24 hours`
-  - **Block 03:** Label `Pillar 05 · Launch Command` · **H3** `Failover & On-Site Launch Command`
+  - **Block 03:** Label `05 · Launch Command` · **H3** `Failover & On-Site Launch Command`
     - **Body:** `On-site launch engineers ran local edge servers with dual-carrier private 5G failover throughout RestateX.`
     - **Features:** `Dual-Carrier Private 5G` / `Automatic carrier failover` · `On-Floor Standby Engineers` / `Specialists in the booth for the full event` · `Fast Unit Holds` / `Live inventory sync prevents double-bookings`
 
@@ -1702,13 +1702,13 @@
 - **H2:** `A Turnkey Sales Setup for Al-Mukiman`
 - **Subheading / Body Copy:** `The Al-Mukiman sales center runs on a browser-based WebGL twin and showroom touch tables, with structured sales playbooks for the frontline team.`
 - **Cards / Sub-Elements:**
-  - **Block 01:** Label `Pillar 01 · Digital Twin` · **H3** `Browser-Based Community Twin`
+  - **Block 01:** Label `01 · Digital Twin` · **H3** `Browser-Based Community Twin`
     - **Body:** `A no-download WebGL masterplan of all 3.5M+ m² of Al-Mukiman, showing building massing, roads, mosques, schools and plot-level daylight in 4K at 60 FPS.`
     - **Features:** `Community Exploration` / `Aerial navigation across 6,000+ homes` · `Boundary Context` / `Accurate distances to the Prophet's Mosque area` · `Under 3-Second Load` / `Smooth on 4G and 5G mobile browsers`
-  - **Block 02:** Label `Pillar 03 · Showroom Hardware` · **H3** `Sales Gallery Hardware`
+  - **Block 02:** Label `03 · Showroom Hardware` · **H3** `Sales Gallery Hardware`
     - **Body:** `65-inch 4K multi-touch tables installed in the permanent sales center, backed by local computing that removes network lag in busy consultations.`
     - **Features:** `Multi-Touch Tables` / `Rated for all-day showroom use` · `Dual-Display Mode` / `Touch table mirrored to LED walls` · `Local Edge Caching` / `No dependence on public Wi-Fi`
-  - **Block 03:** Label `Pillar 04 · Sales Enablement` · **H3** `Sales Playbooks for Family Buyers`
+  - **Block 03:** Label `04 · Sales Enablement` · **H3** `Sales Playbooks for Family Buyers`
     - **Body:** `On-site coaching replaced passive feature tours with a structured presentation built for Saudi family buyers.`
     - **Features:** `Masterplan-to-Home Sequence` / `From community infrastructure to living room` · `Objection Handling` / `Answers on privacy and nearby mosques` · `Digital Reservation Flow` / `From unit inspection to timed unit hold`
 
@@ -1769,13 +1769,13 @@
 - **H2:** `An Interactive Sales Console for Riyadh Villa Buyers`
 - **Subheading / Body Copy:** `A plot-level WebGL twin runs on the showroom touch tables, backed by sales playbooks written for family consultations.`
 - **Cards / Sub-Elements:**
-  - **Block 01:** Label `Pillar 01 · Digital Twin` · **H3** `Plot-Level WebGL Twin`
+  - **Block 01:** Label `01 · Digital Twin` · **H3** `Plot-Level WebGL Twin`
     - **Body:** `A lightweight browser app lets buyers inspect each villa plot, checking courtyard boundaries, street access and nearby green spaces.`
     - **Features:** `Plot Sun-Path Studies` / `Daylight from morning to evening on each plot` · `Interior Walkthroughs` / `From ground-floor living to private upper floors` · `No Download` / `Smooth 60 FPS on showroom and mobile`
-  - **Block 02:** Label `Pillar 03 · Showroom Hardware` · **H3** `65-Inch Showroom Touch Consoles`
+  - **Block 02:** Label `03 · Showroom Hardware` · **H3** `65-Inch Showroom Touch Consoles`
     - **Body:** `65-inch 4K touch tables in the Al-Assalah sales gallery let families gather around and explore their future home together.`
     - **Features:** `Durable Commercial Glass` / `Anti-glare and scratch-resistant` · `Split-Screen Comparisons` / `Villa types and plot sizes side by side` · `Local Computing` / `No lag on zoom, rotate or interior views`
-  - **Block 03:** Label `Pillar 04 · Sales Enablement` · **H3** `Sales Coaching for Family Consultations`
+  - **Block 03:** Label `04 · Sales Enablement` · **H3** `Sales Coaching for Family Consultations`
     - **Body:** `On-site coaching certified the developer's consultants to handle family objections step by step, from plot privacy to finishes.`
     - **Features:** `Step-by-Step Walkthroughs` / `From amenities to garden privacy` · `Finish Demonstrations` / `Materials and fixtures shown in 3D` · `Reservation Workflow` / `From unit selection to timed unit hold`
 
@@ -1836,13 +1836,13 @@
 - **H2:** `A Turnkey Remote Sales Setup for Tabuk Hills`
 - **Subheading / Body Copy:** `Manzili delivered a browser-based WebGL masterplan, pre-configured showroom hardware racks and on-site coaching tailored to local buyers.`
 - **Cards / Sub-Elements:**
-  - **Block 01:** Label `Pillar 01 · Digital Twin` · **H3** `Browser-Based Masterplan Twin`
+  - **Block 01:** Label `01 · Digital Twin` · **H3** `Browser-Based Masterplan Twin`
     - **Body:** `A 2.2M+ m² WebGL model of all 4,600+ homes, parks, schools and commercial facilities, running smoothly at 60 FPS on every device.`
     - **Features:** `Accurate Terrain` / `Real elevation contours of the Tabuk plateau` · `Amenity Distances` / `Walking and driving times to schools and clinics` · `Works in Any Browser` / `No installs for buyers or consultants`
-  - **Block 02:** Label `Pillar 03 · Showroom Hardware` · **H3** `Pre-Built Showroom Hardware`
+  - **Block 02:** Label `03 · Showroom Hardware` · **H3** `Pre-Built Showroom Hardware`
     - **Body:** `Touch tables and presenter consoles shipped pre-configured in flight racks, with remote health monitoring that cuts the need for on-site technician visits.`
     - **Features:** `48-Hour Setup` / `Commissioned within 48 hours of handover` · `Remote Diagnostics` / `Temperature and GPU load flagged to Riyadh engineers` · `Offline Mode` / `Presentations continue during fiber cuts`
-  - **Block 03:** Label `Pillar 04 · Sales Enablement` · **H3** `Sales Team Certification`
+  - **Block 03:** Label `04 · Sales Enablement` · **H3** `Sales Team Certification`
     - **Body:** `Hands-on coaching taught Tabuk consultants to guide first-time off-plan buyers through the 3D twin step by step.`
     - **Features:** `Masterplan-to-Home Storytelling` / `From infrastructure to living spaces` · `Local Objection Playbooks` / `Answers on construction timelines` · `Reservation Routine` / `Timed unit holds before interest fades`
 
@@ -2314,7 +2314,7 @@
 #### 7. Limitation of Liability · `#liability`
 - **H2:** `7. Limitation of Liability`
 - **Item 1:** `To the maximum extent permitted under Saudi law, Manzili shall not be liable for any indirect, incidental, consequential, or special damages—including loss of commercial revenue, anticipated sales, or event interruption—arising from the use or inability to use our platform or exhibition hardware.`
-- **Item 2:** `Hardware deployed under Pillar 03 (Showroom Hardware) and Pillar 05 (Launch Command) operates under dedicated enterprise SLAs. Liability for exhibition network latency or hardware downtime caused by third-party event telecom congestion or force majeure events is expressly limited to the terms of the applicable commercial contract.`
+- **Item 2:** `Hardware deployed under our Showroom Hardware and Launch Command services operates under dedicated enterprise SLAs. Liability for exhibition network latency or hardware downtime caused by third-party event telecom congestion or force majeure events is expressly limited to the terms of the applicable commercial contract.`
 
 #### 8. Infringement Notices · `#infringement`
 - **H2:** `8. Infringement Notices`

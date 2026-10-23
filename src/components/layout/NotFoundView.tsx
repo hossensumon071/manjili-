@@ -1,11 +1,16 @@
+import enMeta from "@/content/copy/en/meta.json";
+import arMeta from "@/content/copy/ar/meta.json";
 import { globalCopy, lp, type Locale } from "@/lib/i18n";
 import { Button } from "@/components/ui/Button";
 import { Sheen } from "@/components/ui/Sheen";
 
 export function NotFoundView({ locale }: { locale: Locale }) {
   const t = globalCopy(locale).notFound;
+  const title = ((locale === "ar" ? arMeta : enMeta) as Record<string, { title: string }>)["*404*"].title;
   return (
     <section className="px-2 pt-2 sm:px-3 sm:pt-3">
+      {/* Revision item 8: rendered in the component so the tab title survives hydration (React 19 hoists it to <head>) */}
+      <title>{title}</title>
       <div className="stage surface-blue">
         <Sheen />
         <div className="container-x flex min-h-[70vh] flex-col items-start justify-end pb-16 pt-36">

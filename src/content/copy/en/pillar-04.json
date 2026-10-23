@@ -2,7 +2,7 @@
  "s01": {
   "breadcrumb": "Home",
   "breadcrumbHref": "/",
-  "eyebrow": "Pillar 04 · Sales Enablement",
+  "eyebrow": "04 · Sales Enablement",
   "h1": "Train Your Sales Team to Sell in 3D, Not Brochures",
   "subheadingBodyCopy": "Saudi trainers coach your sales team in person and online, working with your sales director on showroom hardware, remote showcases and masterplan storytelling.",
   "primaryCta": "Book Technical Scoping",
@@ -22,7 +22,7 @@
     "href": "/"
    },
    {
-    "label": "6-Pillar Infrastructure",
+    "label": "Services",
     "href": "/#pillars"
    },
    {
@@ -140,16 +140,16 @@
  },
  "s06": {
   "previousLink": [
-   "Previous pillar",
-   "Pillar 03 · Showroom Hardware"
+   "Previous service",
+   "03 · Showroom Hardware"
   ],
   "previousLinkHref": "/pillars/sales-center-hardware",
   "nextLink": [
-   "Next pillar",
-   "Pillar 05 · Launch Command"
+   "Next service",
+   "05 · Launch Command"
   ],
   "nextLinkHref": "/pillars/vip-launch-command",
-  "overviewLink": "View All 6 Pillars",
+  "overviewLink": "View All Services",
   "overviewLinkHref": "/#pillars",
   "_tables": []
  },

@@ -33,7 +33,7 @@ export function ExecutionGap({ c }: { c: Head & { cards: Record<string, string>[
                       WebkitMaskImage: "radial-gradient(circle at center, #000 30%, transparent 70%)",
                     }}
                   />
-                  <span className="absolute left-5 top-5 grid grid-cols-1 size-10 place-items-center rounded-full bg-accent text-white shadow-glow-orange">
+                  <span className="absolute start-5 top-5 grid grid-cols-1 size-10 place-items-center rounded-full bg-accent text-white shadow-glow-orange">
                     <Icon name={ICONS[i % 3]} size={18} />
                   </span>
                   <span className="absolute end-5 top-6 font-display text-sm font-semibold text-muted">{card.number}</span>

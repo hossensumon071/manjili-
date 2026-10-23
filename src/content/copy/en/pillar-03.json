@@ -2,7 +2,7 @@
  "s01": {
   "breadcrumb": "Home",
   "breadcrumbHref": "/",
-  "eyebrow": "Pillar 03 · Showroom Hardware",
+  "eyebrow": "03 · Showroom Hardware",
   "h1": "One Contract for Every Screen in Your Sales Gallery",
   "subheadingBodyCopy": "Manzili specifies, installs, calibrates and maintains your touch tables, LED walls, immersive rooms and hologram displays under one Master Service Agreement.",
   "primaryCta": "Book Technical Scoping",
@@ -23,7 +23,7 @@
     "href": "/"
    },
    {
-    "label": "6-Pillar Infrastructure",
+    "label": "Services",
     "href": "/#pillars"
    },
    {
@@ -161,16 +161,16 @@
  },
  "s06": {
   "previousLink": [
-   "Previous pillar",
-   "Pillar 02 · CRM & Inventory Sync"
+   "Previous service",
+   "02 · CRM & Inventory Sync"
   ],
   "previousLinkHref": "/pillars/crm-inventory-integration",
   "nextLink": [
-   "Next pillar",
-   "Pillar 04 · Sales Enablement"
+   "Next service",
+   "04 · Sales Enablement"
   ],
   "nextLinkHref": "/pillars/saudi-sales-enablement",
-  "overviewLink": "View All 6 Pillars",
+  "overviewLink": "View All Services",
   "overviewLinkHref": "/#pillars",
   "_tables": []
  },

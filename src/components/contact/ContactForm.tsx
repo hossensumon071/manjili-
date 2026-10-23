@@ -37,9 +37,11 @@ function check(k: Key, v: Values, e: Copy): Issue | undefined {
     }
     if (k === "mobile" && !/^5\d{8}$/.test(s.replace(/\s/g, ""))) return { message: e.mobile };
     if (k === "launch") {
+      const month = normalizeMonth(s);
+      if (!month) return { message: e.required[TEXT.indexOf("launch")] };
       const now = new Date();
       const cur = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
-      if (s < cur) return { message: e.pastDate };
+      if (month < cur) return { message: e.pastDate };
     }
     if (k === "scale") {
       const m = s.replace(/[,٬]/g, "").match(/\d+(\.\d+)?/);
@@ -53,6 +55,16 @@ function check(k: Key, v: Values, e: Copy): Issue | undefined {
   if (k === "assets" || k === "wafi") return v[k] ? undefined : { message: e.select };
   if (k === "hardware") return v.hardware.length ? undefined : { message: e.multi };
   if (k === "consent") return v.consent ? undefined : { message: e.consent };
+}
+
+/** "06/2027", "6/2027", "06-2027", "2027-06" → "2027-06"; anything else → null. */
+export function normalizeMonth(raw: string): string | null {
+  const s = raw.trim().replace(/[٠-٩]/g, (d) => String("٠١٢٣٤٥٦٧٨٩".indexOf(d)));
+  let m = s.match(/^(\d{4})[-/.](\d{1,2})$/);
+  if (m) return +m[2] >= 1 && +m[2] <= 12 ? `${m[1]}-${m[2].padStart(2, "0")}` : null;
+  m = s.match(/^(\d{1,2})[-/.](\d{4})$/);
+  if (m) return +m[1] >= 1 && +m[1] <= 12 ? `${m[2]}-${m[1].padStart(2, "0")}` : null;
+  return null;
 }
 
 const ALL: Key[] = [...TEXT, "assets", "wafi", "hardware", "consent"];
@@ -100,7 +112,7 @@ export function ContactForm({ c, locale }: { c: Copy; locale: Locale }) {
       const res = await fetch("/api/rfp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...v, locale }),
+        body: JSON.stringify({ ...v, launch: normalizeMonth(v.launch) ?? v.launch, locale }),
       });
       const json = (await res.json()) as { ok: boolean; code?: string; reference?: string };
       if (json.ok) {
@@ -160,6 +172,7 @@ export function ContactForm({ c, locale }: { c: Copy; locale: Locale }) {
         value={v[k]}
         onChange={(ev) => set(k, ev.target.value)}
         onBlur={blur(k)}
+        aria-required="true"
         aria-invalid={issue && !issue.warning ? true : undefined}
         aria-describedby={describedBy(k, fd.helper)}
         className={cn(inputCls(k), k === "mobile" && "ps-16", k === "email" && "text-start")}
@@ -191,6 +204,7 @@ export function ContactForm({ c, locale }: { c: Copy; locale: Locale }) {
             value={v[k]}
             onChange={(ev) => set(k, ev.target.value)}
             onBlur={blur(k)}
+            aria-required="true"
             aria-invalid={issues[k] ? true : undefined}
             aria-describedby={describedBy(k)}
             className={cn(inputCls(k), "appearance-none pe-10", !v[k] && "text-muted")}
@@ -251,7 +265,7 @@ export function ContactForm({ c, locale }: { c: Copy; locale: Locale }) {
       <Group legend={f.legends[2]}>
         {select("assets", 8)}
         {select("wafi", 9)}
-        <fieldset className="sm:col-span-2" aria-describedby={describedBy("hardware", hw.helper)}>
+        <fieldset className="sm:col-span-2" aria-required="true" aria-describedby={describedBy("hardware", hw.helper)}>
           <legend className="mb-1 text-sm font-semibold text-ink">{hw.label}</legend>
           <p id={id("hardware-help")} className="mb-2 text-xs text-muted">
             {hw.helper}
@@ -294,6 +308,7 @@ export function ContactForm({ c, locale }: { c: Copy; locale: Locale }) {
             type="checkbox"
             name="consent"
             data-field="consent"
+            aria-required="true"
             checked={v.consent}
             onChange={(ev) => set("consent", ev.target.checked)}
             aria-describedby={describedBy("consent")}

@@ -55,7 +55,7 @@
   "blocks": [
    {
     "index": "01",
-    "label": "Pillar 01 · Digital Twin",
+    "label": "01 · Digital Twin",
     "title": "Plot-Level WebGL Twin",
     "body": "A lightweight browser app lets buyers inspect each villa plot, checking courtyard boundaries, street access and nearby green spaces.",
     "features": [
@@ -75,7 +75,7 @@
    },
    {
     "index": "02",
-    "label": "Pillar 03 · Showroom Hardware",
+    "label": "03 · Showroom Hardware",
     "title": "65-Inch Showroom Touch Consoles",
     "body": "65-inch 4K touch tables in the Al-Assalah sales gallery let families gather around and explore their future home together.",
     "features": [
@@ -95,7 +95,7 @@
    },
    {
     "index": "03",
-    "label": "Pillar 04 · Sales Enablement",
+    "label": "04 · Sales Enablement",
     "title": "Sales Coaching for Family Consultations",
     "body": "On-site coaching certified the developer's consultants to handle family objections step by step, from plot privacy to finishes.",
     "features": [

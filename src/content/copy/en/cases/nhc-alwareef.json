@@ -55,7 +55,7 @@
   "blocks": [
    {
     "index": "01",
-    "label": "Pillar 01 · Digital Twin",
+    "label": "01 · Digital Twin",
     "title": "10M+ m² WebGL Masterplan Twin",
     "body": "A no-download WebGL twin of all 10M+ m² of Alwareef, showing residential zones, parks, schools and highway junctions in 4K at 60 FPS.",
     "features": [
@@ -75,7 +75,7 @@
    },
    {
     "index": "02",
-    "label": "Pillar 03 · Showroom Hardware",
+    "label": "03 · Showroom Hardware",
     "title": "Exhibition Hardware & Local Computing",
     "body": "Durable touch podiums and presenter stations backed by local edge computers that run without venue internet.",
     "features": [
@@ -95,7 +95,7 @@
    },
    {
     "index": "03",
-    "label": "Pillar 05 · Launch Command",
+    "label": "05 · Launch Command",
     "title": "Failover & On-Site Launch Command",
     "body": "On-site launch engineers ran local edge servers with dual-carrier private 5G failover throughout RestateX.",
     "features": [

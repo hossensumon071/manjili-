@@ -2,7 +2,7 @@
  "s01": {
   "breadcrumb": "Home",
   "breadcrumbHref": "/",
-  "eyebrow": "Pillar 05 · Launch Command",
+  "eyebrow": "05 · Launch Command",
   "h1": "Protect High-Stakes Launch-Day Revenue",
   "subheadingBodyCopy": "Our Riyadh-based technical team works on site across the Kingdom, running live unit allocation, failover systems and VIP presentations at property exhibitions, developer offices and flagship sales centers.",
   "primaryCta": "Book Technical Scoping",
@@ -22,7 +22,7 @@
     "href": "/"
    },
    {
-    "label": "6-Pillar Infrastructure",
+    "label": "Services",
     "href": "/#pillars"
    },
    {
@@ -140,16 +140,16 @@
  },
  "s06": {
   "previousLink": [
-   "Previous pillar",
-   "Pillar 04 · Sales Enablement"
+   "Previous service",
+   "04 · Sales Enablement"
   ],
   "previousLinkHref": "/pillars/saudi-sales-enablement",
   "nextLink": [
-   "Next pillar",
-   "Pillar 06 · Lifecycle & Matterport"
+   "Next service",
+   "06 · Lifecycle & Matterport"
   ],
   "nextLinkHref": "/pillars/full-lifecycle-support",
-  "overviewLink": "View All 6 Pillars",
+  "overviewLink": "View All Services",
   "overviewLinkHref": "/#pillars",
   "_tables": []
  },

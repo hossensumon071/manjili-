@@ -41,7 +41,7 @@ export function Process({ c }: { c: Head & { steps: Record<string, string>[] } }
           <p>{process.body}</p>
         </Reveal>
 
-        <ol className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-6">
+        <ol className="mt-14 grid grid-cols-1 gap-10 lg:grid-cols-3 lg:gap-6">
           {process.steps.map((step, i) => (
             <motion.li
               key={step.title}
@@ -62,7 +62,7 @@ export function Process({ c }: { c: Head & { steps: Record<string, string>[] } }
                     whileInView={{ scaleX: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, ease: EASE, delay: 0.4 + i * 0.2 }}
-                    className="hidden h-px flex-1 origin-left bg-gradient-to-r from-brand/40 to-transparent md:block"
+                    className="hidden h-px flex-1 origin-left bg-gradient-to-r from-brand/40 to-transparent lg:block rtl:origin-right rtl:bg-gradient-to-l"
                   />
                 )}
               </div>

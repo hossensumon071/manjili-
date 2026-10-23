@@ -63,10 +63,10 @@ export function Footer({ locale }: { locale: Locale }) {
 
             <nav aria-label={f.pillarsHeader}>
               <p className="text-sm font-bold text-white">{f.pillarsHeader}</p>
-              <ul className="mt-5 space-y-3 text-sm">
+              <ul className="mt-4 space-y-1.5 text-sm">
                 {pillars.map((p, i) => (
                   <li key={p.href}>
-                    <Link href={lp(locale, p.href)} className="text-white/95 transition-colors hover:text-white hover:underline">
+                    <Link href={lp(locale, p.href)} className="inline-flex min-h-6 items-center py-0.5 text-white/95 transition-colors hover:text-white hover:underline">
                       {f.pillars[i]}
                     </Link>
                   </li>
@@ -76,10 +76,10 @@ export function Footer({ locale }: { locale: Locale }) {
 
             <nav aria-label={f.procHeader}>
               <p className="text-sm font-bold text-white">{f.procHeader}</p>
-              <ul className="mt-5 space-y-3 text-sm">
+              <ul className="mt-4 space-y-1.5 text-sm">
                 {f.proc.map((label, i) => (
                   <li key={label}>
-                    <Link href={lp(locale, procHrefs[i])} className="text-white/95 transition-colors hover:text-white hover:underline">
+                    <Link href={lp(locale, procHrefs[i])} className="inline-flex min-h-6 items-center py-0.5 text-white/95 transition-colors hover:text-white hover:underline">
                       {label}
                     </Link>
                   </li>
@@ -89,13 +89,13 @@ export function Footer({ locale }: { locale: Locale }) {
 
             <div>
               <p className="text-sm font-bold text-white">{f.contactHeader}</p>
-              <ul className="mt-5 space-y-3 text-sm">
+              <ul className="mt-4 space-y-1.5 text-sm">
                 {f.contact.map((label, i) => (
                   <li key={label}>
                     <a
                       href={contactHrefs[i]}
                       {...(i >= 3 && { target: "_blank", rel: "noopener" })}
-                      className="flex items-start gap-2.5 text-white/95 transition-colors hover:text-white hover:underline"
+                      className="flex min-h-6 items-start gap-2.5 py-1 text-white/95 transition-colors hover:text-white hover:underline"
                     >
                       <Icon name={contactIcons[i]} size={16} className="mt-0.5 shrink-0" />
                       <span>
@@ -113,12 +113,12 @@ export function Footer({ locale }: { locale: Locale }) {
             <p>{legal}</p>
             <ul className="flex gap-5">
               <li>
-                <Link href={lp(locale, routes.privacy)} className="hover:text-white hover:underline">
+                <Link href={lp(locale, routes.privacy)} className="inline-flex min-h-6 items-center hover:text-white hover:underline">
                   {f.privacy}
                 </Link>
               </li>
               <li>
-                <Link href={lp(locale, routes.terms)} className="hover:text-white hover:underline">
+                <Link href={lp(locale, routes.terms)} className="inline-flex min-h-6 items-center hover:text-white hover:underline">
                   {f.terms}
                 </Link>
               </li>

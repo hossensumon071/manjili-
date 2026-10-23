@@ -42,7 +42,7 @@ export function CaseStudies({ c }: { c: Head & { cta: Cta; cards: Card[] } }) {
                   <div className="absolute inset-0 transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]">
                     <SceneFrame {...sceneFor(card.link.href)} density="card" className="h-full w-full" />
                   </div>
-                  <span className="absolute start-4 top-4 rounded-full bg-white px-3 py-1.5 text-[11px] font-bold text-ink shadow-[0_6px_16px_-6px_rgba(55,53,53,0.45)] ring-1 ring-ink/5">
+                  <span className="absolute start-4 top-4 rounded-full bg-white px-3 py-1.5 text-xs font-bold text-ink shadow-[0_6px_16px_-6px_rgba(55,53,53,0.45)] ring-1 ring-ink/5">
                     {card.tag}
                   </span>
                 </div>

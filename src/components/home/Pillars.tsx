@@ -10,7 +10,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Sheen } from "@/components/ui/Sheen";
 
 /** Glass card with a light that follows the pointer. */
-type CardCopy = { label: string; title: string; body: string; link: { label: string; href: string } };
+type CardCopy = { label: string; title: string; body: string; link: { label: string; href: string }; ariaLabel?: string };
 
 function PillarCard({ card, icon }: { card: CardCopy; icon: IconName }) {
   const onMove = (e: MouseEvent<HTMLElement>) => {
@@ -38,7 +38,7 @@ function PillarCard({ card, icon }: { card: CardCopy; icon: IconName }) {
       </div>
       <h3 className="mt-auto pt-10 text-h3 font-semibold text-white">{card.title}</h3>
       <p className="mt-3 max-w-[48ch] text-[15px] leading-relaxed text-white/95">{card.body}</p>
-      <ArrowLink href={card.link.href} className="mt-5 text-white/95 hover:text-white">
+      <ArrowLink href={card.link.href} ariaLabel={card.ariaLabel} className="mt-5 text-white/95 hover:text-white">
         {card.link.label}
       </ArrowLink>
     </article>

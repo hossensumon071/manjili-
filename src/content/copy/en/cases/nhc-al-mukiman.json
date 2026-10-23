@@ -55,7 +55,7 @@
   "blocks": [
    {
     "index": "01",
-    "label": "Pillar 01 · Digital Twin",
+    "label": "01 · Digital Twin",
     "title": "Browser-Based Community Twin",
     "body": "A no-download WebGL masterplan of all 3.5M+ m² of Al-Mukiman, showing building massing, roads, mosques, schools and plot-level daylight in 4K at 60 FPS.",
     "features": [
@@ -75,7 +75,7 @@
    },
    {
     "index": "02",
-    "label": "Pillar 03 · Showroom Hardware",
+    "label": "03 · Showroom Hardware",
     "title": "Sales Gallery Hardware",
     "body": "65-inch 4K multi-touch tables installed in the permanent sales center, backed by local computing that removes network lag in busy consultations.",
     "features": [
@@ -95,7 +95,7 @@
    },
    {
     "index": "03",
-    "label": "Pillar 04 · Sales Enablement",
+    "label": "04 · Sales Enablement",
     "title": "Sales Playbooks for Family Buyers",
     "body": "On-site coaching replaced passive feature tours with a structured presentation built for Saudi family buyers.",
     "features": [
